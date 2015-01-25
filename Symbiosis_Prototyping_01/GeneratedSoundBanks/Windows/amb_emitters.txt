@@ -1,0 +1,30 @@
+Event	ID	Name			Wwise Object Path	Notes
+	230488276	Stop_Tree_music			\Default Work Unit\Stop_Tree_music	
+	517649804	Stop_Stem_4___60bpm			\Default Work Unit\Stop_Stem_4___60bpm	
+	1432509149	Play_Stem_3___60bpm			\Default Work Unit\Play_Stem_3___60bpm	
+	1578190931	Play_Stem_5___60bpm			\Default Work Unit\Play_Stem_5___60bpm	
+	1681753055	Play_Stem_1___60bpm			\Default Work Unit\Play_Stem_1___60bpm	
+	1937775604	Play_amb_campfire_crackle			\Default Work Unit\Play_amb_campfire_crackle	
+	1944101308	Play_Stem_2___60bpm			\Default Work Unit\Play_Stem_2___60bpm	
+	2107565590	Play_Tree_music			\Default Work Unit\Play_Tree_music	
+	2338382509	Stop_Stem_5___60bpm			\Default Work Unit\Stop_Stem_5___60bpm	
+	2364944865	Stop_Stem_1___60bpm			\Default Work Unit\Stop_Stem_1___60bpm	
+	2720887442	Play_Stem_4___60bpm			\Default Work Unit\Play_Stem_4___60bpm	
+	3285419490	Stop_Stem_2___60bpm			\Default Work Unit\Stop_Stem_2___60bpm	
+	3322360739	Stop_Stem_3___60bpm			\Default Work Unit\Stop_Stem_3___60bpm	
+	3748981955	Play_amb_tree_rustle			\Default Work Unit\Play_amb_tree_rustle	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	86688320	amb_tree_rustle_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_tree_rustle_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_tree_rustle\amb_tree_rustle_03		620046
+	128502887	amb_fire_campfire_lp_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_fire_campfire_lp_02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_campfire_crackle\amb_fire_campfire_lp_02		330816
+	404462776	Stem 1 - 60bpm	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Stem 1 - 60bpm_23E654FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tree_music\Stem 1 - 60bpm		1411264
+	553192953	amb_tree_rustle_04	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_tree_rustle_04_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_tree_rustle\amb_tree_rustle_04		404362
+	646861373	amb_tree_rustle_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_tree_rustle_02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_tree_rustle\amb_tree_rustle_02		958528
+	741163241	Stem 4 - 60bpm	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Stem 4 - 60bpm_23E654FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tree_music\Stem 4 - 60bpm		1411264
+	753608655	amb_fire_campfire_lp_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_fire_campfire_lp_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_campfire_crackle\amb_fire_campfire_lp_01		661688
+	772488042	Stem 2 - 60bpm	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Stem 2 - 60bpm_23E654FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tree_music\Stem 2 - 60bpm		1411264
+	782779139	amb_fire_campfire_lp_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_fire_campfire_lp_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_campfire_crackle\amb_fire_campfire_lp_03		408640
+	869385127	Stem 3 - 60bpm	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Stem 3 - 60bpm_23E654FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tree_music\Stem 3 - 60bpm		1411264
+	932115879	Stem 5 - 60bpm	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Stem 5 - 60bpm_23E654FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tree_music\Stem 5 - 60bpm		1411264
+	965330546	amb_tree_rustle_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\amb_tree_rustle_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_tree_rustle\amb_tree_rustle_01		592286
+

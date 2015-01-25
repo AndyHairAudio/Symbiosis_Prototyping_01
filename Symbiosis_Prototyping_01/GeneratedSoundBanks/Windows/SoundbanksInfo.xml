@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<SoundBanks>
+		<SoundBank Id="316118591" Language="SFX">
+			<ShortName>amb_emitters</ShortName>
+			<Path>amb_emitters.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1937775604" Name="Play_amb_campfire_crackle" MaxAttenuation="75.000000"/>
+				<Event Id="3748981955" Name="Play_amb_tree_rustle" MaxAttenuation="75.000000"/>
+				<Event Id="1681753055" Name="Play_Stem_1___60bpm" MaxAttenuation="75.000000"/>
+				<Event Id="1944101308" Name="Play_Stem_2___60bpm" MaxAttenuation="75.000000"/>
+				<Event Id="1432509149" Name="Play_Stem_3___60bpm" MaxAttenuation="75.000000"/>
+				<Event Id="2720887442" Name="Play_Stem_4___60bpm" MaxAttenuation="75.000000"/>
+				<Event Id="1578190931" Name="Play_Stem_5___60bpm" MaxAttenuation="75.000000"/>
+				<Event Id="2107565590" Name="Play_Tree_music" MaxAttenuation="75.000000"/>
+				<Event Id="2364944865" Name="Stop_Stem_1___60bpm"/>
+				<Event Id="3285419490" Name="Stop_Stem_2___60bpm"/>
+				<Event Id="3322360739" Name="Stop_Stem_3___60bpm"/>
+				<Event Id="517649804" Name="Stop_Stem_4___60bpm"/>
+				<Event Id="2338382509" Name="Stop_Stem_5___60bpm"/>
+				<Event Id="230488276" Name="Stop_Tree_music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="86688320" Language="SFX">
+					<ShortName>amb_tree_rustle_03.wav</ShortName>
+					<Path>SFX\amb_tree_rustle_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="128502887" Language="SFX">
+					<ShortName>amb_fire_campfire_lp_02.wav</ShortName>
+					<Path>SFX\amb_fire_campfire_lp_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="404462776" Language="SFX">
+					<ShortName>Stem 1 - 60bpm.wav</ShortName>
+					<Path>SFX\Stem 1 - 60bpm_23E654FE.wem</Path>
+				</File>
+				<File Id="553192953" Language="SFX">
+					<ShortName>amb_tree_rustle_04.wav</ShortName>
+					<Path>SFX\amb_tree_rustle_04_DDC98EF4.wem</Path>
+				</File>
+				<File Id="646861373" Language="SFX">
+					<ShortName>amb_tree_rustle_02.wav</ShortName>
+					<Path>SFX\amb_tree_rustle_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="741163241" Language="SFX">
+					<ShortName>Stem 4 - 60bpm.wav</ShortName>
+					<Path>SFX\Stem 4 - 60bpm_23E654FE.wem</Path>
+				</File>
+				<File Id="753608655" Language="SFX">
+					<ShortName>amb_fire_campfire_lp_01.wav</ShortName>
+					<Path>SFX\amb_fire_campfire_lp_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="772488042" Language="SFX">
+					<ShortName>Stem 2 - 60bpm.wav</ShortName>
+					<Path>SFX\Stem 2 - 60bpm_23E654FE.wem</Path>
+				</File>
+				<File Id="782779139" Language="SFX">
+					<ShortName>amb_fire_campfire_lp_03.wav</ShortName>
+					<Path>SFX\amb_fire_campfire_lp_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="869385127" Language="SFX">
+					<ShortName>Stem 3 - 60bpm.wav</ShortName>
+					<Path>SFX\Stem 3 - 60bpm_23E654FE.wem</Path>
+				</File>
+				<File Id="932115879" Language="SFX">
+					<ShortName>Stem 5 - 60bpm.wav</ShortName>
+					<Path>SFX\Stem 5 - 60bpm_23E654FE.wem</Path>
+				</File>
+				<File Id="965330546" Language="SFX">
+					<ShortName>amb_tree_rustle_01.wav</ShortName>
+					<Path>SFX\amb_tree_rustle_01_DDC98EF4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1184774098" Language="SFX">
+			<ShortName>amb_background</ShortName>
+			<Path>amb_background.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3359688453" Name="Play_amb_forest_day_background_loop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="801325103" Language="SFX">
+					<ShortName>amb_forest_day_background_loop.wav</ShortName>
+					<Path>SFX\amb_forest_day_background_loop_BDBC63A6.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

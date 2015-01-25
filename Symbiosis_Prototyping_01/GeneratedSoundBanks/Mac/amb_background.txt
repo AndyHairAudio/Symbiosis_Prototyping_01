@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3359688453	Play_amb_forest_day_background_loop			\Default Work Unit\Play_amb_forest_day_background_loop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	801325103	amb_forest_day_background_loop	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Mac\SFX\amb_forest_day_background_loop_BDBC63A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\amb_forest_day_background_loop		9327980
+
