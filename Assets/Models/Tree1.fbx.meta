@@ -1,40 +1,53 @@
 fileFormatVersion: 2
-guid: 1353a5e45db1e0a469670ab721b09bc1
+guid: 5bdcc1ac6e48a024393379a48cfab9a8
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Lensflare_Source
-    100004: Moon
-    100006: Moon_Light
-    100008: Physical_Sky
-    100010: Plane
-    100012: Shadow_Plane
-    100014: Sky_Dome
-    100016: Sky_Null
-    100018: Sun
-    100020: Sun_light
-    400000: //RootNode
-    400002: Lensflare_Source
-    400004: Moon
-    400006: Moon_Light
-    400008: Physical_Sky
-    400010: Plane
-    400012: Shadow_Plane
-    400014: Sky_Dome
-    400016: Sky_Null
-    400018: Sun
-    400020: Sun_light
-    2300000: Plane
-    3300000: Plane
-    4300000: Plane
-    6400000: Plane
-    7400000: C4D Animation Take
+    100000: Cube
+    100002: Null
+    100004: Sphere
+    100006: Sphere_1
+    100008: Sphere_2
+    100010: Sphere_3
+    100012: Sphere_4
+    100014: //RootNode
+    400000: Cube
+    400002: Null
+    400004: Sphere
+    400006: Sphere_1
+    400008: Sphere_2
+    400010: Sphere_3
+    400012: Sphere_4
+    400014: //RootNode
+    2300000: Cube
+    2300002: Sphere
+    2300004: Sphere_1
+    2300006: Sphere_2
+    2300008: Sphere_3
+    2300010: Sphere_4
+    3300000: Cube
+    3300002: Sphere
+    3300004: Sphere_1
+    3300006: Sphere_2
+    3300008: Sphere_3
+    3300010: Sphere_4
+    4300000: Sphere_4
+    4300002: Sphere_3
+    4300004: Sphere_2
+    4300006: Sphere_1
+    4300008: Sphere
+    4300010: Cube
+    6400000: Cube
+    6400002: Sphere
+    6400004: Sphere_1
+    6400006: Sphere_2
+    6400008: Sphere_3
+    6400010: Sphere_4
     9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 0
+    materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -54,7 +67,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 1
     importBlendShapes: 1
-    swapUVChannels: 0
+    swapUVChannels: 1
     generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
