@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0a6550af496a1d4dbf6c2463b33e832
+guid: e77628c1ccc516940abf6ce68d0f8ccb
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -43,12 +43,12 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .0500000007
+    globalScale: .100000001
     meshCompression: 0
     addColliders: 1
     importBlendShapes: 1
-    swapUVChannels: 1
-    generateSecondaryUV: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
