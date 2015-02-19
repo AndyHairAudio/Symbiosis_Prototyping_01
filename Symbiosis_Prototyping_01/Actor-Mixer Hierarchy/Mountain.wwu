@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6D4262CC-7D82-4D85-A338-C7B047ECAE6B}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
+	<AudioObjects>
+		<WorkUnit Name="Mountain" ID="{6D4262CC-7D82-4D85-A338-C7B047ECAE6B}" OwnerID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Waterfall" ID="{5F860E77-A21D-41BE-ABD2-DC84AC4F1DE8}" PersistMode="Reference"/>
+				<WorkUnit Name="Waterfall Cove" ID="{168D1917-737F-4DAF-9812-10266D90F2EF}" PersistMode="Reference"/>
+				<WorkUnit Name="Glacier" ID="{CBE0B9C1-9633-4B09-9E6D-A1AE55DC531E}" PersistMode="Reference"/>
+				<WorkUnit Name="Snow Plains" ID="{AAEF332C-ED25-4877-BC77-2EEB43A0E677}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

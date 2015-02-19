@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CBE0B9C1-9633-4B09-9E6D-A1AE55DC531E}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
+	<AudioObjects>
+		<WorkUnit Name="Glacier" ID="{CBE0B9C1-9633-4B09-9E6D-A1AE55DC531E}" OwnerID="{6D4262CC-7D82-4D85-A338-C7B047ECAE6B}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Ice Creak" ID="{9D322E88-A057-49FC-B12C-6A33A43FB3D6}" PersistMode="Reference"/>
+				<WorkUnit Name="Ice Rumble" ID="{3A10B5B1-E1A4-431D-9080-54A741D5B8CA}" PersistMode="Reference"/>
+				<WorkUnit Name="Ice River" ID="{54D60AC2-C9D7-4B30-B598-AD9A3B90E265}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

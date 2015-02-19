@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B751BA24-9440-4EE8-BC6A-2AED0586AAFA}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
+	<AudioObjects>
+		<WorkUnit Name="Insect Noise" ID="{B751BA24-9440-4EE8-BC6A-2AED0586AAFA}" OwnerID="{F56E36C3-A561-4E50-9755-21987C22B7D4}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" ShortID="562941770">
+					<PropertyList>
+						<Property Name="FollowListenerOrientation" Type="bool" Value="False"/>
+						<Property Name="OutputBusHighpass" Type="int16">
+							<ValueList>
+								<Value>40</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7A3C87A7-9BDB-4BC2-93A5-63298938EA1E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="101"/>
+											<Property Name="Min" Type="Real64" Value="-101"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Amb_ForestFloor_InsectChirp" ID="{76A9457F-FC4B-4C1B-945E-B0314FE83AF2}" WorkUnitID="{E7704AF0-29F3-418C-828E-B573C02C78BA}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{63DC175B-9B51-4762-8066-BCB66B102F74}" ShortID="636314384" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{FD1E5E84-6353-4DDE-9C61-AFBA0290A30F}" ShortID="142227830">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{FD1E5E84-6353-4DDE-9C61-AFBA0290A30F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1" ID="{913DDFEB-63E0-485D-9B12-5B78A96F1D73}" ShortID="702784714" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1" ID="{A227C6F6-9B88-4561-9267-BDC63BFE2F55}" ShortID="932348603">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1" ID="{A227C6F6-9B88-4561-9267-BDC63BFE2F55}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1" ID="{F8BA0FC0-8F0D-4D81-A493-E46CD25CED22}" ShortID="552018390" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1" ID="{DCC9DA3A-D25A-4E39-900A-F9B13B593246}" ShortID="117728911">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1" ID="{DCC9DA3A-D25A-4E39-900A-F9B13B593246}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1" ID="{EAB5E735-8DAD-452E-81E2-6352076B67DB}" ShortID="960615766" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1" ID="{74A9DCB1-B35D-44DF-B38E-DE947B86BD1B}" ShortID="992573404">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1" ID="{74A9DCB1-B35D-44DF-B38E-DE947B86BD1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1" ID="{AFA493C7-A9E3-4727-89FB-D751A8AAD191}" ShortID="989186654" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1" ID="{485D9603-C465-4046-BD20-BB50BCE1A9F5}" ShortID="318506861">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1" ID="{485D9603-C465-4046-BD20-BB50BCE1A9F5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1" ID="{A61796DB-CCB4-4BB8-AD98-6717E11D8D4D}" ShortID="150374836" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1" ID="{2DF6597E-C4FB-4D17-B9EA-BEE232502FAE}" ShortID="234911312">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1" ID="{2DF6597E-C4FB-4D17-B9EA-BEE232502FAE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1" ID="{8D8ED494-5586-47F1-8FF0-1A171379FA6C}" ShortID="851345483" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1" ID="{5B5ACDC8-F3DA-464D-9365-72CD0CDB8BFC}" ShortID="730949567">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1" ID="{5B5ACDC8-F3DA-464D-9365-72CD0CDB8BFC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1" ID="{93CAA39D-CDF7-4464-BD57-43A08ABA3750}" ShortID="1022121753" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1" ID="{5F9BB1C2-389B-438B-B3D5-137425882DF7}" ShortID="333877690">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1" ID="{5F9BB1C2-389B-438B-B3D5-137425882DF7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1" ID="{3E24F08F-A75C-493E-834A-6250CADCE3EF}" ShortID="86136832" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1" ID="{CCAAB59E-ADCC-4949-8760-3963066839E4}" ShortID="12907513">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1" ID="{CCAAB59E-ADCC-4949-8760-3963066839E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1" ID="{3ED515B7-BD8A-4169-A09D-254AE33D271F}" ShortID="698235380" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1" ID="{B256FB57-7360-4217-B453-F4BD9461D251}" ShortID="619249110">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1" ID="{B256FB57-7360-4217-B453-F4BD9461D251}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1" ID="{0F9A0C89-269E-49C2-827C-668BF7A759C1}" ShortID="643153229" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1" ID="{F5ADD7EE-0AC0-4EB2-B948-F270648CEE9B}" ShortID="689774042">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1" ID="{F5ADD7EE-0AC0-4EB2-B948-F270648CEE9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1" ID="{86B60450-1501-4A04-A5FB-15A390F0397A}" ShortID="745212291" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1" ID="{B2387D61-2E25-4729-80E3-7E83CA023F25}" ShortID="789919579">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1" ID="{B2387D61-2E25-4729-80E3-7E83CA023F25}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1" ID="{EBC88317-290D-4B2E-9FE6-E6B5863C6C29}" ShortID="151568137" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1" ID="{2B46570F-7EF2-4F16-9912-DD74F63CA7DB}" ShortID="212142448">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1" ID="{2B46570F-7EF2-4F16-9912-DD74F63CA7DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1" ID="{5AFB0B54-7D15-4B9B-869B-0DB82F0F1CE1}" ShortID="584847103" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1" ID="{1D4EEBA0-448B-4668-BB2C-7BDE5CEF13C8}" ShortID="918995127">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1" ID="{1D4EEBA0-448B-4668-BB2C-7BDE5CEF13C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1" ID="{287928F3-99A7-4411-AD03-4E022F0164C4}" ShortID="666259497" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1" ID="{5CC0B197-5B64-46B5-A648-E05556C5A9C6}" ShortID="696699612">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1" ID="{5CC0B197-5B64-46B5-A648-E05556C5A9C6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1" ID="{FB3BEA45-35EC-441E-BCE2-7292590A2E92}" ShortID="339978088" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1" ID="{E2B7B9AA-E886-4E08-BD5E-F85DE9C0BF7B}" ShortID="522067787">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1" ID="{E2B7B9AA-E886-4E08-BD5E-F85DE9C0BF7B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1" ID="{C7ECE420-9F9F-4A2B-872D-7E0FD6040EBA}" ShortID="866109878" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1" ID="{E95AD4FD-C49A-44C8-9972-D696BEAECB58}" ShortID="982027625">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1" ID="{E95AD4FD-C49A-44C8-9972-D696BEAECB58}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1" ID="{6F74073F-87E1-4E90-9CDD-9496F8F6648D}" ShortID="505808537" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1" ID="{AB071DCB-16BF-4A5F-BD70-051AEBFF4ED6}" ShortID="855628050">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1" ID="{AB071DCB-16BF-4A5F-BD70-051AEBFF4ED6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1" ID="{653DE1D1-8108-45FD-AD46-5F53C4A8A9D7}" ShortID="552389689" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1" ID="{510C74D4-5C99-4DA2-AEC4-0E3A45348650}" ShortID="162340508">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1" ID="{510C74D4-5C99-4DA2-AEC4-0E3A45348650}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1" ID="{1E6B33B4-7D02-46D4-BEA9-3BEA139BB0E0}" ShortID="1007031499" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1" ID="{FCF3F542-D2EB-43CE-B4FB-05D4FB69D28C}" ShortID="708413003">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1" ID="{FCF3F542-D2EB-43CE-B4FB-05D4FB69D28C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1" ID="{070E91D3-6D2E-42B7-980E-A06155E66001}" ShortID="922680308" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1" ID="{16207977-8372-4B31-ABF6-A530BC6B4249}" ShortID="618996005">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1" ID="{16207977-8372-4B31-ABF6-A530BC6B4249}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1" ID="{48536346-B395-499F-AFAB-D7C2A77E4CB7}" ShortID="896641776" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1" ID="{AE4B9B0B-ED09-48AB-B98E-FA18B25D2F71}" ShortID="1069920407">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1" ID="{AE4B9B0B-ED09-48AB-B98E-FA18B25D2F71}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1" ID="{1905263D-CC61-4494-9198-5D20C43A2B06}" ShortID="425404071" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1" ID="{928D808D-AC1F-4D44-8403-BA5C2EB42268}" ShortID="566557766">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1" ID="{928D808D-AC1F-4D44-8403-BA5C2EB42268}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1" ID="{87A55C1D-C1B9-49B8-90EE-A3E7B1F2E539}" ShortID="122139629" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1" ID="{79177C25-6757-4295-85FC-D0E3A1F5F37B}" ShortID="1052354779">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1" ID="{79177C25-6757-4295-85FC-D0E3A1F5F37B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1" ID="{56B9E914-EFFA-4060-85C3-BEA59C6804EC}" ShortID="259882294" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1" ID="{5AD8A6C7-7CFF-4471-8DA5-83CB46E41ABC}" ShortID="544275846">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1" ID="{5AD8A6C7-7CFF-4471-8DA5-83CB46E41ABC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1" ID="{830BCC44-F18F-4CE3-BFC7-46F18F169580}" ShortID="855348729" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1" ID="{1734161D-3FDF-4355-B87B-C6C4E9201D84}" ShortID="985221289">
+									<Language>SFX</Language>
+									<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1" ID="{1734161D-3FDF-4355-B87B-C6C4E9201D84}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence" ID="{0B1A1327-321A-4735-BE2A-B5F6A3C97BDE}" ShortID="121055137" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{866633F6-F556-4E5E-9BF0-F1965130AC46}" ShortID="785635438" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="5"/>
+										<Property Name="LengthMax" Type="Real32" Value="4"/>
+										<Property Name="LengthMin" Type="Real32" Value="-4"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{866633F6-F556-4E5E-9BF0-F1965130AC46}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{29631C73-71CB-4F5F-A461-5708B32FB1E7}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Chirp_Path" ID="{42733B22-3B65-431B-B06C-069F7EF3DB2A}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="22"/>
+										<Property Name="RandomY" Type="Real64" Value="22"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-70.88608</XPos>
+											<YPos>64.64967</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Chirp_Path_01" ID="{24B7FBE4-ED7D-4EB5-BDF0-56E2688F702C}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="27"/>
+										<Property Name="RandomY" Type="Real64" Value="20"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>71.51899</XPos>
+											<YPos>58.9172</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Chirp_Path_02" ID="{188F3F9A-912B-404E-B090-05719A74D470}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="20"/>
+										<Property Name="RandomY" Type="Real64" Value="20"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>68.35443</XPos>
+											<YPos>-69.74522</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Chirp_Path_03" ID="{B9F6F1FE-0452-488B-8578-FDF4589CE34B}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="23"/>
+										<Property Name="RandomY" Type="Real64" Value="23"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-42.40506</XPos>
+											<YPos>-37.26115</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Buzz" ID="{2CAD38AC-D413-4F75-9F9E-901A8032FB29}" ShortID="999287849">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Chatter" ID="{B5AA5007-871E-4148-926D-AA1B9EED7A58}" ShortID="31062799">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

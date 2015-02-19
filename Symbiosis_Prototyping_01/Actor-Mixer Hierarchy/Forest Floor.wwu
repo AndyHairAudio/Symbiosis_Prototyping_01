@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F56E36C3-A561-4E50-9755-21987C22B7D4}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
+	<AudioObjects>
+		<WorkUnit Name="Forest Floor" ID="{F56E36C3-A561-4E50-9755-21987C22B7D4}" OwnerID="{FE419998-7990-43A6-917C-D226F5ACCBEE}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Insect Noise" ID="{B751BA24-9440-4EE8-BC6A-2AED0586AAFA}" PersistMode="Reference"/>
+				<WorkUnit Name="Forest Wind" ID="{22203ECE-6514-4027-BA7B-50DBE69B5969}" PersistMode="Reference"/>
+				<WorkUnit Name="Bird Flutter" ID="{218C2890-2513-40CD-85FD-F91AD05B7F6B}" PersistMode="Reference"/>
+				<WorkUnit Name="Wood Break" ID="{B019055C-DFDE-4F82-8297-35A47617D355}" PersistMode="Reference"/>
+				<WorkUnit Name="Wood Creak" ID="{E6BC550E-F163-4AA7-A8B4-E31DC1F7B9EB}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

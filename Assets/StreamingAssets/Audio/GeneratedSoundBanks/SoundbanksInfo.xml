@@ -10,90 +10,122 @@
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<SoundBanks>
-		<SoundBank Id="316118591" GUID="{28BD9D2C-5621-46B9-B4AA-853A0CCB824A}" Language="SFX">
-			<ShortName>amb_emitters</ShortName>
-			<Path>amb_emitters.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1937775604" Name="Play_amb_campfire_crackle" GUID="{EABF518A-AF1E-46E3-9918-45D38B4DBF18}" MaxAttenuation="20.000000"/>
-				<Event Id="3748981955" Name="Play_amb_tree_rustle" GUID="{A0B606C1-6B3F-4C2A-8170-1E9AD7363901}" MaxAttenuation="20.000000"/>
-				<Event Id="2623417700" Name="Play_StemPicker_BigTree" GUID="{25A176AF-E4D9-4A3A-A480-D3478B6A9B6F}" MaxAttenuation="70.000000"/>
-				<Event Id="1405335252" Name="Play_StemPicker_Bush" GUID="{6EE24BAC-FC37-4D56-8434-810C79CC8971}" MaxAttenuation="70.000000"/>
-				<Event Id="2496235435" Name="Play_StemPicker_MediumTree" GUID="{1A2B350B-E7E7-44D7-B340-2E4DF4FEE447}" MaxAttenuation="70.000000"/>
-				<Event Id="3256481050" Name="Play_StemPicker_Sapling" GUID="{59B34452-DDC0-48DC-8D18-51F14F28553C}" MaxAttenuation="70.000000"/>
-				<Event Id="1574472763" Name="Play_StemPicker_SmallTree" GUID="{A4DB222E-FA3F-4AB5-901B-0B7BB28C8D86}" MaxAttenuation="70.000000"/>
-				<Event Id="3741724626" Name="Stop_StemPicker_BigTree" GUID="{288BD5D8-E620-4283-AFD1-0884D3B74A38}"/>
-				<Event Id="4078466226" Name="Stop_StemPicker_Bush" GUID="{4ED7019C-2453-4318-829D-56F71448F088}"/>
-				<Event Id="3142720133" Name="Stop_StemPicker_MediumTree" GUID="{BD02C966-E705-40AF-B807-21B9E7610F46}"/>
-				<Event Id="3944943176" Name="Stop_StemPicker_Sapling" GUID="{B666D437-1A7D-43A6-B1B5-FC2501908A82}"/>
-				<Event Id="3195754805" Name="Stop_StemPicker_SmallTree" GUID="{5F1923DB-2611-4E35-A80C-3FB1866B5C5D}"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="86688320" Language="SFX">
-					<ShortName>amb_tree_rustle_03.wav</ShortName>
-					<Path>SFX\amb_tree_rustle_03_DDC98EF4.wem</Path>
-				</File>
-				<File Id="102113797" Language="SFX">
-					<ShortName>Stem 5 - 60bpm.wav</ShortName>
-					<Path>SFX\Stem 5 - 60bpm_DDC98EF4.wem</Path>
-				</File>
-				<File Id="113408390" Language="SFX">
-					<ShortName>Stem 3 - 60bpm.wav</ShortName>
-					<Path>SFX\Stem 3 - 60bpm_DDC98EF4.wem</Path>
-				</File>
-				<File Id="128502887" Language="SFX">
-					<ShortName>amb_fire_campfire_lp_02.wav</ShortName>
-					<Path>SFX\amb_fire_campfire_lp_02_DDC98EF4.wem</Path>
-				</File>
-				<File Id="130032705" Language="SFX">
-					<ShortName>Stem 2 - 60bpm.wav</ShortName>
-					<Path>SFX\Stem 2 - 60bpm_DDC98EF4.wem</Path>
-				</File>
-				<File Id="293919849" Language="SFX">
-					<ShortName>Stem 4 - 60bpm.wav</ShortName>
-					<Path>SFX\Stem 4 - 60bpm_DDC98EF4.wem</Path>
-				</File>
-				<File Id="306220534" Language="SFX">
-					<ShortName>Stem 1 - 60bpm.wav</ShortName>
-					<Path>SFX\Stem 1 - 60bpm_DDC98EF4.wem</Path>
-				</File>
-				<File Id="553192953" Language="SFX">
-					<ShortName>amb_tree_rustle_04.wav</ShortName>
-					<Path>SFX\amb_tree_rustle_04_DDC98EF4.wem</Path>
-				</File>
-				<File Id="646861373" Language="SFX">
-					<ShortName>amb_tree_rustle_02.wav</ShortName>
-					<Path>SFX\amb_tree_rustle_02_DDC98EF4.wem</Path>
-				</File>
-				<File Id="753608655" Language="SFX">
-					<ShortName>amb_fire_campfire_lp_01.wav</ShortName>
-					<Path>SFX\amb_fire_campfire_lp_01_DDC98EF4.wem</Path>
-				</File>
-				<File Id="782779139" Language="SFX">
-					<ShortName>amb_fire_campfire_lp_03.wav</ShortName>
-					<Path>SFX\amb_fire_campfire_lp_03_DDC98EF4.wem</Path>
-				</File>
-				<File Id="965330546" Language="SFX">
-					<ShortName>amb_tree_rustle_01.wav</ShortName>
-					<Path>SFX\amb_tree_rustle_01_DDC98EF4.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="1184774098" GUID="{52B20779-003B-4167-A6A7-0F2579ED7BBE}" Language="SFX">
-			<ShortName>amb_background</ShortName>
-			<Path>amb_background.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3359688453" Name="Play_amb_forest_day_background_loop" GUID="{96ACBB05-5DCD-4D28-AC91-F6BD5E0264B4}"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="801325103" Language="SFX">
-					<ShortName>amb_forest_day_background_loop.wav</ShortName>
-					<Path>SFX\amb_forest_day_background_loop_BDBC63A6.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{8E6779EC-C155-4622-849A-DE0E0C02B5A4}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{2E08957C-E933-4682-98F9-BE733FA8ACA0}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3578186316" GUID="{F2FA009C-083C-4E21-8DFB-B26758434EE8}" Language="SFX">
+			<ShortName>Forest_Floor_Ambience</ShortName>
+			<Path>Forest_Floor_Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3187155090" Name="Play_Chirp" GUID="{0AF09043-659A-422A-9DC4-EE76F5819F8E}" MaxAttenuation="50.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="12907513" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="117728911" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="142227830" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="162340508" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="212142448" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="234911312" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="318506861" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="333877690" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="522067787" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="544275846" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="566557766" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="618996005" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="619249110" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="689774042" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="696699612" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="708413003" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="730949567" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="789919579" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="855628050" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="918995127" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="932348603" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="982027625" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="985221289" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="992573404" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1052354779" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1069920407" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1_DDC98EF4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

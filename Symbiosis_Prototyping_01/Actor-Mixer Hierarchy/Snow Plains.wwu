@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AAEF332C-ED25-4877-BC77-2EEB43A0E677}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
+	<AudioObjects>
+		<WorkUnit Name="Snow Plains" ID="{AAEF332C-ED25-4877-BC77-2EEB43A0E677}" OwnerID="{6D4262CC-7D82-4D85-A338-C7B047ECAE6B}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Shifting Snow" ID="{A1A57EB3-BAD9-42ED-A44E-A5FBB03320FB}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

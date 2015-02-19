@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4C463B2A-2EA8-4812-AC02-D2D665CDF3B8}" SchemaVersion="69">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{4C463B2A-2EA8-4812-AC02-D2D665CDF3B8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4C463B2A-2EA8-4812-AC02-D2D665CDF3B8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Forest_Floor_Ambience" ID="{F2FA009C-083C-4E21-8DFB-B26758434EE8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Chirp" ID="{0AF09043-659A-422A-9DC4-EE76F5819F8E}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

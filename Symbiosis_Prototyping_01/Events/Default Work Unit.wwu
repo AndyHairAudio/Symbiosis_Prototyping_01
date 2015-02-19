@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" SchemaVersion="69">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Chirp" ID="{0AF09043-659A-422A-9DC4-EE76F5819F8E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A2ECCF67-9A6D-49F8-9A6B-7EF50802B677}" ShortID="141839631" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3AD7C3A0-D273-468B-8102-831805E36A55}" Global="false">
+									<ObjectRef Name="Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" WorkUnitID="{B751BA24-9440-4EE8-BC6A-2AED0586AAFA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
