@@ -91,7 +91,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{5C7C91DB-9E1A-4A08-8071-46C8CA72DA57}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{8C0825CD-0862-4D80-AE5A-1F445FC5B7DB}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>

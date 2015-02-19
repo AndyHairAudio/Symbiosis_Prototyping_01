@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4C463B2A-2EA8-4812-AC02-D2D665CDF3B8}" SchemaVersion="69">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{4C463B2A-2EA8-4812-AC02-D2D665CDF3B8}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundBank Name="amb_emitters" ID="{28BD9D2C-5621-46B9-B4AA-853A0CCB824A}">
-					<ObjectInclusionList>
-						<ObjectRef Name="amb_tree_rustle" ID="{1716F008-BCC1-4469-8381-6A6DCC44BD87}" WorkUnitID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="amb_campfire_crackle" ID="{91DC5341-E8CD-4F85-82FC-AFD9C94D61A0}" WorkUnitID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Tree_music" ID="{42B77CDC-9BA5-4EE4-B607-5828390DAD6E}" WorkUnitID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="amb_background" ID="{52B20779-003B-4167-A6A7-0F2579ED7BBE}">
-					<ObjectInclusionList>
-						<ObjectRef Name="amb_forest_day_background_loop" ID="{6850B34F-4750-46B4-BB9A-15CA59DB5299}" WorkUnitID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{4C463B2A-2EA8-4812-AC02-D2D665CDF3B8}" PersistMode="Standalone"/>
 	</SoundBanks>
 </WwiseDocument>
