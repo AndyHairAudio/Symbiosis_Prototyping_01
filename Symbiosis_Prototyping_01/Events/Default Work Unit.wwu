@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Tree_Music" ID="{54B2BB87-7EBF-47A0-8054-57CE6A8ABE10}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BBBF4E7F-989A-4F17-9A08-E11BA3956A24}" ShortID="67447087" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{79DC34E1-BDAA-4C48-A508-388198CC4EF1}" Global="false">
+									<ObjectRef Name="Tree_Music" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{F56E36C3-A561-4E50-9755-21987C22B7D4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Tree_Music" ID="{7EB963B1-AE88-4BBB-B9B7-34458BF0C7A5}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{A9DD3F6D-FF97-4EFB-AA17-DCE8105840DA}" ShortID="340989294" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{13BC3F06-9BE4-41D5-8283-377388500E20}" Global="false">
+									<ObjectRef Name="Tree_Music" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{F56E36C3-A561-4E50-9755-21987C22B7D4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -10,6 +10,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Tree_music" ID="{EBE870FD-5134-4985-9F2E-07241B95E522}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Tree_Music" ID="{54B2BB87-7EBF-47A0-8054-57CE6A8ABE10}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Tree_Music" ID="{7EB963B1-AE88-4BBB-B9B7-34458BF0C7A5}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

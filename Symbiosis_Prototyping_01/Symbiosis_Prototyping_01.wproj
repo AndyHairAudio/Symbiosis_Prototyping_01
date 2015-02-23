@@ -81,6 +81,7 @@
 						<Value Platform="VitaHW">False</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjE3NjEiIG1hc2s9IkhEVFIxMjY2IiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDE1LTA4LTMxIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAxNS0wOC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAxNS0wOC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjI1IiBuYW1lPSJBbGwgV3dpc2UgUGx1Zy1JbnMiIHR5cGU9IjMiICBleHBpcmVzPSIyMDE1LTA4LTMxIiAgLz48bGljZW5zZSBpZD0iMTgiIG5hbWU9Ild3aXNlIEludGVncmF0aW9uIGZvciBVbml0eSBQcm8iIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCIgZXhwaXJlcz0iMjAxNS0wOC0zMSIgIC8+PC9wcm9qZWN0Pg==|hmNpc/7jL7LVXfQ6VR9l+k/1VcFB9ty0yqM0Ke2VUrespbDWkjEmG56wPDnR+gIvCu+JZxwVTw2ioNVKt1ahhHhktxhDMADmbgvGrfvnaSlfMTmh9RvNbLrzLJprpGThDdIfyxRzn8kKPqMJfAyqT7MM8DnGoCKZ4gE2luOLdt0ud8WzA4JnFYRU6nx6/XPCKn56ggn5HRCtAu63MmVnQLSe0oLKe9dWllkaPxIF7K+fiSfybCIbXyN4PXn6mLFxyn0tGrSexe2QtYhVKUNSPUr9qvQDUmBlZQQsNCgJSSbP7zZ2jet4y+X+I91Ozy0dGlu5aXVUYa/aJKNgoZnw4w=="/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True"/>
