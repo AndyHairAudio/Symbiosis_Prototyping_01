@@ -24,6 +24,14 @@
 						<State Name="BTree" ID="{0DD50618-1313-472B-BE56-43993A0A03D7}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Player_zone" ID="{72C539CF-40BF-4D84-AF7A-1E96D4E3F8E0}">
+					<ChildrenList>
+						<State Name="None" ID="{B6173F53-A674-44C9-BB6B-FC11B6F26DB7}"/>
+						<State Name="Forest" ID="{E55CCDFE-8C98-4A9A-A30F-A68DA4CDC69E}"/>
+						<State Name="Lakeside" ID="{2AAEAFD3-3E72-45F1-8FEB-2287A2F99317}"/>
+						<State Name="Cave" ID="{CC8F9C67-A397-4D27-9AE6-E12C069D28C4}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -1,6 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{22203ECE-6514-4027-BA7B-50DBE69B5969}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
 	<AudioObjects>
-		<WorkUnit Name="Forest Wind" ID="{22203ECE-6514-4027-BA7B-50DBE69B5969}" OwnerID="{F56E36C3-A561-4E50-9755-21987C22B7D4}" PersistMode="Nested"/>
+		<WorkUnit Name="Forest Wind" ID="{22203ECE-6514-4027-BA7B-50DBE69B5969}" OwnerID="{FE419998-7990-43A6-917C-D226F5ACCBEE}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchContainer Name="Wind Zones" ID="{199F396D-9EDF-40BF-AABD-0FBF1EEA6AB2}" ShortID="434579112">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Forest_floor" ID="{71D18B6A-73AC-485C-B577-6A1C4660B3B2}" ShortID="769989016" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Wind" ID="{69EE1172-6C37-4FF1-B717-EFD4C8EAD95B}" ShortID="542896232" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+									<PropertyList>
+										<Property Name="AverageVelocity" Type="Real32" Value="-680"/>
+										<Property Name="DurationRandom" Type="Real32" Value="19.9"/>
+										<Property Name="FrequencyScale" Type="Real32" Value="0.16"/>
+										<Property Name="GainOffset" Type="Real32" Value="3.1"/>
+										<Property Name="Gustiness" Type="Real32" Value="0.22"/>
+										<Property Name="QFactorScale" Type="Real32" Value="-3.12"/>
+										<Property Name="Variability" Type="Real32" Value="0.52"/>
+										<Property Name="VelocityDynamicRange" Type="Real32" Value="0.49"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData/>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{AD77FED7-5513-42C7-BF5E-0F9B7ED681E0}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="691"/>
+													<Property Name="PanX" Type="Real64" Value="-94.9253731343284"/>
+													<Property Name="PanY" Type="Real64" Value="-1.20481927710843"/>
+												</PropertyList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{9FFAB4E2-D734-4A95-BE06-C956350BEAED}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="591"/>
+													<Property Name="PanX" Type="Real64" Value="94.0298507462687"/>
+													<Property Name="PanY" Type="Real64" Value="-2.40963855421687"/>
+												</PropertyList>
+											</PluginInnerObject>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SoundSeed Wind" ID="{69EE1172-6C37-4FF1-B717-EFD4C8EAD95B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lakeside" ID="{027D3219-0049-4389-8151-56F808CA9ED3}" ShortID="207295584" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Wind" ID="{F1128C2E-3FBE-4C3E-A94D-F0CD67C700E9}" ShortID="540362666" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+									<PropertyList>
+										<Property Name="AverageVelocity" Type="Real32" Value="-910"/>
+										<Property Name="DurationRandom" Type="Real32" Value="30.9"/>
+										<Property Name="FrequencyScale" Type="Real32" Value="1.35"/>
+										<Property Name="GainOffset" Type="Real32" Value="5.1"/>
+										<Property Name="Gustiness" Type="Real32" Value="0.57"/>
+										<Property Name="QFactorScale" Type="Real32" Value="-1.18"/>
+										<Property Name="Variability" Type="Real32" Value="0.31"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData/>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{F10EE77C-7CE3-4EAC-BE61-666F60BFB14E}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="663"/>
+													<Property Name="PanX" Type="Real64" Value="-93.7313432835821"/>
+													<Property Name="PanY" Type="Real64" Value="-1.80722891566265"/>
+													<Property Name="QFactor" Type="Real32" Value="2.99"/>
+												</PropertyList>
+											</PluginInnerObject>
+											<PluginInnerObject Name="" ID="{1A680853-5B3B-44B9-8A64-60967E03675B}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="605"/>
+													<Property Name="PanX" Type="Real64" Value="97.0149253731343"/>
+													<Property Name="PanY" Type="Real64" Value="-1.80722891566266"/>
+													<Property Name="QFactor" Type="Real32" Value="2.99"/>
+												</PropertyList>
+											</PluginInnerObject>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SoundSeed Wind" ID="{F1128C2E-3FBE-4C3E-A94D-F0CD67C700E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cave" ID="{C03E176C-4B0A-4F1A-B6EF-D0182C7E8DBE}" ShortID="805164179" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Wind" ID="{63DF7926-3714-4F22-9656-A64572888D3E}" ShortID="1051350558" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
+									<PropertyList>
+										<Property Name="DurationRandom" Type="Real32" Value="30"/>
+										<Property Name="FrequencyScale" Type="Real32" Value="-0.17"/>
+										<Property Name="GainOffset" Type="Real32" Value="5.1"/>
+										<Property Name="Gustiness" Type="Real32" Value="0.48"/>
+										<Property Name="Variability" Type="Real32" Value="0.18"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData/>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{0892E97E-80EC-4521-B082-ABA5CBF71BCA}" PluginName="Deflector" CompanyID="0" PluginID="121">
+												<PropertyList>
+													<Property Name="Frequency" Type="Real32" Value="232"/>
+													<Property Name="PanX" Type="Real64" Value="-7.105427357601E-15"/>
+													<Property Name="PanY" Type="Real64" Value="-1.20481927710848"/>
+													<Property Name="QFactor" Type="Real32" Value="16.38"/>
+												</PropertyList>
+											</PluginInnerObject>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SoundSeed Wind" ID="{63DF7926-3714-4F22-9656-A64572888D3E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="Player_zone" ID="{72C539CF-40BF-4D84-AF7A-1E96D4E3F8E0}"/>
+						<DefaultSwitchRef Name="Forest" ID="{E55CCDFE-8C98-4A9A-A30F-A68DA4CDC69E}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Lakeside" ID="{027D3219-0049-4389-8151-56F808CA9ED3}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>10</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>10</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Forest_floor" ID="{71D18B6A-73AC-485C-B577-6A1C4660B3B2}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>10</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>10</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Cave" ID="{C03E176C-4B0A-4F1A-B6EF-D0182C7E8DBE}"/>
+								<PropertyList>
+									<Property Name="ContinuePlay" Type="bool" Value="True"/>
+									<Property Name="FadeInTime" Type="Real64">
+										<ValueList>
+											<Value>10</Value>
+										</ValueList>
+									</Property>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>10</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Cave" ID="{CC8F9C67-A397-4D27-9AE6-E12C069D28C4}"/>
+								<ItemList>
+									<ItemRef Name="Cave" ID="{C03E176C-4B0A-4F1A-B6EF-D0182C7E8DBE}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Lakeside" ID="{2AAEAFD3-3E72-45F1-8FEB-2287A2F99317}"/>
+								<ItemList>
+									<ItemRef Name="Lakeside" ID="{027D3219-0049-4389-8151-56F808CA9ED3}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Forest" ID="{E55CCDFE-8C98-4A9A-A30F-A68DA4CDC69E}"/>
+								<ItemList>
+									<ItemRef Name="Forest_floor" ID="{71D18B6A-73AC-485C-B577-6A1C4660B3B2}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
