@@ -24,12 +24,36 @@
 						<State Name="BTree" ID="{0DD50618-1313-472B-BE56-43993A0A03D7}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Player_zone" ID="{72C539CF-40BF-4D84-AF7A-1E96D4E3F8E0}">
+				<StateGroup Name="Player_Forest_Zone" ID="{72C539CF-40BF-4D84-AF7A-1E96D4E3F8E0}">
 					<ChildrenList>
 						<State Name="None" ID="{B6173F53-A674-44C9-BB6B-FC11B6F26DB7}"/>
-						<State Name="Forest" ID="{E55CCDFE-8C98-4A9A-A30F-A68DA4CDC69E}"/>
+						<State Name="Forest_Floor" ID="{E55CCDFE-8C98-4A9A-A30F-A68DA4CDC69E}"/>
 						<State Name="Lakeside" ID="{2AAEAFD3-3E72-45F1-8FEB-2287A2F99317}"/>
 						<State Name="Cave" ID="{CC8F9C67-A397-4D27-9AE6-E12C069D28C4}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="World_Zone" ID="{D28A50A8-A5FB-4A99-B519-6657BBDE32D8}">
+					<ChildrenList>
+						<State Name="None" ID="{64A4D259-DA17-4FB4-9481-88A2BA71D0EC}"/>
+						<State Name="Forest" ID="{D70FACEA-7B91-4253-9589-67F63938E194}"/>
+						<State Name="Desert" ID="{3B2D3088-AFF1-4A9E-AB63-716727A4DE63}"/>
+						<State Name="Mountain" ID="{5AA91D12-A88D-4720-8170-A65E7EB6251F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Player_Mountain_Zone" ID="{5C38FD04-96E2-4A47-AC07-B69E30EBBDEE}">
+					<ChildrenList>
+						<State Name="None" ID="{AD445062-DAEC-44E5-8C95-22189769990D}"/>
+						<State Name="Glacier" ID="{B0A46668-9D75-4DC2-A9A7-2BAC6B47CC5B}"/>
+						<State Name="Snow_Plain" ID="{ACB2E0B8-A005-446C-BFF7-9497D7CBD039}"/>
+						<State Name="Waterfall" ID="{433274D0-6F57-4DA9-BE25-62C66EB2CA80}"/>
+						<State Name="Waterfall_Cove" ID="{FB2745F7-B2E1-4EE1-834D-94C6816AF01D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Player_Desert_Zone" ID="{76EAD1F6-D67E-447A-9911-647254C39316}">
+					<ChildrenList>
+						<State Name="None" ID="{B4872A6D-C60F-4F6A-97F6-D802390BCE5E}"/>
+						<State Name="Oasis" ID="{A53DF92B-386F-4CEE-8CC6-53A8CA766493}"/>
+						<State Name="Dune" ID="{3F887123-48E6-43E3-BC50-EC91C2B46C06}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

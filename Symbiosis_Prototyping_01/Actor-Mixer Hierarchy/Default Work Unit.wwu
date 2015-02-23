@@ -3,9 +3,18 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="Forest" ID="{FE419998-7990-43A6-917C-D226F5ACCBEE}" PersistMode="Reference"/>
-				<WorkUnit Name="Desert" ID="{5809DB81-7080-4283-B6B6-12054D6ADCDD}" PersistMode="Reference"/>
-				<WorkUnit Name="Mountain" ID="{6D4262CC-7D82-4D85-A338-C7B047ECAE6B}" PersistMode="Reference"/>
+				<WorkUnit Name="Ambience-Emitters" ID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}" PersistMode="Reference"/>
+				<WorkUnit Name="Tree (Forest)" ID="{C70690FC-788B-4CE0-9613-CE6210F107A2}" PersistMode="Reference"/>
+				<WorkUnit Name="Bird (Forest)" ID="{01404FAD-613F-46B0-837B-F99825E6CCA6}" PersistMode="Reference"/>
+				<WorkUnit Name="Mammal (Forest)" ID="{468CF8C3-E1CC-4988-8CB7-B6884770E601}" PersistMode="Reference"/>
+				<WorkUnit Name="Cactus (Desert)" ID="{46B96AF8-3120-41D0-A63C-42C5EE1AB18E}" PersistMode="Reference"/>
+				<WorkUnit Name="Crow (Mountain)" ID="{0EB20626-198B-4C0F-8DF8-57B834AF083B}" PersistMode="Reference"/>
+				<WorkUnit Name="Player" ID="{720EB467-7467-4081-97BE-82ED4D783EB1}" PersistMode="Reference"/>
+				<WorkUnit Name="UI" ID="{A0BFFBC4-7FDD-4009-A584-9D87640F3409}" PersistMode="Reference"/>
+				<WorkUnit Name="Pine (Mountain)" ID="{60A0C9E5-FD1C-4C4C-A2E9-A19BB7E15477}" PersistMode="Reference"/>
+				<WorkUnit Name="Fish (Mountain)" ID="{F0E624B4-752A-4989-A90F-38F6DC386558}" PersistMode="Reference"/>
+				<WorkUnit Name="Snake (Desert)" ID="{9201E55E-FE5D-4781-AF17-3CEDD0B493B9}" PersistMode="Reference"/>
+				<WorkUnit Name="Waterfall (Mountain)" ID="{0723F38D-2C4B-48D7-802F-C5E52D6E7509}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

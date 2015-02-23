@@ -8,7 +8,7 @@
 						<Action Name="Play" ID="{A2ECCF67-9A6D-49F8-9A6B-7EF50802B677}" ShortID="141839631" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{3AD7C3A0-D273-468B-8102-831805E36A55}" Global="false">
-									<ObjectRef Name="Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" WorkUnitID="{FE419998-7990-43A6-917C-D226F5ACCBEE}"/>
+									<ObjectRef Name="Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -19,7 +19,7 @@
 						<Action Name="Play" ID="{BBBF4E7F-989A-4F17-9A08-E11BA3956A24}" ShortID="67447087" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{79DC34E1-BDAA-4C48-A508-388198CC4EF1}" Global="false">
-									<ObjectRef Name="Tree_Music" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{FE419998-7990-43A6-917C-D226F5ACCBEE}"/>
+									<ObjectRef Name="Tree_Music_Emitter" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -30,7 +30,7 @@
 						<Action Name="Stop" ID="{A9DD3F6D-FF97-4EFB-AA17-DCE8105840DA}" ShortID="340989294" Type="Stop" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{13BC3F06-9BE4-41D5-8283-377388500E20}" Global="false">
-									<ObjectRef Name="Tree_Music" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{FE419998-7990-43A6-917C-D226F5ACCBEE}"/>
+									<ObjectRef Name="Tree_Music_Emitter" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
 								</Element>
 							</ElementList>
 						</Action>
