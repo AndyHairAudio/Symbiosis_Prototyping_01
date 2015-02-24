@@ -8,7 +8,7 @@
 						<Action Name="Play" ID="{A2ECCF67-9A6D-49F8-9A6B-7EF50802B677}" ShortID="141839631" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{3AD7C3A0-D273-468B-8102-831805E36A55}" Global="false">
-									<ObjectRef Name="Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
+									<ObjectRef Name="Bird Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
 								</Element>
 							</ElementList>
 						</Action>
@@ -31,6 +31,17 @@
 							<ElementList>
 								<Element ID="{13BC3F06-9BE4-41D5-8283-377388500E20}" Global="false">
 									<ObjectRef Name="Tree_Music_Emitter" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Entrance_Music" ID="{8942D512-218D-46EE-AB86-6F33A75AC692}">
+					<ChildrenList>
+						<Action Name="Trigger" ID="{1CA8A735-1C22-4708-AE86-9E967353A65B}" ShortID="818057070" Type="Trigger" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{32DC5E21-6F94-48F6-8C1D-199718905DBF}" Global="true">
+									<ObjectRef Name="Player_Enter_World" ID="{B9BE9E00-5312-4FE5-BCF9-2CB82E3292F0}" WorkUnitID="{7E6665D9-695A-4318-B74D-1920926B985E}"/>
 								</Element>
 							</ElementList>
 						</Action>
