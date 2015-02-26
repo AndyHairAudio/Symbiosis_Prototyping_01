@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" SchemaVersion="69" RootDocumentID="{0FC56CA5-945C-4EF4-9EED-8AB7030CB6B2}">
+	<InteractiveMusic>
+		<WorkUnit Name="Tree (Forest)" ID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" OwnerID="{0FC56CA5-945C-4EF4-9EED-8AB7030CB6B2}" PersistMode="Nested">
+			<ChildrenList>
+				<MusicSwitchContainer Name="Tree_State" ID="{9453A87B-40BA-459D-B0AA-6F94B3356456}" ShortID="675881068">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Sapling" ID="{1600484A-ECC0-4121-A455-6F72E0EC13DC}" ShortID="364631475">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="32000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Forest_Four_Four_Sapling_Motif_01" ID="{8E1383CB-7FE3-43A4-BD2C-CF596D3C2338}" ShortID="519740700">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_Four_Four_Sapling_Motif_01" ID="{547E323E-5847-4EEB-91F1-8AC192ECEE05}" ShortID="254176593">
+											<Language>SFX</Language>
+											<AudioFile>Forest_Four_Four_Sapling_Motif_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1832CF55-779E-4DE6-ABDB-D241E6D51145}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{788A6652-68A2-4CE8-B12A-F06FDE52F4E1}">
+											<ClipList>
+												<MusicClip Name="Forest_Four_Four_Sapling_Motif_01" ID="{F0066117-E290-4EF3-9FD2-CDF6DD349DC2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="238.450074515648"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="333.830104321908"/>
+													</PropertyList>
+													<AudioSourceRef Name="Forest_Four_Four_Sapling_Motif_01" ID="{547E323E-5847-4EEB-91F1-8AC192ECEE05}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{81300318-44E0-472C-86B1-7E052CBE49DD}"/>
+								<MusicCue Name="Exit Cue" ID="{012FFB7C-2E5F-41A2-B2F9-06462B8B2E6A}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="3998.50968703428"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Bush" ID="{D6D97BA7-EB57-4C14-A216-52AB1F71DDF7}" ShortID="47297833">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="8403.87481371088"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Forest_Four_Four_Bush_Motif_01" ID="{B9D6BDB5-BB4E-4642-8943-28143A317CA3}" ShortID="1036473191">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_Four_Four_Bush_Motif_01" ID="{F0F15C9F-82FE-47C0-94E6-2C7BCB0DD83D}" ShortID="208265393">
+											<Language>SFX</Language>
+											<AudioFile>Forest_Four_Four_Bush_Motif_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2F9D8EF9-A7DA-4A52-B9B6-9DFC58835DBB}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{376B1061-4E79-4DFD-8706-7D52F473F159}">
+											<ClipList>
+												<MusicClip Name="Forest_Four_Four_Bush_Motif_01" ID="{913B5098-665A-41ED-9215-CC25B02ED563}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="494.78390461997"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="399.403874813712"/>
+													</PropertyList>
+													<AudioSourceRef Name="Forest_Four_Four_Bush_Motif_01" ID="{F0F15C9F-82FE-47C0-94E6-2C7BCB0DD83D}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{4D038451-A018-4958-A971-9EE40E096A43}"/>
+								<MusicCue Name="Exit Cue" ID="{A352EB96-7954-4CF0-810F-CD052BDE47A9}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="7998.50968703428"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Small Tree" ID="{FDEB9C27-DB01-4613-8F05-3038A9582D14}" ShortID="732412281">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="16845.0074515648"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Forest_Four_Four_Small_Tree_Motif_01" ID="{B23137E9-ED39-4793-8A06-4C1899DFA341}" ShortID="801093310">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_Four_Four_Small_Tree_Motif_01" ID="{10B538AE-E02C-4399-8F1D-BD2D5FF5E8C3}" ShortID="568921389">
+											<Language>SFX</Language>
+											<AudioFile>Forest_Four_Four_Small_Tree_Motif_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0E355F87-8EC7-40D5-864A-7095301A44D1}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{FA4962A7-D834-4231-A6FD-862B527DA070}">
+											<ClipList>
+												<MusicClip Name="Forest_Four_Four_Small_Tree_Motif_01" ID="{E64855B7-7E62-400F-A57E-965AB6B831BB}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="292.101341281669"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="381.520119225039"/>
+													</PropertyList>
+													<AudioSourceRef Name="Forest_Four_Four_Small_Tree_Motif_01" ID="{10B538AE-E02C-4399-8F1D-BD2D5FF5E8C3}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{5762C5DF-38E6-495A-AD45-DDB7E9F7B314}"/>
+								<MusicCue Name="Exit Cue" ID="{29627754-678A-4126-8A86-DDB64DB7115D}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="15992.5484351714"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Medium Tree" ID="{826F5DDF-59B5-4B00-9383-A7488578A527}" ShortID="474727149">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="33655.737704918"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Forest_Four_Four_Medium_Tree_Motif_01" ID="{A33C6E36-360D-46EB-BB60-7F775D3CEA1E}" ShortID="195104703">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_Four_Four_Medium_Tree_Motif_01" ID="{43C3C7F0-17D5-4DE7-905C-AF8957366EC5}" ShortID="678859308">
+											<Language>SFX</Language>
+											<AudioFile>Forest_Four_Four_Medium_Tree_Motif_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D7AD435C-B021-4612-8701-775A60AA70F7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{DEADD8DF-1CB8-4150-979F-AAA29C297FEB}">
+											<ClipList>
+												<MusicClip Name="Forest_Four_Four_Medium_Tree_Motif_01" ID="{AF75A7C7-A7A3-4711-A167-4C64942B649E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="32000"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="208.643815201192"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="429.21013412816"/>
+													</PropertyList>
+													<AudioSourceRef Name="Forest_Four_Four_Medium_Tree_Motif_01" ID="{43C3C7F0-17D5-4DE7-905C-AF8957366EC5}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{BCBB220A-52D5-4FC0-B140-C654B35C3005}"/>
+								<MusicCue Name="Exit Cue" ID="{2A96E543-00C0-4A9D-A56B-213F68BD8837}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="31998.5096870343"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Large Tree" ID="{B4425726-AD4E-433F-A182-197659E2A51D}" ShortID="1014519944">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="33983.6065573771"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Forest_Four_Four_Large_Tree_Motif_01" ID="{43B69E88-E85C-4C4A-9FD3-E5F0F7E22EE7}" ShortID="2179383">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_Four_Four_Large_Tree_Motif_01" ID="{C47FB3AE-59ED-4149-BBB2-C26EAD58A7F9}" ShortID="169555437">
+											<Language>SFX</Language>
+											<AudioFile>Forest_Four_Four_Large_Tree_Motif_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{28C60D7C-07AD-4E01-B0D5-89FD49E903E7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E01BA42A-2DCD-48E9-8266-3A74C5EA931A}">
+											<ClipList>
+												<MusicClip Name="Forest_Four_Four_Large_Tree_Motif_01" ID="{C63A5701-32E3-4EF8-8F74-191B2D2961A1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="32000"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="53.6512667660207"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="180.162278522941"/>
+													</PropertyList>
+													<AudioSourceRef Name="Forest_Four_Four_Large_Tree_Motif_01" ID="{C47FB3AE-59ED-4149-BBB2-C26EAD58A7F9}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{09B61F3D-BB62-46A4-A8F2-90915A927304}"/>
+								<MusicCue Name="Exit Cue" ID="{9E11A675-7991-4E1E-A29A-575788A03BA8}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="31999.1720483524"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{F5CFB7B4-BA0F-4DDA-B504-A87FAEDCF0AC}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{541919A6-A44A-45B6-A78A-8951B8BF7CF7}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="Tree_States" ID="{1E4C1F5D-B841-4266-99F7-0C0135A66D20}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="BTree" ID="{0DD50618-1313-472B-BE56-43993A0A03D7}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Large Tree" ID="{B4425726-AD4E-433F-A182-197659E2A51D}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Bush" ID="{1FC91A6F-ABB7-43B8-BA04-E42A91B8A318}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Bush" ID="{D6D97BA7-EB57-4C14-A216-52AB1F71DDF7}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="MTree" ID="{F95864A6-C935-4031-846E-203F30321A2C}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Medium Tree" ID="{826F5DDF-59B5-4B00-9383-A7488578A527}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Sapling" ID="{0B12D2D1-4E62-4EFB-8FD7-29B445CF2011}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Sapling" ID="{1600484A-ECC0-4121-A455-6F72E0EC13DC}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="STree" ID="{4B4FF181-CCA5-4D4B-BFF8-568AE7DC652C}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Small Tree" ID="{FDEB9C27-DB01-4613-8F05-3038A9582D14}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>
