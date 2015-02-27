@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID PLAY_ENTRANCE_MUSIC = 4075369248U;
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
-        static const AkUniqueID PLAY_GLOBAL_TEMPO = 941886111U;
         static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
         static const AkUniqueID PLAY_TREE_STATE = 4258997712U;
         static const AkUniqueID PLAY_ZONES = 3780807851U;

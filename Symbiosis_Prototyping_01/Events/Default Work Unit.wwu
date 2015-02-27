@@ -91,17 +91,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Global_Tempo" ID="{99726606-7324-4038-B09F-646DFD3CF292}">
-					<ChildrenList>
-						<Action Name="Play" ID="{8B141205-8C52-40EE-9BAA-30C1796DD368}" ShortID="367990570" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{817B3A07-D015-49B4-98C0-4949B059278F}" Global="false">
-									<ObjectRef Name="Global_Tempo" ID="{BA0031D1-E265-4DC5-A88B-8520D7A00F69}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

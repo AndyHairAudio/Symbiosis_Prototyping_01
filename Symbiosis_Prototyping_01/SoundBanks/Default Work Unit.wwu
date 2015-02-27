@@ -12,7 +12,6 @@
 				</SoundBank>
 				<SoundBank Name="Tree_Music" ID="{EBE870FD-5134-4985-9F2E-07241B95E522}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Global_Tempo" ID="{99726606-7324-4038-B09F-646DFD3CF292}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Tree_State" ID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Tree_State" ID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
