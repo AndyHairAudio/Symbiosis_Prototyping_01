@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7E6665D9-695A-4318-B74D-1920926B985E}" SchemaVersion="69">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{7E6665D9-695A-4318-B74D-1920926B985E}" PersistMode="Standalone">
-			<ChildrenList>
-				<Trigger Name="Player_Enter_World" ID="{B9BE9E00-5312-4FE5-BCF9-2CB82E3292F0}"/>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{7E6665D9-695A-4318-B74D-1920926B985E}" PersistMode="Standalone"/>
 	</Triggers>
 </WwiseDocument>

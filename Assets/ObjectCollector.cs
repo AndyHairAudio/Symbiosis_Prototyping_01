@@ -15,6 +15,10 @@ public class ObjectCollector : MonoBehaviour {
 		StartCoroutine (HealthDecay (0.01f));
 	}
 
+	void Start(){
+		AkSoundEngine.SetState ("Tempo_Global", "Active");
+	}
+
 	void Update (){
 
 		if (playerHealth > 100) {
@@ -31,25 +35,6 @@ public class ObjectCollector : MonoBehaviour {
 		
 		if (fruitCollected < 0) {
 			fruitCollected = 0;
-		}
-
-		if(playerHealth >= 80.0f && playerHealth < 100.0f){
-			AkSoundEngine.SetState("Player_Health", "Healthy");
-		}
-		if(playerHealth >= 60.0f && playerHealth < 80.0f){
-			AkSoundEngine.SetState("Player_Health", "Lively");
-		}
-		if(playerHealth >= 40.0f && playerHealth < 60.0f){
-			AkSoundEngine.SetState("Player_Health", "Weak");
-		}
-		if(playerHealth >= 20.0f && playerHealth < 40.0f){
-			AkSoundEngine.SetState("Player_Health", "Wounded");
-		}
-		if(playerHealth > 0.0f && playerHealth < 20.0f){
-			AkSoundEngine.SetState("Player_Health", "Dying");
-		}
-		if(playerHealth == 0.0f){
-			AkSoundEngine.SetState("Player_Health", "Dead");
 		}
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));

@@ -3,57 +3,11 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{64E17B37-2B13-488D-BB1C-4BC08F857154}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Player_Health" ID="{B5CDD1D1-E4DB-470E-8D2A-FBE51432DC5B}">
+				<StateGroup Name="Tempo_Global" ID="{FE4021E4-4ADC-495F-97FB-B3E7C6604066}">
 					<ChildrenList>
-						<State Name="None" ID="{B7227387-F760-42EC-8038-C3E3B9E379BA}"/>
-						<State Name="Healthy" ID="{03972301-D64F-451F-8C3E-A08172D01A3A}"/>
-						<State Name="Lively" ID="{5EA890F6-D8F7-47FD-A701-6528B6934D7B}"/>
-						<State Name="Weak" ID="{061B8877-BFD2-4902-AE85-390DC32C8877}"/>
-						<State Name="Wounded" ID="{D6F8C5C0-B9B5-4471-9648-F9C87DCB9529}"/>
-						<State Name="Dying" ID="{B8AD954E-3653-4A57-B1B6-64716A8D3932}"/>
-						<State Name="Dead" ID="{43D92F26-328A-4B4E-B913-E951FB049BFC}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Tree_States" ID="{1E4C1F5D-B841-4266-99F7-0C0135A66D20}">
-					<ChildrenList>
-						<State Name="None" ID="{D65CD5C8-3279-42C2-B437-E2A882208D93}"/>
-						<State Name="Sapling" ID="{0B12D2D1-4E62-4EFB-8FD7-29B445CF2011}"/>
-						<State Name="Bush" ID="{1FC91A6F-ABB7-43B8-BA04-E42A91B8A318}"/>
-						<State Name="STree" ID="{4B4FF181-CCA5-4D4B-BFF8-568AE7DC652C}"/>
-						<State Name="MTree" ID="{F95864A6-C935-4031-846E-203F30321A2C}"/>
-						<State Name="BTree" ID="{0DD50618-1313-472B-BE56-43993A0A03D7}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Player_Forest_Zone" ID="{72C539CF-40BF-4D84-AF7A-1E96D4E3F8E0}">
-					<ChildrenList>
-						<State Name="None" ID="{B6173F53-A674-44C9-BB6B-FC11B6F26DB7}"/>
-						<State Name="Forest_Floor" ID="{E55CCDFE-8C98-4A9A-A30F-A68DA4CDC69E}"/>
-						<State Name="Lakeside" ID="{2AAEAFD3-3E72-45F1-8FEB-2287A2F99317}"/>
-						<State Name="Cave" ID="{CC8F9C67-A397-4D27-9AE6-E12C069D28C4}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="World_Zone" ID="{D28A50A8-A5FB-4A99-B519-6657BBDE32D8}">
-					<ChildrenList>
-						<State Name="None" ID="{64A4D259-DA17-4FB4-9481-88A2BA71D0EC}"/>
-						<State Name="Forest" ID="{D70FACEA-7B91-4253-9589-67F63938E194}"/>
-						<State Name="Desert" ID="{3B2D3088-AFF1-4A9E-AB63-716727A4DE63}"/>
-						<State Name="Mountain" ID="{5AA91D12-A88D-4720-8170-A65E7EB6251F}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Player_Mountain_Zone" ID="{5C38FD04-96E2-4A47-AC07-B69E30EBBDEE}">
-					<ChildrenList>
-						<State Name="None" ID="{AD445062-DAEC-44E5-8C95-22189769990D}"/>
-						<State Name="Glacier" ID="{B0A46668-9D75-4DC2-A9A7-2BAC6B47CC5B}"/>
-						<State Name="Snow_Plain" ID="{ACB2E0B8-A005-446C-BFF7-9497D7CBD039}"/>
-						<State Name="Waterfall" ID="{433274D0-6F57-4DA9-BE25-62C66EB2CA80}"/>
-						<State Name="Waterfall_Cove" ID="{FB2745F7-B2E1-4EE1-834D-94C6816AF01D}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Player_Desert_Zone" ID="{76EAD1F6-D67E-447A-9911-647254C39316}">
-					<ChildrenList>
-						<State Name="None" ID="{B4872A6D-C60F-4F6A-97F6-D802390BCE5E}"/>
-						<State Name="Oasis" ID="{A53DF92B-386F-4CEE-8CC6-53A8CA766493}"/>
-						<State Name="Dune" ID="{3F887123-48E6-43E3-BC50-EC91C2B46C06}"/>
+						<State Name="None" ID="{7FA2594E-FF2F-4828-B836-7FA9BA8E4B39}"/>
+						<State Name="Inactive" ID="{1C40A656-2AD1-4DD9-8212-38BAB08258CF}"/>
+						<State Name="Active" ID="{123E9960-D6EE-43D1-9F0C-27219DA9F581}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

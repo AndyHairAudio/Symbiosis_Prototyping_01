@@ -1308,6 +1308,11 @@ public class AkSoundEngine {
 
   }
 
+  public static void MuteBackgroundMusic(bool in_bMute) {
+    AkSoundEnginePINVOKE.CSharp_MuteBackgroundMusic(in_bMute);
+
+  }
+
   public static AKRESULT RegisterGameObj(UnityEngine.GameObject in_gameObjectID, uint in_uListenerMask) {
     
 		uint tempin_gameObjectID;

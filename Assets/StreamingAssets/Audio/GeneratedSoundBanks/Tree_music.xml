@@ -1,260 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
 	<RootPaths>
-		<ProjectRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Symbiosis_Prototyping_01/</ProjectRoot>
-		<SourceFilesRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Symbiosis_Prototyping_01/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Assets/StreamingAssets/Audio/GeneratedSoundBanks/</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Symbiosis_Prototyping_01/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="2261192469" GUID="{EBE870FD-5134-4985-9F2E-07241B95E522}" Language="SFX">
-			<ShortName>Tree_music</ShortName>
-			<Path>Tree_music.bnk</Path>
+			<ShortName>Tree_Music</ShortName>
+			<Path>Tree_Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2107565590" Name="Play_Tree_Music" GUID="{54B2BB87-7EBF-47A0-8054-57CE6A8ABE10}" MaxAttenuation="70.000000"/>
-				<Event Id="230488276" Name="Stop_Tree_Music" GUID="{7EB963B1-AE88-4BBB-B9B7-34458BF0C7A5}" MaxAttenuation="0.000000"/>
+				<Event Id="941886111" Name="Play_Global_Tempo" GUID="{99726606-7324-4038-B09F-646DFD3CF292}"/>
+				<Event Id="4258997712" Name="Play_Tree_State" GUID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}" MaxAttenuation="50.000000"/>
+				<Event Id="116774218" Name="Stop_Tree_State" GUID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="9169149" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_C3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_C3_bip_DDC98EF4.wem</Path>
+				<File Id="169555437" Language="SFX">
+					<ShortName>Forest_Four_Four_Large_Tree_Motif_01.wav</ShortName>
+					<Path>SFX\Forest_Four_Four_Large_Tree_Motif_01_5DAC705E.wem</Path>
 				</File>
-				<File Id="23864869" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_F2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_F2_bip_DDC98EF4.wem</Path>
+				<File Id="208265393" Language="SFX">
+					<ShortName>Forest_Four_Four_Bush_Motif_01.wav</ShortName>
+					<Path>SFX\Forest_Four_Four_Bush_Motif_01_23E654FE.wem</Path>
 				</File>
-				<File Id="44497801" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_B2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_B2_bip_DDC98EF4.wem</Path>
+				<File Id="254176593" Language="SFX">
+					<ShortName>Forest_Four_Four_Sapling_Motif_01.wav</ShortName>
+					<Path>SFX\Forest_Four_Four_Sapling_Motif_01_9ED9C06E.wem</Path>
 				</File>
-				<File Id="46127579" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_E3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_E3_bip_DDC98EF4.wem</Path>
+				<File Id="568921389" Language="SFX">
+					<ShortName>Forest_Four_Four_Small_Tree_Motif_01.wav</ShortName>
+					<Path>SFX\Forest_Four_Four_Small_Tree_Motif_01_74F7F5CE.wem</Path>
 				</File>
-				<File Id="64165784" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_B2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_B2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="73438389" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_C4_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_C4_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="102513873" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_F2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_F2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="125792185" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_D3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_D3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="134381445" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_C4_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_C4_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="157060942" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_C3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_C3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="159733297" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_G2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_G2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="193662637" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_C3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_C3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="223712407" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_A2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_A2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="243296456" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_B3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_B3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="246949646" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_G3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_G3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="251319057" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_G2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_G2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="288282273" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_E3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_E3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="290633902" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_G2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_G2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="307484186" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_A2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_A2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="358234733" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_F2_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_F2_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="371284680" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_E3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_E3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="371357930" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_B3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_B3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="431276906" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_E3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_E3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="459191548" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_B3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_B3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="461885033" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_D3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_D3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="462713145" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_C4_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_C4_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="496704476" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_G3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_G3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="503270492" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_A3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_A3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="553478460" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_D3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_D3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="573692947" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_A3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_A3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="574473715" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_C3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_C3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="575998786" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_C3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_C3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="602900519" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_A2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_A2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="638078815" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_F3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_F3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="640356546" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_F2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_F2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="641584434" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_G3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_G3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="661430887" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_B2_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_B2_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="663808388" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_F3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_F3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="679196395" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_B2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_B2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="687518703" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_E3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_E3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="691625610" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_F3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_F3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="705168323" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_C4_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_C4_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="715073031" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_A3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_A3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="728267095" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_B3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_B3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="755300125" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_B2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_B2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="756287765" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_D3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_D3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="774241650" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_G2_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_G2_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="843017519" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_G3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_G3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="849408920" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_D3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_D3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="856664758" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_A2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_A2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="909743941" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_A3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_A3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="930656833" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_F3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_F3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="964141926" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_60%_Distort_A3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_60%_Distort_A3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="972969641" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_G2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_G2_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="987747071" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_A2_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_A2_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="992366370" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_40%_Distort_B3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_40%_Distort_B3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="1027694146" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_80%_Distort_G3_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_80%_Distort_G3_bip_DDC98EF4.wem</Path>
-				</File>
-				<File Id="1027924151" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_F3_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_F3_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="1029241189" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_0%_Distort_C4_bip_1.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_0%_Distort_C4_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="1042923553" Language="SFX">
-					<ShortName>Tree_Sapling_Picolo_20%_Distort_F2_bip.wav</ShortName>
-					<Path>SFX/Tree_Sapling_Picolo_20%_Distort_F2_bip_DDC98EF4.wem</Path>
+				<File Id="678859308" Language="SFX">
+					<ShortName>Forest_Four_Four_Medium_Tree_Motif_01.wav</ShortName>
+					<Path>SFX\Forest_Four_Four_Medium_Tree_Motif_01_5DAC705E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4075369248	Play_Entrance_Music			\Default Work Unit\Play_Entrance_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	27236003	Enter_World_Bass(Breath)_Motif_44_1kHz_24bit	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Enter_World_Bass(Breath)_Motif_44.1kHz_24bit_4259D924.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Entrance Music\Enter_World_Bass(Breath)_Motif_44_1kHz_24bit		3880944
+	201532063	Enter_World_Gentle_Pad_Motif_44_1kHz_24bit	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Enter_World_Gentle_Pad_Motif_44.1kHz_24bit_259D57E5.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Entrance Music\Enter_World_Gentle_Pad_Motif_44_1kHz_24bit		3276944
+

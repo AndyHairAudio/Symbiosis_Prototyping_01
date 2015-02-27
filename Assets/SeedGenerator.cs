@@ -16,7 +16,6 @@ public class SeedGenerator : MonoBehaviour {
 
 	void Awake(){
 		StartCoroutine (GrowingTree (0.05f));
-		AkSoundEngine.PostEvent ("Play_Tree_Music", this.gameObject);
 	}
 
 	// Use this for initialization
@@ -48,15 +47,18 @@ public class SeedGenerator : MonoBehaviour {
 
 			if(treeEnergy >= 0){
 				sapBool = true;
-
-
+				AkSoundEngine.SetSwitch("Tree_States", "Sapling",this.gameObject);
 				if(treeEnergy >= 20){
 					bushBool = true;
+					AkSoundEngine.SetSwitch("Tree_States", "Bush",this.gameObject);
 					if(treeEnergy >= 40){
+						AkSoundEngine.SetSwitch ("Tree_States", "STree",this.gameObject);
 						sTreeBool = true;
 						if(treeEnergy >= 60){
+							AkSoundEngine.SetSwitch ("Tree_States", "MTree",this.gameObject);
 							mTreeBool = true;
 							if(treeEnergy >= 80){
+								AkSoundEngine.SetSwitch ("Tree_States", "BTree",this.gameObject);
 								bTreeBool = true;
 							}
 						}

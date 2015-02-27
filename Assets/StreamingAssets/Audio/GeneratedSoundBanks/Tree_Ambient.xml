@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="3749599892" GUID="{2B2927C0-BA6F-4952-B307-18B01ECF428B}" Language="SFX">
+			<ShortName>Tree_Ambient</ShortName>
+			<Path>Tree_Ambient.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="20.000000"/>
+				<Event Id="3564794469" Name="Play_Tree_Emitter" GUID="{BA583110-534E-4932-9111-8C72238A0EEC}" MaxAttenuation="70.000000"/>
+				<Event Id="2900363446" Name="Stop_Falling_Fruit" GUID="{570B2C4B-B7E2-4162-944A-15DB979F5871}" MaxAttenuation="0.000000"/>
+				<Event Id="1538482647" Name="Stop_Tree_Emitter" GUID="{D9208233-60EA-4157-ABD5-50CA7ED01722}" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="12907513" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_09_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="50847112" Language="SFX">
+					<ShortName>SqueakyDoor_Chop_44.1kHz_24bit_06.wav</ShortName>
+					<Path>SFX\SqueakyDoor_Chop_44.1kHz_24bit_06_D7EDE47C.wem</Path>
+				</File>
+				<File Id="117728911" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_03_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="142227830" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="149338316" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_C3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_C3_DDC98EF4.wem</Path>
+				</File>
+				<File Id="162340508" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="212142448" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_13_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="234911312" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_06_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="272001251" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_04.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_04_DDC98EF4.wem</Path>
+				</File>
+				<File Id="318506861" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_05_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="333877690" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_08_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="347841201" Language="SFX">
+					<ShortName>SqueakyDoor_Chop_44.1kHz_24bit_05.wav</ShortName>
+					<Path>SFX\SqueakyDoor_Chop_44.1kHz_24bit_05_FA42154F.wem</Path>
+				</File>
+				<File Id="379805987" Language="SFX">
+					<ShortName>SqueakyDoor_Chop_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\SqueakyDoor_Chop_44.1kHz_24bit_02_C32894CD.wem</Path>
+				</File>
+				<File Id="382017504" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_07.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_07_DDC98EF4.wem</Path>
+				</File>
+				<File Id="522067787" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_16_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="544275846" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="548044526" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_G3 .wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_G3 _DDC98EF4.wem</Path>
+				</File>
+				<File Id="566557766" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="616776228" Language="SFX">
+					<ShortName>SqueakyDoor_Chop_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\SqueakyDoor_Chop_44.1kHz_24bit_01_BEA82DF1.wem</Path>
+				</File>
+				<File Id="618996005" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_21_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="619249110" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_10_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="666021338" Language="SFX">
+					<ShortName>SqueakyDoor_Chop_44.1kHz_24bit_07.wav</ShortName>
+					<Path>SFX\SqueakyDoor_Chop_44.1kHz_24bit_07_86095222.wem</Path>
+				</File>
+				<File Id="670745657" Language="SFX">
+					<ShortName>SqueakyDoor_Chop_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\SqueakyDoor_Chop_44.1kHz_24bit_03_5D758B3C.wem</Path>
+				</File>
+				<File Id="689774042" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_11_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="696699612" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_15_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="708413003" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_20_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="730949567" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_07_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="738228300" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="743726581" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_05.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_05_DDC98EF4.wem</Path>
+				</File>
+				<File Id="743756307" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_F3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_F3_DDC98EF4.wem</Path>
+				</File>
+				<File Id="753439135" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_D3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_D3_DDC98EF4.wem</Path>
+				</File>
+				<File Id="789919579" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="855628050" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_18_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="918995127" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="932348603" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="934215590" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_E3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_E3_DDC98EF4.wem</Path>
+				</File>
+				<File Id="968246198" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="982027625" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_17_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="985221289" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_26_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="992573404" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1035449172" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_06.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_06_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1052354779" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1066138928" Language="SFX">
+					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1069920407" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_22_bip_1_DDC98EF4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

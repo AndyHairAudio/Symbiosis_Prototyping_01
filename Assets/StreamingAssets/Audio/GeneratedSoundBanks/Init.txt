@@ -1,21 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	215992295	Player_Health			\Default Work Unit\Player_Health	
-	4072258362	Tree_States			\Default Work Unit\Tree_States	
+	2868541796	Tempo_Global			\Default Work Unit\Tempo_Global	
 
 State	ID	Name	State Group			Notes
-	321744434	Lively	Player_Health			
-	748895195	None	Player_Health			
-	1488596377	Weak	Player_Health			
-	1764828697	Wounded	Player_Health			
-	2044049779	Dead	Player_Health			
-	2874639328	Healthy	Player_Health			
-	3328495488	Dying	Player_Health			
-	656847401	BTree	Tree_States			
-	748895195	None	Tree_States			
-	1094844220	STree	Tree_States			
-	1427625975	Bush	Tree_States			
-	1558384023	Sapling	Tree_States			
-	2169647486	MTree	Tree_States			
+	58138747	Active	Tempo_Global			
+	748895195	None	Tempo_Global			
+	3163453698	Inactive	Tempo_Global			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	

@@ -3,45 +3,100 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Chirp" ID="{0AF09043-659A-422A-9DC4-EE76F5819F8E}">
+				<Event Name="Play_Tree_State" ID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}">
 					<ChildrenList>
-						<Action Name="Play" ID="{A2ECCF67-9A6D-49F8-9A6B-7EF50802B677}" ShortID="141839631" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{19C3589C-C777-4850-9ADB-1C19AE9B4294}" ShortID="948132867" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{3AD7C3A0-D273-468B-8102-831805E36A55}" Global="false">
-									<ObjectRef Name="Bird Chirp" ID="{82715B7E-AE57-4326-AA2A-1BCBC14B4DA3}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
+								<Element ID="{A7CAE61B-52C3-43C9-8104-C1CB51095FCE}" Global="false">
+									<ObjectRef Name="Tree_State" ID="{9453A87B-40BA-459D-B0AA-6F94B3356456}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Tree_Music" ID="{54B2BB87-7EBF-47A0-8054-57CE6A8ABE10}">
+				<Event Name="Stop_Tree_State" ID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}">
 					<ChildrenList>
-						<Action Name="Play" ID="{BBBF4E7F-989A-4F17-9A08-E11BA3956A24}" ShortID="67447087" Type="Play" Scope="One" Global="false">
+						<Action Name="Stop" ID="{29BA855F-15C5-41F1-89E4-2D3CB8D41CB7}" ShortID="621676122" Type="Stop" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{79DC34E1-BDAA-4C48-A508-388198CC4EF1}" Global="false">
-									<ObjectRef Name="Tree_Music_Emitter" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								<Element ID="{D07FC3EA-D78F-4C19-8DAC-4C213AB6FE60}" Global="false">
+									<ObjectRef Name="Tree_State" ID="{9453A87B-40BA-459D-B0AA-6F94B3356456}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Tree_Music" ID="{7EB963B1-AE88-4BBB-B9B7-34458BF0C7A5}">
+				<Event Name="Play_Falling_Fruit" ID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}">
 					<ChildrenList>
-						<Action Name="Stop" ID="{A9DD3F6D-FF97-4EFB-AA17-DCE8105840DA}" ShortID="340989294" Type="Stop" Scope="One" Global="false">
+						<Action Name="Play" ID="{8552A3CC-79F5-4393-A7C1-59477EB6CA8C}" ShortID="341167238" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{13BC3F06-9BE4-41D5-8283-377388500E20}" Global="false">
-									<ObjectRef Name="Tree_Music_Emitter" ID="{422CBEE6-8819-416C-97DD-CCC7FEF3EFA3}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								<Element ID="{ADBA1BA1-1C36-4BBB-A391-07E4B988501E}" Global="false">
+									<ObjectRef Name="Falling_Fruit" ID="{2DEAEA00-0E57-4438-A329-0E16233F723E}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Entrance_Music" ID="{8942D512-218D-46EE-AB86-6F33A75AC692}">
+				<Event Name="Stop_Falling_Fruit" ID="{570B2C4B-B7E2-4162-944A-15DB979F5871}">
 					<ChildrenList>
-						<Action Name="Trigger" ID="{1CA8A735-1C22-4708-AE86-9E967353A65B}" ShortID="818057070" Type="Trigger" Scope="One" Global="true">
+						<Action Name="Stop" ID="{75D4C309-EAEC-43D6-8089-816399DDAAB1}" ShortID="487005828" Type="Stop" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{32DC5E21-6F94-48F6-8C1D-199718905DBF}" Global="true">
-									<ObjectRef Name="Player_Enter_World" ID="{B9BE9E00-5312-4FE5-BCF9-2CB82E3292F0}" WorkUnitID="{7E6665D9-695A-4318-B74D-1920926B985E}"/>
+								<Element ID="{09BC731C-842C-43B4-8109-05C39F179FB5}" Global="false">
+									<ObjectRef Name="Falling_Fruit" ID="{2DEAEA00-0E57-4438-A329-0E16233F723E}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Zones" ID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8F99B99B-0B62-4861-9587-2C01758E8617}" ShortID="968986413" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C63ED010-C186-46B2-B5DC-F4877E6EBB52}" Global="false">
+									<ObjectRef Name="Zones" ID="{E2E5464E-68BA-4E10-B943-BBFF2BD88CEB}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Tree_Emitter" ID="{BA583110-534E-4932-9111-8C72238A0EEC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2BFC509B-70F9-4719-B33B-F5D004AD6AA9}" ShortID="114278043" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C09C8925-B6EB-406A-BBE9-BA4972F289D3}" Global="false">
+									<ObjectRef Name="Tree_Emitter" ID="{9A82A11C-81AF-4215-B290-87515DDFE80F}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Tree_Emitter" ID="{D9208233-60EA-4157-ABD5-50CA7ED01722}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{EA74B041-C49D-42A8-A088-126D84555D0C}" ShortID="782105995" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0D00CAC0-29C1-459C-8658-6C796FF28023}" Global="false">
+									<ObjectRef Name="Tree_Emitter" ID="{9A82A11C-81AF-4215-B290-87515DDFE80F}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Entrance_Music" ID="{0E9049BC-8222-44A5-9B77-161DDE26986E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A2A707E6-B2AA-41EB-87AA-BEFCBD59313E}" ShortID="68962614" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{963B2595-88F7-4A50-8613-E9B627EEAB69}" Global="false">
+									<ObjectRef Name="Entrance Music" ID="{9BB10D9C-FF65-45E6-9084-D2135ECCF734}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Global_Tempo" ID="{99726606-7324-4038-B09F-646DFD3CF292}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8B141205-8C52-40EE-9BAA-30C1796DD368}" ShortID="367990570" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{817B3A07-D015-49B4-98C0-4949B059278F}" Global="false">
+									<ObjectRef Name="Global_Tempo" ID="{BA0031D1-E265-4DC5-A88B-8520D7A00F69}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}"/>
 								</Element>
 							</ElementList>
 						</Action>

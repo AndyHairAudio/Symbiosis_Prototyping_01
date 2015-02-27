@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
 	<RootPaths>
-		<ProjectRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Symbiosis_Prototyping_01/</ProjectRoot>
-		<SourceFilesRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Symbiosis_Prototyping_01/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Assets/StreamingAssets/Audio/GeneratedSoundBanks/</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/user/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/Unity Projects/Symbiosis_Prototyping_01/Symbiosis_Prototyping_01/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{E0FCA90E-F4D1-422B-B8CF-BCE3C533A9D7}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{F54EE960-0D5B-4C88-B7C0-75530272D897}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>

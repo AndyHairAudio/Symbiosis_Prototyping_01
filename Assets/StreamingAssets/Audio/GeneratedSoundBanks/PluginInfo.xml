@@ -2,7 +2,5 @@
 <PluginInfo Project="Symbiosis_Prototyping_01" Platform="Windows" Motion="false">
 	<Plugins>
 		<Plugin Name="Wwise Silence" ID="6619138"/>
-		<Plugin Name="Wwise Harmonizer" ID="9043971"/>
-		<Plugin Name="Wwise Synth One" ID="9699330"/>
 	</Plugins>
 </PluginInfo>

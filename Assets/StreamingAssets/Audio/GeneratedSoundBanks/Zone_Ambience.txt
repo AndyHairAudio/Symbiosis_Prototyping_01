@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3780807851	Play_Zones			\Default Work Unit\Play_Zones	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2657943960	World_Zone			\Default Work Unit\World_Zone	
+	2958763795	Player_Forest_Zone			\Default Work Unit\Player_Forest_Zone	
+
+Switch	ID	Name	Switch Group			Notes
+	491961918	Forest	World_Zone			
+	513139656	Mountain	World_Zone			
+	1850388778	Desert	World_Zone			
+	2190861365	Lakeside	Player_Forest_Zone			
+	2592332705	Forest_Floor	Player_Forest_Zone			
+	4122393694	Cave	Player_Forest_Zone			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	495426800	Freesound_Wind_Forest_-03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Wind_Forest_-03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Temp Wind\Freesound_Wind_Forest_-03		6057164
+	558731394	Freesound_Wind_Forest_-04	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Wind_Forest_-04_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Temp Wind\Freesound_Wind_Forest_-04		5992728
+	874887432	Freesound_Wind_Forest_-02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Wind_Forest_-02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Temp Wind\Freesound_Wind_Forest_-02		6121600
+	1005381365	Freesound_Wind_Forest_-01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Wind_Forest_-01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Temp Wind\Freesound_Wind_Forest_-01		6057164
+

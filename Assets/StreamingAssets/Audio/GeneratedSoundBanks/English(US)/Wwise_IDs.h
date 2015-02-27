@@ -13,49 +13,81 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_CHIRP = 3187155090U;
-        static const AkUniqueID PLAY_TREE_MUSIC = 2107565590U;
-        static const AkUniqueID STOP_TREE_MUSIC = 230488276U;
+        static const AkUniqueID PLAY_ENTRANCE_MUSIC = 4075369248U;
+        static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
+        static const AkUniqueID PLAY_GLOBAL_TEMPO = 941886111U;
+        static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
+        static const AkUniqueID PLAY_TREE_STATE = 4258997712U;
+        static const AkUniqueID PLAY_ZONES = 3780807851U;
+        static const AkUniqueID STOP_FALLING_FRUIT = 2900363446U;
+        static const AkUniqueID STOP_TREE_EMITTER = 1538482647U;
+        static const AkUniqueID STOP_TREE_STATE = 116774218U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace PLAYER_HEALTH
+        namespace TEMPO_GLOBAL
         {
-            static const AkUniqueID GROUP = 215992295U;
+            static const AkUniqueID GROUP = 2868541796U;
 
             namespace STATE
             {
-                static const AkUniqueID DEAD = 2044049779U;
-                static const AkUniqueID DYING = 3328495488U;
-                static const AkUniqueID HEALTHY = 2874639328U;
-                static const AkUniqueID LIVELY = 321744434U;
-                static const AkUniqueID WEAK = 1488596377U;
-                static const AkUniqueID WOUNDED = 1764828697U;
+                static const AkUniqueID ACTIVE = 58138747U;
+                static const AkUniqueID INACTIVE = 3163453698U;
             } // namespace STATE
-        } // namespace PLAYER_HEALTH
+        } // namespace TEMPO_GLOBAL
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace PLAYER_FOREST_ZONE
+        {
+            static const AkUniqueID GROUP = 2958763795U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CAVE = 4122393694U;
+                static const AkUniqueID FOREST_FLOOR = 2592332705U;
+                static const AkUniqueID LAKESIDE = 2190861365U;
+            } // namespace SWITCH
+        } // namespace PLAYER_FOREST_ZONE
 
         namespace TREE_STATES
         {
             static const AkUniqueID GROUP = 4072258362U;
 
-            namespace STATE
+            namespace SWITCH
             {
                 static const AkUniqueID BTREE = 656847401U;
                 static const AkUniqueID BUSH = 1427625975U;
                 static const AkUniqueID MTREE = 2169647486U;
                 static const AkUniqueID SAPLING = 1558384023U;
                 static const AkUniqueID STREE = 1094844220U;
-            } // namespace STATE
+            } // namespace SWITCH
         } // namespace TREE_STATES
 
-    } // namespace STATES
+        namespace WORLD_ZONE
+        {
+            static const AkUniqueID GROUP = 2657943960U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DESERT = 1850388778U;
+                static const AkUniqueID FOREST = 491961918U;
+                static const AkUniqueID MOUNTAIN = 513139656U;
+            } // namespace SWITCH
+        } // namespace WORLD_ZONE
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID FOREST_FLOOR_AMBIENCE = 3578186316U;
+        static const AkUniqueID NARRATIVE_SCORE = 1554040882U;
+        static const AkUniqueID TREE_AMBIENT = 3749599892U;
         static const AkUniqueID TREE_MUSIC = 2261192469U;
+        static const AkUniqueID ZONE_AMBIENCE = 4262403134U;
     } // namespace BANKS
 
     namespace BUSSES

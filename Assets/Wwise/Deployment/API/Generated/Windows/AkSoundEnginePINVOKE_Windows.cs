@@ -651,6 +651,8 @@ class AkSoundEnginePINVOKE {
   public static extern void CSharp_StopPlayingID__SWIG_2(uint jarg1);
   [DllImport("AkSoundEngine", EntryPoint="CSharp_SetRandomSeed")]
   public static extern void CSharp_SetRandomSeed(uint jarg1);
+  [DllImport("AkSoundEngine", EntryPoint="CSharp_MuteBackgroundMusic")]
+  public static extern void CSharp_MuteBackgroundMusic(bool jarg1);
   [DllImport("AkSoundEngine", EntryPoint="CSharp_RegisterGameObj__SWIG_0")]
   public static extern int CSharp_RegisterGameObj__SWIG_0(uint jarg1, uint jarg2);
   [DllImport("AkSoundEngine", EntryPoint="CSharp_RegisterGameObj__SWIG_1")]
