@@ -10,10 +10,8 @@
 
 public enum AkAudioOutputType {
   AkOutput_Dummy = 1 << 2,
-  AkOutput_Main = 1 << 3,
-  AkOutput_Remote = 1 << 4,
-  AkOutput_MergeToMain = 1 << 5,
-  AkOutput_DRC = 1 << 6,
-  AkOutput_NumOutputs = 1 << 7
+  AkOutput_MergeToMain = 1 << 3,
+  AkOutput_Main = 1 << 4,
+  AkOutput_NumOutputs = 1 << 5
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

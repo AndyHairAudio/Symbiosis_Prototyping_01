@@ -14,24 +14,6 @@
 			<IncludedEvents>
 				<Event Id="3780807851" Name="Play_Zones" GUID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}"/>
 			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="495426800" Language="SFX">
-					<ShortName>Freesound_Wind_Forest_-03.wav</ShortName>
-					<Path>SFX\Freesound_Wind_Forest_-03_DDC98EF4.wem</Path>
-				</File>
-				<File Id="558731394" Language="SFX">
-					<ShortName>Freesound_Wind_Forest_-04.wav</ShortName>
-					<Path>SFX\Freesound_Wind_Forest_-04_DDC98EF4.wem</Path>
-				</File>
-				<File Id="874887432" Language="SFX">
-					<ShortName>Freesound_Wind_Forest_-02.wav</ShortName>
-					<Path>SFX\Freesound_Wind_Forest_-02_DDC98EF4.wem</Path>
-				</File>
-				<File Id="1005381365" Language="SFX">
-					<ShortName>Freesound_Wind_Forest_-01.wav</ShortName>
-					<Path>SFX\Freesound_Wind_Forest_-01_DDC98EF4.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

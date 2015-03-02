@@ -9,7 +9,9 @@
 
 
 public enum AkAudioAPI {
-  AkAPI_Default = 1 << 0,
+  AkAPI_XAudio2 = 1 << 0,
+  AkAPI_DirectSound = 1 << 1,
+  AkAPI_Default = AkAPI_XAudio2|AkAPI_DirectSound,
   AkAPI_Dummy = 1 << 2
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

@@ -656,25 +656,6 @@
 						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
-				<MusicSegment Name="New Music Segment" ID="{1825B3FB-B10A-4C62-B861-BE123333B594}" ShortID="829448335">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-						</Reference>
-					</ReferenceList>
-					<CueList>
-						<MusicCue Name="Entry Cue" ID="{92DE169B-7CF3-4A6E-BDC5-A8EF462D0257}"/>
-						<MusicCue Name="Exit Cue" ID="{482D7EF0-6643-4E1F-B3B8-9E56889EEBF4}">
-							<PropertyList>
-								<Property Name="CueType" Type="int16" Value="1"/>
-								<Property Name="TimeMs" Type="Real64" Value="1000"/>
-							</PropertyList>
-						</MusicCue>
-					</CueList>
-				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

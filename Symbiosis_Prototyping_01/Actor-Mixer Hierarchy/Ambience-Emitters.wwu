@@ -37,6 +37,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<BlendContainer Name="Cave" ID="{93109861-DF4A-4ADD-89BD-E9A87D21ABC0}" ShortID="793068954">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -47,9 +54,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Cave Wind" ID="{C03E176C-4B0A-4F1A-B6EF-D0182C7E8DBE}" ShortID="805164179" Type="SoundFX">
-													<ExcludedPlatformList>
-														<Platform>Windows</Platform>
-													</ExcludedPlatformList>
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ModifierList>
@@ -106,6 +110,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="Forest Floor" ID="{0D4D1A7F-2903-4E1B-B2E1-550D1146C352}" ShortID="217707687">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -116,9 +127,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Forest Floor Wind" ID="{71D18B6A-73AC-485C-B577-6A1C4660B3B2}" ShortID="769989016" Type="SoundFX">
-													<ExcludedPlatformList>
-														<Platform>Windows</Platform>
-													</ExcludedPlatformList>
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
@@ -174,9 +182,6 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="Rustling Leaves" ID="{32080EC5-7082-4210-BB0F-61ABC2D745F5}" ShortID="578885465" Type="SoundFX">
-													<ExcludedPlatformList>
-														<Platform>Windows</Platform>
-													</ExcludedPlatformList>
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
@@ -262,6 +267,9 @@
 													</ActiveSourceList>
 												</Sound>
 												<RandomSequenceContainer Name="Temp Wind" ID="{D057B774-83B3-4117-A498-1174629755BD}" ShortID="315002184">
+													<ExcludedPlatformList>
+														<Platform>Windows</Platform>
+													</ExcludedPlatformList>
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -364,6 +372,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="Lakeside" ID="{241E1633-B05B-49AD-8178-865C54E858CB}" ShortID="217853021">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -374,9 +389,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Lakeside Wind" ID="{027D3219-0049-4389-8151-56F808CA9ED3}" ShortID="207295584" Type="SoundFX">
-													<ExcludedPlatformList>
-														<Platform>Windows</Platform>
-													</ExcludedPlatformList>
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 													</PropertyList>
@@ -432,7 +444,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Player_Forest_Zone" ID="{81E14E53-652D-46B7-853C-D4685FB98EB6}"/>
-										<DefaultSwitchRef Name="Forest_Floor" ID="{C709226F-162A-4B1A-BE0E-80C14E2AB912}"/>
+										<DefaultSwitchRef Name="Lakeside" ID="{C128964A-CB0D-48F7-AEFB-6CDBE5C62B2E}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Lakeside" ID="{241E1633-B05B-49AD-8178-865C54E858CB}"/>
@@ -446,9 +458,21 @@
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
+												<SwitchRef Name="Lakeside" ID="{C128964A-CB0D-48F7-AEFB-6CDBE5C62B2E}"/>
+												<ItemList>
+													<ItemRef Name="Lakeside" ID="{241E1633-B05B-49AD-8178-865C54E858CB}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Forest_Floor" ID="{C709226F-162A-4B1A-BE0E-80C14E2AB912}"/>
 												<ItemList>
 													<ItemRef Name="Forest Floor" ID="{0D4D1A7F-2903-4E1B-B2E1-550D1146C352}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Cave" ID="{97DC4673-213A-4227-9819-1C02801D1618}"/>
+												<ItemList>
+													<ItemRef Name="Cave" ID="{93109861-DF4A-4ADD-89BD-E9A87D21ABC0}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
