@@ -3,11 +3,15 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{64E17B37-2B13-488D-BB1C-4BC08F857154}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Tempo_Global" ID="{FE4021E4-4ADC-495F-97FB-B3E7C6604066}">
+				<StateGroup Name="Player_Events" ID="{AEF1737A-AB9D-4288-A514-ED9564838A7A}">
 					<ChildrenList>
-						<State Name="None" ID="{7FA2594E-FF2F-4828-B836-7FA9BA8E4B39}"/>
-						<State Name="Inactive" ID="{1C40A656-2AD1-4DD9-8212-38BAB08258CF}"/>
-						<State Name="Active" ID="{123E9960-D6EE-43D1-9F0C-27219DA9F581}"/>
+						<State Name="None" ID="{0A540A64-E1B8-4BD1-ABF3-DABFB33CF437}"/>
+						<State Name="Entered_World" ID="{889842C4-CA1B-4E1E-A84D-9312E7577E96}"/>
+						<State Name="Discovered_Tree" ID="{CBC29519-7BFB-45AA-B20F-9C32009244C9}"/>
+						<State Name="Picked_Up_Seed" ID="{9F49643D-41A7-483D-A55C-E2F35C523C76}"/>
+						<State Name="Eat_Seed" ID="{DF79DF63-3195-41C3-BF19-2A9BC161A1C9}"/>
+						<State Name="Discover_Lake" ID="{63376E85-D1D6-4B6A-A59D-172889240D59}"/>
+						<State Name="Plant_Tree" ID="{558AD6A0-33B8-4609-9385-725C7907D55A}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

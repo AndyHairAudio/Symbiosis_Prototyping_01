@@ -13,28 +13,31 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_ENTRANCE_MUSIC = 4075369248U;
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
+        static const AkUniqueID PLAY_PLAYER_EVENT_MANAGER = 3690526740U;
         static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
         static const AkUniqueID PLAY_TREE_STATE = 4258997712U;
         static const AkUniqueID PLAY_ZONES = 3780807851U;
-        static const AkUniqueID STOP_FALLING_FRUIT = 2900363446U;
-        static const AkUniqueID STOP_TREE_EMITTER = 1538482647U;
+        static const AkUniqueID STOP_PLAYER_EVENT_MANAGER = 1721880682U;
         static const AkUniqueID STOP_TREE_STATE = 116774218U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace TEMPO_GLOBAL
+        namespace PLAYER_EVENTS
         {
-            static const AkUniqueID GROUP = 2868541796U;
+            static const AkUniqueID GROUP = 2993354578U;
 
             namespace STATE
             {
-                static const AkUniqueID ACTIVE = 58138747U;
-                static const AkUniqueID INACTIVE = 3163453698U;
+                static const AkUniqueID DISCOVER_LAKE = 2359399142U;
+                static const AkUniqueID DISCOVERED_TREE = 1946655246U;
+                static const AkUniqueID EAT_SEED = 3231337011U;
+                static const AkUniqueID ENTERED_WORLD = 4134113183U;
+                static const AkUniqueID PICKED_UP_SEED = 1600046017U;
+                static const AkUniqueID PLANT_TREE = 2854786531U;
             } // namespace STATE
-        } // namespace TEMPO_GLOBAL
+        } // namespace PLAYER_EVENTS
 
     } // namespace STATES
 
@@ -79,6 +82,16 @@ namespace AK
         } // namespace WORLD_ZONE
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYER_HEALTH = 215992295U;
+    } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID DISCOVERED_TREE = 1946655246U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

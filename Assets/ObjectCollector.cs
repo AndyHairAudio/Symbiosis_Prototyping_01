@@ -10,13 +10,14 @@ public class ObjectCollector : MonoBehaviour {
 	bool rayHittingFruit;
 	bool rayHittingTerrain;
 	public float playerHealth = 100.0f;
+	public bool treeDiscovered = false;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
 	}
 
 	void Start(){
-		AkSoundEngine.SetState ("Tempo_Global", "Active");
+		AkSoundEngine.SetState ("Player_Events", "Entered_World");
 	}
 
 	void Update (){
@@ -105,6 +106,18 @@ public class ObjectCollector : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (decayTimer);
 			playerHealth = playerHealth - 0.01f;
+			AkSoundEngine.SetRTPCValue("Player_Health", playerHealth);
 		}
+	}
+
+	void OnTriggerEnter (Collider other){
+		if (other.collider.tag == "Tree" && treeDiscovered == false) {
+
+			Debug.Log ("in a tree now");
+			
+			AkSoundEngine.PostTrigger ("Discovered_Tree", this.gameObject);
+			treeDiscovered = true;
+		}
+
 	}
 }

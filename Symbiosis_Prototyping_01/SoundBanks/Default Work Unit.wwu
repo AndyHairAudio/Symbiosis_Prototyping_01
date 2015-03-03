@@ -21,8 +21,6 @@
 				<SoundBank Name="Tree_Ambient" ID="{2B2927C0-BA6F-4952-B307-18B01ECF428B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Tree_Emitter" ID="{BA583110-534E-4932-9111-8C72238A0EEC}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Stop_Tree_Emitter" ID="{D9208233-60EA-4157-ABD5-50CA7ED01722}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Stop_Falling_Fruit" ID="{570B2C4B-B7E2-4162-944A-15DB979F5871}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Falling_Fruit" ID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -30,7 +28,7 @@
 				</SoundBank>
 				<SoundBank Name="Narrative_Score" ID="{37F97473-1F94-4419-BA1A-AB78D603E3A0}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Entrance_Music" ID="{0E9049BC-8222-44A5-9B77-161DDE26986E}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Narrative Score" ID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

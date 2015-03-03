@@ -3,5 +3,6 @@
 	<Plugins>
 		<Plugin Name="Wwise Silence" ID="6619138"/>
 		<Plugin Name="SoundSeed Air/SoundSeed Wind" ID="7798786"/>
+		<Plugin Name="Wwise Flanger" ID="8192003"/>
 	</Plugins>
 </PluginInfo>

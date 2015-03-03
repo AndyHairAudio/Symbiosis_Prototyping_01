@@ -10,7 +10,7 @@
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{AEE66BB7-C5BE-4490-86D4-E173EF9119DD}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{543D9D06-1841-4C57-8191-B82EA6805C89}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -18,16 +18,17 @@
 			<ShortName>Narrative_Score</ShortName>
 			<Path>Narrative_Score.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4075369248" Name="Play_Entrance_Music" GUID="{0E9049BC-8222-44A5-9B77-161DDE26986E}"/>
+				<Event Id="3690526740" Name="Play_Player_Event_Manager" GUID="{82A11A14-395E-4F8F-B520-1356F1C78375}"/>
+				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="27236003" Language="SFX">
-					<ShortName>Enter_World_Bass(Breath)_Motif_44.1kHz_24bit.wav</ShortName>
-					<Path>SFX\Enter_World_Bass(Breath)_Motif_44.1kHz_24bit_4259D924.wem</Path>
+				<File Id="562970709" Language="SFX">
+					<ShortName>Daybreak - Welcome To The World.wav</ShortName>
+					<Path>SFX\Daybreak - Welcome To The World_89C298B1.wem</Path>
 				</File>
-				<File Id="201532063" Language="SFX">
-					<ShortName>Enter_World_Gentle_Pad_Motif_44.1kHz_24bit.wav</ShortName>
-					<Path>SFX\Enter_World_Gentle_Pad_Motif_44.1kHz_24bit_259D57E5.wem</Path>
+				<File Id="773211072" Language="SFX">
+					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
+					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -67,8 +68,6 @@
 			<IncludedEvents>
 				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="20.000000"/>
 				<Event Id="3564794469" Name="Play_Tree_Emitter" GUID="{BA583110-534E-4932-9111-8C72238A0EEC}" MaxAttenuation="70.000000"/>
-				<Event Id="2900363446" Name="Stop_Falling_Fruit" GUID="{570B2C4B-B7E2-4162-944A-15DB979F5871}" MaxAttenuation="0.000000"/>
-				<Event Id="1538482647" Name="Stop_Tree_Emitter" GUID="{D9208233-60EA-4157-ABD5-50CA7ED01722}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="12907513" Language="SFX">

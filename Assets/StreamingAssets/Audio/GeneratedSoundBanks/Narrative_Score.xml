@@ -12,16 +12,17 @@
 			<ShortName>Narrative_Score</ShortName>
 			<Path>Narrative_Score.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4075369248" Name="Play_Entrance_Music" GUID="{0E9049BC-8222-44A5-9B77-161DDE26986E}"/>
+				<Event Id="3690526740" Name="Play_Player_Event_Manager" GUID="{82A11A14-395E-4F8F-B520-1356F1C78375}"/>
+				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="27236003" Language="SFX">
-					<ShortName>Enter_World_Bass(Breath)_Motif_44.1kHz_24bit.wav</ShortName>
-					<Path>SFX\Enter_World_Bass(Breath)_Motif_44.1kHz_24bit_4259D924.wem</Path>
+				<File Id="562970709" Language="SFX">
+					<ShortName>Daybreak - Welcome To The World.wav</ShortName>
+					<Path>SFX\Daybreak - Welcome To The World_89C298B1.wem</Path>
 				</File>
-				<File Id="201532063" Language="SFX">
-					<ShortName>Enter_World_Gentle_Pad_Motif_44.1kHz_24bit.wav</ShortName>
-					<Path>SFX\Enter_World_Gentle_Pad_Motif_44.1kHz_24bit_259D57E5.wem</Path>
+				<File Id="773211072" Language="SFX">
+					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
+					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

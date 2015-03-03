@@ -2,14 +2,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	116774218	Stop_Tree_State			\Default Work Unit\Stop_Tree_State	
 	4258997712	Play_Tree_State			\Default Work Unit\Play_Tree_State	
 
-State Group	ID	Name			Wwise Object Path	Notes
-	2868541796	Tempo_Global			\Default Work Unit\Tempo_Global	
-
-State	ID	Name	State Group			Notes
-	58138747	Active	Tempo_Global			
-	748895195	None	Tempo_Global			
-	3163453698	Inactive	Tempo_Global			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	169555437	Forest_Four_Four_Large_Tree_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Large_Tree_Motif_01_5DAC705E.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Large_Tree_Loop\Large Tree\Forest_Four_Four_Large_Tree_Motif_01		5644864
 	208265393	Forest_Four_Four_Bush_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Bush_Motif_01_23E654FE.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Bush_Loop\Bush\Forest_Four_Four_Bush_Motif_01		1411264

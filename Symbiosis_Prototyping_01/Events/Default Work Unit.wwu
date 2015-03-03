@@ -36,17 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Falling_Fruit" ID="{570B2C4B-B7E2-4162-944A-15DB979F5871}">
-					<ChildrenList>
-						<Action Name="Stop" ID="{75D4C309-EAEC-43D6-8089-816399DDAAB1}" ShortID="487005828" Type="Stop" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{09BC731C-842C-43B4-8109-05C39F179FB5}" Global="false">
-									<ObjectRef Name="Falling_Fruit" ID="{2DEAEA00-0E57-4438-A329-0E16233F723E}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Zones" ID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}">
 					<ChildrenList>
 						<Action Name="Play" ID="{8F99B99B-0B62-4861-9587-2C01758E8617}" ShortID="968986413" Type="Play" Scope="One" Global="false">
@@ -69,12 +58,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Tree_Emitter" ID="{D9208233-60EA-4157-ABD5-50CA7ED01722}">
+				<Event Name="Play_Player_Event_Manager" ID="{82A11A14-395E-4F8F-B520-1356F1C78375}">
 					<ChildrenList>
-						<Action Name="Stop" ID="{EA74B041-C49D-42A8-A088-126D84555D0C}" ShortID="782105995" Type="Stop" Scope="One" Global="false">
+						<Action Name="Play" ID="{D1FBB155-00FE-4928-9515-1BDA306D5B87}" ShortID="608430931" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{0D00CAC0-29C1-459C-8658-6C796FF28023}" Global="false">
-									<ObjectRef Name="Tree_Emitter" ID="{9A82A11C-81AF-4215-B290-87515DDFE80F}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								<Element ID="{ADC34487-718A-41D1-BD4C-494B7EFB6E6C}" Global="false">
+									<ObjectRef Name="Player Event Manager" ID="{381F0BD5-216C-4E41-AC65-991030990608}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Player_Event_Manager" ID="{63325CB2-92D7-4E67-B542-CEE435D71821}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{A2BC4A2D-C649-4C2F-A3E7-9B756E5DC0C2}" ShortID="127586084" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C2C704CE-8BC3-4E23-9D4F-3CAA184963AA}" Global="false">
+									<ObjectRef Name="Player Event Manager" ID="{381F0BD5-216C-4E41-AC65-991030990608}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Discover_Trees" ID="{8BFA1F85-7E82-4F20-A780-374F5E478BAF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B31864B3-961D-4B36-9108-FE36DB4071F9}" ShortID="799259794" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D65D08D7-F12B-46A5-87F0-1365D4125CA4}" Global="false">
+									<ObjectRef Name="Discover Trees" ID="{90980457-7B5F-4810-A1C7-969B5333D807}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
 								</Element>
 							</ElementList>
 						</Action>

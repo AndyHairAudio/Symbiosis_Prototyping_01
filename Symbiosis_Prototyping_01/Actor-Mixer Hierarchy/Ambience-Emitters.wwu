@@ -113,7 +113,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>7</Value>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -444,7 +444,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Player_Forest_Zone" ID="{81E14E53-652D-46B7-853C-D4685FB98EB6}"/>
-										<DefaultSwitchRef Name="Lakeside" ID="{C128964A-CB0D-48F7-AEFB-6CDBE5C62B2E}"/>
+										<DefaultSwitchRef Name="Forest_Floor" ID="{C709226F-162A-4B1A-BE0E-80C14E2AB912}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Lakeside" ID="{241E1633-B05B-49AD-8178-865C54E858CB}"/>
