@@ -80,17 +80,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Entrance_Music" ID="{0E9049BC-8222-44A5-9B77-161DDE26986E}">
-					<ChildrenList>
-						<Action Name="Play" ID="{A2A707E6-B2AA-41EB-87AA-BEFCBD59313E}" ShortID="68962614" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{963B2595-88F7-4A50-8613-E9B627EEAB69}" Global="false">
-									<ObjectRef Name="Entrance Music" ID="{9BB10D9C-FF65-45E6-9084-D2135ECCF734}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
