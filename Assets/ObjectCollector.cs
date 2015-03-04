@@ -113,11 +113,18 @@ public class ObjectCollector : MonoBehaviour {
 	void OnTriggerEnter (Collider other){
 		if (other.collider.tag == "Tree" && treeDiscovered == false) {
 
-			Debug.Log ("in a tree now");
-			
 			AkSoundEngine.PostTrigger ("Discovered_Tree", this.gameObject);
 			treeDiscovered = true;
 		}
 
+		if (other.collider.tag == "ForestWorldZone") {
+
+			Debug.Log ("in the forest zone now");
+			AkSoundEngine.SetSwitch ("Player_Forest_Zone", "Forest_Floor", this.gameObject);
+		} else if (other.collider.tag == "LakeWorldZone") {
+
+			Debug.Log ("in the lake zone now");
+			AkSoundEngine.SetSwitch ("Player_Forest_Zone", "Lakeside", this.gameObject);
+		}
 	}
 }

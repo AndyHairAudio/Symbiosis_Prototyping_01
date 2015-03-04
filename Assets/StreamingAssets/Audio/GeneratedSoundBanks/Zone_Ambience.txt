@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3780807851	Play_Zones			\Default Work Unit\Play_Zones	
+	4112892722	Play_Lake_Waves_Lapping			\Default Work Unit\Play_Lake_Waves_Lapping	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2657943960	World_Zone			\Default Work Unit\World_Zone	
@@ -18,4 +19,11 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	542896232	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Forest Floor Wind\SoundSeed Wind	
 	994670864	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Rustling Leaves\SoundSeed Wind	
 	1051350558	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Cave\Cave Wind\SoundSeed Wind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	32486016	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_04	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_04_7565D8F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_04		2822544
+	228440681	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_01_C32C625A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_01		2822544
+	248262535	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_02_9C15DAF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_02		2822544
+	526195681	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_03		2822544
+	986347298	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_05	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_05_DF4100CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_05		3288808
 

@@ -15,6 +15,7 @@
 				<WorkUnit Name="Fish (Mountain)" ID="{F0E624B4-752A-4989-A90F-38F6DC386558}" PersistMode="Reference"/>
 				<WorkUnit Name="Snake (Desert)" ID="{9201E55E-FE5D-4781-AF17-3CEDD0B493B9}" PersistMode="Reference"/>
 				<WorkUnit Name="Waterfall (Mountain)" ID="{0723F38D-2C4B-48D7-802F-C5E52D6E7509}" PersistMode="Reference"/>
+				<WorkUnit Name="Lake (Forest)" ID="{A96DBE0E-C209-46B7-84DA-0F91D60889B9}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -5,7 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="Zone_Ambience" ID="{F2FA009C-083C-4E21-8DFB-B26758434EE8}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Zones" ID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Lake (Forest)" ID="{A96DBE0E-C209-46B7-84DA-0F91D60889B9}" WorkUnitID="{A96DBE0E-C209-46B7-84DA-0F91D60889B9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambience-Emitters" ID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

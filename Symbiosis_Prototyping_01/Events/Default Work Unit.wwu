@@ -91,6 +91,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Lake_Waves_Lapping" ID="{2B15A29D-1858-487E-B76D-48704109603B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CB03FDAD-9D77-4309-B64F-864735F79DA5}" ShortID="83351295" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{99075F43-F30F-48C6-AF9A-097D235CE450}" Global="false">
+									<ObjectRef Name="Lake Waves Lapping" ID="{C26937AC-CDD8-4FBE-80AB-F5233916B4DA}" WorkUnitID="{A96DBE0E-C209-46B7-84DA-0F91D60889B9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

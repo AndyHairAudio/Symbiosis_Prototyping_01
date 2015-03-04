@@ -235,7 +235,7 @@
 				</Attenuation>
 				<Attenuation Name="Amb_Emitter_Lake_Waves" ID="{C46F3F21-EE01-43F5-A407-B85F27473738}" ShortID="251314397">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="150"/>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -251,13 +251,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100.15673</XPos>
+											<XPos>1.66666666666667E-03</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
-											<SegmentShape>Log3</SegmentShape>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>150</XPos>
+											<XPos>50</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

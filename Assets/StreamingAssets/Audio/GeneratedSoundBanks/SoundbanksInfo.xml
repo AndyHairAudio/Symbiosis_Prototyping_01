@@ -10,7 +10,7 @@
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{543D9D06-1841-4C57-8191-B82EA6805C89}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{303CB16B-B820-4D97-90B8-99551A466F9D}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -252,8 +252,31 @@
 			<ShortName>Zone_Ambience</ShortName>
 			<Path>Zone_Ambience.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4112892722" Name="Play_Lake_Waves_Lapping" GUID="{2B15A29D-1858-487E-B76D-48704109603B}" MaxAttenuation="50.000000"/>
 				<Event Id="3780807851" Name="Play_Zones" GUID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="32486016" Language="SFX">
+					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_04.wav</ShortName>
+					<Path>SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_04_7565D8F5.wem</Path>
+				</File>
+				<File Id="228440681" Language="SFX">
+					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_01.wav</ShortName>
+					<Path>SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_01_C32C625A.wem</Path>
+				</File>
+				<File Id="248262535" Language="SFX">
+					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_02.wav</ShortName>
+					<Path>SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_02_9C15DAF7.wem</Path>
+				</File>
+				<File Id="526195681" Language="SFX">
+					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_03.wav</ShortName>
+					<Path>SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="986347298" Language="SFX">
+					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_05.wav</ShortName>
+					<Path>SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_05_DF4100CF.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
