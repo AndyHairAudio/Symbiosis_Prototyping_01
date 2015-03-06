@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	503952552	Play_Health_SFX			\Default Work Unit\Play_Health_SFX	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_health			\Default Work Unit\Player_health	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	669560380	Modulator Envelope (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	807770975	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	213280504	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Player\Health SFX\Ringing Noise\Wwise Synth One	
+

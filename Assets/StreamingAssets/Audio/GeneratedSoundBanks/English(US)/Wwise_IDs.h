@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
+        static const AkUniqueID PLAY_HEALTH_SFX = 503952552U;
         static const AkUniqueID PLAY_LAKE_WAVES_LAPPING = 4112892722U;
         static const AkUniqueID PLAY_PLAYER_EVENT_MANAGER = 3690526740U;
         static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
@@ -98,6 +99,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID NARRATIVE_SCORE = 1554040882U;
+        static const AkUniqueID PLAYER_SFX = 817096458U;
         static const AkUniqueID TREE_AMBIENT = 3749599892U;
         static const AkUniqueID TREE_MUSIC = 2261192469U;
         static const AkUniqueID ZONE_AMBIENCE = 4262403134U;
@@ -107,7 +109,6 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
-        static const AkUniqueID TREE_STATE_1 = 811697043U;
     } // namespace BUSSES
 
 }// namespace AK

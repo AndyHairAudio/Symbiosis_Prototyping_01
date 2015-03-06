@@ -11,6 +11,7 @@ public class ObjectCollector : MonoBehaviour {
 	bool rayHittingTerrain;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
+	public float healthDecayRate = 1.0f;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -28,6 +29,7 @@ public class ObjectCollector : MonoBehaviour {
 		
 		if (playerHealth < 0) {
 			playerHealth = 0;
+			Debug.Log ("Game is actually over");
 		}
 
 		if (fruitCollected > 3) {
@@ -37,6 +39,19 @@ public class ObjectCollector : MonoBehaviour {
 		if (fruitCollected < 0) {
 			fruitCollected = 0;
 		}
+
+		if (Time.time >= 59.5f && Time.time <= 60.5f) {
+						healthDecayRate = 2.0f;
+				} else if (Time.time >= 119.5f && Time.time <= 120.5f) {
+						healthDecayRate = 3.0f;
+				} else if (Time.time >= 179.5f && Time.time <= 180.5f) {
+						healthDecayRate = 4.0f;
+				} else if (Time.time >= 239.5f && Time.time <= 240.5f) {
+						healthDecayRate = 5.0f;
+				} else if (Time.time >= 299.5f && Time.time <= 300.5f) {
+						healthDecayRate = 6.0f;
+				}
+
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 		if(Physics.Raycast(cameraRay, out rayHit, 5.0f)){
@@ -105,7 +120,7 @@ public class ObjectCollector : MonoBehaviour {
 		
 		while (true) {
 			yield return new WaitForSeconds (decayTimer);
-			playerHealth = playerHealth - 0.01f;
+			playerHealth = playerHealth - (0.01f * healthDecayRate);
 			AkSoundEngine.SetRTPCValue("Player_Health", playerHealth);
 		}
 	}
@@ -119,11 +134,9 @@ public class ObjectCollector : MonoBehaviour {
 
 		if (other.collider.tag == "ForestWorldZone") {
 
-			Debug.Log ("in the forest zone now");
 			AkSoundEngine.SetSwitch ("Player_Forest_Zone", "Forest_Floor", this.gameObject);
 		} else if (other.collider.tag == "LakeWorldZone") {
 
-			Debug.Log ("in the lake zone now");
 			AkSoundEngine.SetSwitch ("Player_Forest_Zone", "Lakeside", this.gameObject);
 		}
 	}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="817096458" GUID="{8EB5AB78-33C8-4CFB-9E52-DE58E9384709}" Language="SFX">
+			<ShortName>Player_SFX</ShortName>
+			<Path>Player_SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

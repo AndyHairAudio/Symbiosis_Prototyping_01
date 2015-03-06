@@ -102,6 +102,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Health_SFX" ID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3EA22438-1E66-409C-AD43-ADA45E5B9C81}" ShortID="750454768" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{66CA7C49-9221-4BDB-8789-470943D5FE6F}" Global="false">
+									<ObjectRef Name="Health SFX" ID="{485AA2FB-C1AE-4E39-9DE3-E5516C2FF5AE}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

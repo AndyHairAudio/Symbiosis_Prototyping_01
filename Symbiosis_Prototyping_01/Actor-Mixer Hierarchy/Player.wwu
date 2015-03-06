@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{720EB467-7467-4081-97BE-82ED4D783EB1}" SchemaVersion="69" RootDocumentID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}">
 	<AudioObjects>
-		<WorkUnit Name="Player" ID="{720EB467-7467-4081-97BE-82ED4D783EB1}" OwnerID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" PersistMode="Nested"/>
+		<WorkUnit Name="Player" ID="{720EB467-7467-4081-97BE-82ED4D783EB1}" OwnerID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" PersistMode="Nested">
+			<ChildrenList>
+				<BlendContainer Name="Health SFX" ID="{485AA2FB-C1AE-4E39-9DE3-E5516C2FF5AE}" ShortID="788627444">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{E6FB1F3A-E856-467B-B3B4-EE209993241F}" ShortID="344351532">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{3A976C4A-3841-46B4-AF5B-86EE0F2684A8}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{C8C21CC5-8EF2-4746-B160-1F055F81B5BF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>25.2356</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Exp3</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ringing Noise" ID="{D809F21A-E2F8-4176-A703-DFB724DDBAAE}" ShortID="645731569" Type="SoundFX">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Guitar Distortion (Custom)" ID="{2D7DF725-A802-4E72-93A7-978DA60E242A}" ShortID="807770975" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Synth One" ID="{52DCDA6C-6293-44EB-9E3C-3CEED3F76420}" ShortID="213280504" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="1072"/>
+										<Property Name="NoiseLevel" Type="Real32" Value="-19"/>
+										<Property Name="NoiseShape" Type="int32" Value="1"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-19"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-18"/>
+										<Property Name="Osc2Waveform" Type="int32" Value="3"/>
+										<Property Name="OutputLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{F1C75511-A399-47F1-9783-7FB62B5D3477}" ShortID="162676017">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{9CDF65FD-79A6-4F5E-82E4-D90245D305A6}" ShortID="669560380"/>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{38D6E2F2-A05B-45CA-BA20-DA870E282B88}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Synth One" ID="{52DCDA6C-6293-44EB-9E3C-3CEED3F76420}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

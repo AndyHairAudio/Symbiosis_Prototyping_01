@@ -10,7 +10,14 @@
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{303CB16B-B820-4D97-90B8-99551A466F9D}" Language="SFX">
+		<SoundBank Id="817096458" GUID="{8EB5AB78-33C8-4CFB-9E52-DE58E9384709}" Language="SFX">
+			<ShortName>Player_SFX</ShortName>
+			<Path>Player_SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" GUID="{7BCDCAE1-5290-496C-B23D-6C5CB7C4511B}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>

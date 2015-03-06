@@ -15,7 +15,7 @@ public class LightDimmer : MonoBehaviour {
 		ObjectCollector collectorComponent = healthObject.GetComponent<ObjectCollector> ();
 
 		float healthInt = collectorComponent.playerHealth;
-		float healthIntensity = ((healthInt * 0.01f) / 2) + 0.25f;
+		float healthIntensity = ((healthInt * 0.01f) / 2) + 0.05f;
 
 		light.intensity = healthIntensity;
 	}

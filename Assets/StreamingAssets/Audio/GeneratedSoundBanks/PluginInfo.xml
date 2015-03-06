@@ -4,5 +4,7 @@
 		<Plugin Name="Wwise Silence" ID="6619138"/>
 		<Plugin Name="SoundSeed Air/SoundSeed Wind" ID="7798786"/>
 		<Plugin Name="Wwise Flanger" ID="8192003"/>
+		<Plugin Name="Wwise Guitar Distortion" ID="8257539"/>
+		<Plugin Name="Wwise Synth One" ID="9699330"/>
 	</Plugins>
 </PluginInfo>

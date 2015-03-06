@@ -4,9 +4,76 @@
 		<WorkUnit Name="Ambience-Emitters" ID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}" OwnerID="{A6E8E135-1369-47A7-B69D-0DA19774C03E}" PersistMode="Nested">
 			<ChildrenList>
 				<SwitchContainer Name="Zones" ID="{E2E5464E-68BA-4E10-B943-BBFF2BD88CEB}" ShortID="563843427">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{295243FE-7F1E-4006-B68D-185815686E54}" ShortID="132342459">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Player_health" ID="{3A976C4A-3841-46B4-AF5B-86EE0F2684A8}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{2E179440-DD52-4850-983C-D168EE34D447}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>50</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Flanger (Custom)" ID="{448D5015-A711-4375-9791-44B034B01724}" ShortID="639798823" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+									<PropertyList>
+										<Property Name="ModFrequency" Type="Real32" Value="0.06"/>
+										<Property Name="WetDryMix" Type="Real32" Value="0">
+											<RTPCList>
+												<RTPC Name="" ID="{92785B17-1E91-470A-83D1-5E196E0CC431}" ShortID="735350428">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Player_health" ID="{3A976C4A-3841-46B4-AF5B-86EE0F2684A8}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{63F9C0E0-75F9-4065-87C1-80AB71DFC62A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>

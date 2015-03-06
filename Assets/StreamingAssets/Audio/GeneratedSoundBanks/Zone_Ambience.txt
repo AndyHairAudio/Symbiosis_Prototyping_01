@@ -14,6 +14,12 @@ Switch	ID	Name	Switch Group			Notes
 	2592332705	Forest_Floor	Player_Forest_Zone			
 	4122393694	Cave	Player_Forest_Zone			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_health			\Default Work Unit\Player_health	
+
+Effect plug-ins	ID	Name	Type				Notes
+	639798823	Wwise Flanger (Custom)	Wwise Flanger			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	540362666	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Lakeside\Lakeside Wind\SoundSeed Wind	
 	542896232	SoundSeed Wind	SoundSeed Air/SoundSeed Wind		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Zones\Forest\Forest Subzones\Forest Floor\Forest Floor Wind\SoundSeed Wind	

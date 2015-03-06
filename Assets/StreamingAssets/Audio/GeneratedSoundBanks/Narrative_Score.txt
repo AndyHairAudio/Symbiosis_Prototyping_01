@@ -2,6 +2,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1721880682	Stop_Player_Event_Manager			\Default Work Unit\Stop_Player_Event_Manager	
 	3690526740	Play_Player_Event_Manager			\Default Work Unit\Play_Player_Event_Manager	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	215992295	Player_health			\Default Work Unit\Player_health	
+
 Trigger	ID	Name			Wwise Object Path	Notes
 	1946655246	Discovered_Tree			\Default Work Unit\Discovered_Tree	
 
