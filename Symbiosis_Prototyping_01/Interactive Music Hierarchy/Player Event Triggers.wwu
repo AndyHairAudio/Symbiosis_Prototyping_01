@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4C2AD359-3367-41C9-995E-6EA18F1439A7}" SchemaVersion="69" RootDocumentID="{0FC56CA5-945C-4EF4-9EED-8AB7030CB6B2}">
-	<InteractiveMusic>
-		<WorkUnit Name="Player Event Triggers" ID="{4C2AD359-3367-41C9-995E-6EA18F1439A7}" OwnerID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" PersistMode="Nested"/>
-	</InteractiveMusic>
-</WwiseDocument>

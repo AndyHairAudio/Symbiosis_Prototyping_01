@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{7E6665D9-695A-4318-B74D-1920926B985E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Trigger Name="Discovered_Tree" ID="{B21250E9-1EEF-43B6-935A-13249D697E1B}"/>
+				<Trigger Name="Picked_Up_Seed" ID="{95E05786-5303-4BCE-90BA-D1D36924996D}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>
