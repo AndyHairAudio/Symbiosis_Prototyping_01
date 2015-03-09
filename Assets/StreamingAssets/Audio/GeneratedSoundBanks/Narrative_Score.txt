@@ -6,9 +6,15 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	
 
 Trigger	ID	Name			Wwise Object Path	Notes
+	1600046017	Picked_Up_Seed			\Default Work Unit\Picked_Up_Seed	
 	1946655246	Discovered_Tree			\Default Work Unit\Discovered_Tree	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	562970709	Daybreak - Welcome To The World	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Daybreak - Welcome To The World_89C298B1.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Enter World\Daybreak - Welcome To The World\Daybreak - Welcome To The World		11796624
+	158830147	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_4DC81F9E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		352944
+	401512083	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_FC8A8B1E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		655504
+	562970709	Daybreak - Welcome To The World	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Daybreak - Welcome To The World_89C298B1.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Music_State_Control\Daybreak - Welcome To The World\Daybreak - Welcome To The World		11796624
+	567567323	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_4DC81F9E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		352944
+	636317414	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03_A4D98EB5.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		524432
 	773211072	Daybreak_Discover_Tree	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Daybreak_Discover_Tree_C9B2C403.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Daybreak_Discover_Tree\Daybreak_Discover_Tree		917648
+	951587508	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_FC8A8B1E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		655504
 

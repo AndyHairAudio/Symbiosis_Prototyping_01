@@ -80,17 +80,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Discover_Trees" ID="{8BFA1F85-7E82-4F20-A780-374F5E478BAF}">
-					<ChildrenList>
-						<Action Name="Play" ID="{B31864B3-961D-4B36-9108-FE36DB4071F9}" ShortID="799259794" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D65D08D7-F12B-46A5-87F0-1365D4125CA4}" Global="false">
-									<ObjectRef Name="Discover Trees" ID="{90980457-7B5F-4810-A1C7-969B5333D807}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Lake_Waves_Lapping" ID="{2B15A29D-1858-487E-B76D-48704109603B}">
 					<ChildrenList>
 						<Action Name="Play" ID="{CB03FDAD-9D77-4309-B64F-864735F79DA5}" ShortID="83351295" Type="Play" Scope="One" Global="false">

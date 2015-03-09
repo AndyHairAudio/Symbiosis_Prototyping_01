@@ -11,7 +11,8 @@ public class ObjectCollector : MonoBehaviour {
 	bool rayHittingTerrain;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
-	public float healthDecayRate = 1.0f;
+	public float healthDecayRate = 0.1f;
+	int numberOfFruitCollectedTotal = 0;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -41,15 +42,15 @@ public class ObjectCollector : MonoBehaviour {
 		}
 
 		if (Time.time >= 59.5f && Time.time <= 60.5f) {
-						healthDecayRate = 2.0f;
+						healthDecayRate = 0.5f;
 				} else if (Time.time >= 119.5f && Time.time <= 120.5f) {
-						healthDecayRate = 3.0f;
+						healthDecayRate = 1.0f;
 				} else if (Time.time >= 179.5f && Time.time <= 180.5f) {
-						healthDecayRate = 4.0f;
+						healthDecayRate = 2.0f;
 				} else if (Time.time >= 239.5f && Time.time <= 240.5f) {
-						healthDecayRate = 5.0f;
+						healthDecayRate = 4.0f;
 				} else if (Time.time >= 299.5f && Time.time <= 300.5f) {
-						healthDecayRate = 6.0f;
+						healthDecayRate = 8.0f;
 				}
 
 
@@ -64,6 +65,10 @@ public class ObjectCollector : MonoBehaviour {
 			if(Input.GetButton ("Fire1") && fruitCollected < 3 && rayHittingFruit) {
 				rayHit.collider.gameObject.SetActive(false);
 				fruitCollected++;
+				if(numberOfFruitCollectedTotal <= 3){
+					AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
+					numberOfFruitCollectedTotal++;
+				}
 			}
 		}
 

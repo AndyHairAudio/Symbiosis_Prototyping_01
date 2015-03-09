@@ -139,13 +139,13 @@
 							</TransitionList>
 							<StingerList>
 								<MusicStinger Name="" ID="{609AB68A-13C0-478B-8B69-DF53012AFB45}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
-									</PropertyList>
 									<TriggerRef Name="Discovered_Tree" ID="{B21250E9-1EEF-43B6-935A-13249D697E1B}" WorkUnitID="{7E6665D9-695A-4318-B74D-1920926B985E}"/>
 									<SegmentRef Name="Daybreak_Discover_Tree" ID="{2665FD48-D08A-411D-8FFE-A3AAA7CD70F5}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
 								</MusicStinger>
 								<MusicStinger Name="" ID="{930EC112-6DD1-4620-A02D-9D6D257B26AB}">
+									<PropertyList>
+										<Property Name="DontPlayAgainTime" Type="Real64" Value="1"/>
+									</PropertyList>
 									<TriggerRef Name="Picked_Up_Seed" ID="{95E05786-5303-4BCE-90BA-D1D36924996D}" WorkUnitID="{7E6665D9-695A-4318-B74D-1920926B985E}"/>
 									<SegmentRef Name="Picked_Up_Seed" ID="{418374A7-956C-4097-92CC-1D1B5D44B5E9}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
 								</MusicStinger>
@@ -229,6 +229,11 @@
 						<MusicSegment Name="Picked_Up_Seed" ID="{418374A7-956C-4097-92CC-1D1B5D44B5E9}" ShortID="952677198">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="2000"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -264,10 +269,6 @@
 										<AudioFileSource Name="Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_04" ID="{8B2C075B-95E9-416B-85E9-6B29E638C8BC}" ShortID="158830147">
 											<Language>SFX</Language>
 											<AudioFile>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</AudioFile>
-										</AudioFileSource>
-										<AudioFileSource Name="Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_05" ID="{4EE4FFD6-B117-4804-BE1E-23445A534AF2}" ShortID="947622355">
-											<Language>SFX</Language>
-											<AudioFile>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_05.wav</AudioFile>
 										</AudioFileSource>
 										<AudioFileSource Name="Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_06" ID="{66A252E2-5E13-4167-9107-8C6258338FE2}" ShortID="567567323">
 											<Language>SFX</Language>
@@ -508,18 +509,6 @@
 												</MusicClip>
 											</ClipList>
 										</MusicTrackSequence>
-										<MusicTrackSequence Name="" ID="{5B762DF8-C3EB-47E5-BC61-EB17CD6AFF8B}">
-											<ClipList>
-												<MusicClip Name="Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_05" ID="{E44EB786-6A35-4D53-B141-188AC2D6B70B}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="392.324888226528"/>
-													</PropertyList>
-													<AudioSourceRef Name="Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_05" ID="{4EE4FFD6-B117-4804-BE1E-23445A534AF2}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{4C3F88B2-01B9-4CD1-9281-D164A2975465}">
 											<ClipList>
 												<MusicClip Name="Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_06" ID="{4158A3FF-8DDE-4C96-AA11-F5A44F7F3D34}">
@@ -572,46 +561,6 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Music_State_Control" ID="{65949699-6F0A-439D-A93C-682F5B2D55A5}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Picked_Up_Seed" ID="{9F49643D-41A7-483D-A55C-E2F35C523C76}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Picking Up A Seed" ID="{DCD10247-ACA3-4B70-AF45-AE638B1356BD}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Plant_Tree" ID="{558AD6A0-33B8-4609-9385-725C7907D55A}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Planting A Tree" ID="{3BA5638F-1221-4380-AC0D-7D3336E4626F}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Eat_Seed" ID="{DF79DF63-3195-41C3-BF19-2A9BC161A1C9}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Eating A Seed" ID="{45625FC4-DB55-4902-8A1C-49A302FEA5C5}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Discover_Lake" ID="{63376E85-D1D6-4B6A-A59D-172889240D59}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Discover Lake" ID="{882EA988-954B-4B21-BC4C-BEC4986F9B29}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
-								<PathElementRef Name="Discovered_Tree" ID="{CBC29519-7BFB-45AA-B20F-9C32009244C9}"/>
-							</Path>
-							<AudioNodeInfo>
-								<AudioNodeRef Name="Discover Trees" ID="{90980457-7B5F-4810-A1C7-969B5333D807}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

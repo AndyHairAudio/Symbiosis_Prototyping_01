@@ -32,12 +32,7 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID DISCOVER_LAKE = 2359399142U;
-                static const AkUniqueID DISCOVERED_TREE = 1946655246U;
-                static const AkUniqueID EAT_SEED = 3231337011U;
                 static const AkUniqueID ENTERED_WORLD = 4134113183U;
-                static const AkUniqueID PICKED_UP_SEED = 1600046017U;
-                static const AkUniqueID PLANT_TREE = 2854786531U;
             } // namespace STATE
         } // namespace PLAYER_EVENTS
 
@@ -93,6 +88,7 @@ namespace AK
     namespace TRIGGERS
     {
         static const AkUniqueID DISCOVERED_TREE = 1946655246U;
+        static const AkUniqueID PICKED_UP_SEED = 1600046017U;
     } // namespace TRIGGERS
 
     namespace BANKS

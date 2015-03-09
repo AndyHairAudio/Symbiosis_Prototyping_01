@@ -130,26 +130,6 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Thump" ID="{3E05A62E-BF69-4473-B492-5F08D04B5653}" ShortID="995081226" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="SoundSeed Impact (Custom)" ID="{22A1917A-304B-4C4F-98F0-F7667F347F39}" ShortID="988944480" PluginName="SoundSeed Impact" CompanyID="0" PluginID="116" PluginType="3">											<PluginData>
-	<ModeList GlobalGain="0.000000"/>
-</PluginData>
-										</Effect>
-									</Custom>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-								</Reference>
-							</ReferenceList>
-						</Sound>
-					</ChildrenList>
 				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>

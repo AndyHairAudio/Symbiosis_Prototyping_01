@@ -3,11 +3,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	Player_Events			
-	1600046017	Picked_Up_Seed	Player_Events			
-	1946655246	Discovered_Tree	Player_Events			
-	2359399142	Discover_Lake	Player_Events			
-	2854786531	Plant_Tree	Player_Events			
-	3231337011	Eat_Seed	Player_Events			
 	4134113183	Entered_World	Player_Events			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

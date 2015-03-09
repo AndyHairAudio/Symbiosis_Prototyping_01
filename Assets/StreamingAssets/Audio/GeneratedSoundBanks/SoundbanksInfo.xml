@@ -17,7 +17,7 @@
 				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{7BCDCAE1-5290-496C-B23D-6C5CB7C4511B}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{4DB80D76-227E-4027-B0CA-D6899E0D197C}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -29,13 +29,33 @@
 				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="158830147" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_4DC81F9E.wem</Path>
+				</File>
+				<File Id="401512083" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_FC8A8B1E.wem</Path>
+				</File>
 				<File Id="562970709" Language="SFX">
 					<ShortName>Daybreak - Welcome To The World.wav</ShortName>
 					<Path>SFX\Daybreak - Welcome To The World_89C298B1.wem</Path>
 				</File>
+				<File Id="567567323" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_4DC81F9E.wem</Path>
+				</File>
+				<File Id="636317414" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03_A4D98EB5.wem</Path>
+				</File>
 				<File Id="773211072" Language="SFX">
 					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
 					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
+				</File>
+				<File Id="951587508" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_FC8A8B1E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

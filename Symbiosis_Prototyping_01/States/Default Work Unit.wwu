@@ -7,11 +7,6 @@
 					<ChildrenList>
 						<State Name="None" ID="{0A540A64-E1B8-4BD1-ABF3-DABFB33CF437}"/>
 						<State Name="Entered_World" ID="{889842C4-CA1B-4E1E-A84D-9312E7577E96}"/>
-						<State Name="Discovered_Tree" ID="{CBC29519-7BFB-45AA-B20F-9C32009244C9}"/>
-						<State Name="Picked_Up_Seed" ID="{9F49643D-41A7-483D-A55C-E2F35C523C76}"/>
-						<State Name="Eat_Seed" ID="{DF79DF63-3195-41C3-BF19-2A9BC161A1C9}"/>
-						<State Name="Discover_Lake" ID="{63376E85-D1D6-4B6A-A59D-172889240D59}"/>
-						<State Name="Plant_Tree" ID="{558AD6A0-33B8-4609-9385-725C7907D55A}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
