@@ -534,6 +534,410 @@
 								</MusicCue>
 							</CueList>
 						</MusicSegment>
+						<MusicSegment Name="Dubatech_Loop_Pad_Only_01" ID="{02C06DF6-6172-4F62-ACDB-5A7031440D0C}" ShortID="293008879">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="64000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Loop_Pad_Only_01" ID="{60C6992D-F7F4-410C-8D85-1C955E7941CB}" ShortID="280637222">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Loop_Pad_Only_01" ID="{E9E8027E-5F25-4CA2-BCC7-8E93CAD14762}" ShortID="345201938">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Loop_Pad_Only_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1E8492DD-E87E-4612-8B0A-98657274225C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{1686E492-6FBC-4D58-BC19-2769ECC98A7A}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Loop_Pad_Only_01" ID="{35297865-9966-4A91-A469-55DD6D14358A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Loop_Pad_Only_01" ID="{E9E8027E-5F25-4CA2-BCC7-8E93CAD14762}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{B306D743-4724-487E-B04D-497725D0A315}"/>
+								<MusicCue Name="Exit Cue" ID="{658CB857-DCF2-4900-B341-2781F0DF682C}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="64000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Dubatech_Entry_Pad_Only_01" ID="{5CB3CC16-4BCD-4CDC-9BE2-D6F70ECA53B5}" ShortID="456197845">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="20000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Entry_Pad_Only_01" ID="{938A5B62-D1B4-45D2-A375-20071238AC5D}" ShortID="988217124">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Entry_Pad_Only_01" ID="{24FE84BA-C685-4048-9732-62193494B540}" ShortID="147648445">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Entry_Pad_Only_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{FE36F4BE-F7E1-4211-8718-CAD30B63577F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{F8470CBF-0420-44AE-8BA0-174CD3D1AAE8}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Entry_Pad_Only_01" ID="{A7A1131E-3C99-4341-A1F3-59FEB2CABDC1}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Entry_Pad_Only_01" ID="{24FE84BA-C685-4048-9732-62193494B540}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{13AC15BF-C82D-4BBB-839D-027D7D49AD60}"/>
+								<MusicCue Name="Exit Cue" ID="{C35F252C-19C5-46C4-B743-F851687F0156}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="20000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Dubatech_Chords_Only_02" ID="{BB480450-A73A-477E-9119-66160172E36C}" ShortID="802847886">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="16010.1587301587"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Chords_Only_02" ID="{0FDBF38A-7A9B-459F-83F3-1E7D3797967F}" ShortID="646417810">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Chords_Only_02" ID="{12743C4C-B72F-49A9-BD68-197746CD0E05}" ShortID="194619982">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Chords_Only_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{733BB6CD-4C9F-46D9-97A2-512BA4D8C838}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{3AA93FDE-E88D-4F87-A117-921A70D94500}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Chords_Only_02" ID="{85E2CC7C-C5ED-4A62-A663-81196E8BB076}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16010.1587301587"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Chords_Only_02" ID="{12743C4C-B72F-49A9-BD68-197746CD0E05}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{5A4E1321-C1BC-4A38-AFED-1E0BD34E63DE}"/>
+								<MusicCue Name="Exit Cue" ID="{C950A1F3-8B3F-47D9-B8A3-2A8A3E9AD425}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="16010.1587301587"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Dubatech_Chords_Only_01" ID="{175185BD-7F54-4A56-B94C-6641247F5A5E}" ShortID="414945434">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="16000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Chords_Only_01" ID="{A16C03DE-1FEC-463B-96D5-F9E7D30672F4}" ShortID="68299651">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Chords_Only_01" ID="{C0254423-244D-4E49-BED4-AC03B035FFBE}" ShortID="453554880">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Chords_Only_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{75380C8C-1709-43FD-87B9-246BE04C5BCB}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{8DAFB0A8-9472-421B-B423-FF361F7836DD}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Chords_Only_01" ID="{31F5FE16-794E-42B4-BA18-D3D9BAE723E6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="16000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Chords_Only_01" ID="{C0254423-244D-4E49-BED4-AC03B035FFBE}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{532D1FF5-1B6F-4179-8A0D-8918DC3AA518}"/>
+								<MusicCue Name="Exit Cue" ID="{CA9B929E-4DE2-4E32-A539-FF7F0D82AA8C}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="16000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Dubatech_Hats_Only_01" ID="{7854B260-A0CB-4CC7-B22B-78429AFEAA28}" ShortID="800812951">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Hats_Only_01" ID="{D38F3FB1-E002-4056-9F78-D34BD0ACECFF}" ShortID="137018836">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Hats_Only_01" ID="{91770103-E627-417C-81E6-6CE0F56928DE}" ShortID="1018177312">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Hats_Only_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CF59C38A-2D8B-4BBA-893E-6A04081BFD43}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{6D451FED-9665-43F4-A521-81D0B4EDDB12}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Hats_Only_01" ID="{287764EC-0607-46A0-A8FF-555EE43F2E12}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Hats_Only_01" ID="{91770103-E627-417C-81E6-6CE0F56928DE}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{3454B60D-3901-4A12-AC64-C1C34695849E}"/>
+								<MusicCue Name="Exit Cue" ID="{21AFE1F1-D4F0-48B7-94E4-BD4F6811C5F8}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="4000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Dubatech_Kicks_Only_01" ID="{E09F7EF7-964A-4AF4-9A7B-6D928DC67A3E}" ShortID="501408342">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Kicks_Only_01" ID="{FFDC639E-C53A-4643-A651-76ECBD1FBD72}" ShortID="1062033348">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Kicks_Only_01" ID="{EE025397-2E82-49CD-BE05-F53F906C28E6}" ShortID="947648513">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Kicks_Only_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CD2B2A09-4754-4A7F-9974-BB2DC0267B3E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CBFF127E-643A-4CC4-BCF5-C968982E6676}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Kicks_Only_01" ID="{60B3B6A9-4DA1-4DEC-8B06-42553D79A43F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Kicks_Only_01" ID="{EE025397-2E82-49CD-BE05-F53F906C28E6}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{BF6F5CCC-31CA-46CB-81A8-9FA0A672220E}"/>
+								<MusicCue Name="Exit Cue" ID="{27AC26A7-6309-4A5F-A6D7-40B108F37E24}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="4000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Dubatech_Toms_Only_01" ID="{ADF8FD2C-18BA-4307-85FB-49E343D47B90}" ShortID="873973656">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dubatech_Toms_Only_01" ID="{C3FAEA6F-820F-4C95-81FC-70116E7FB4CC}" ShortID="598394008">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dubatech_Toms_Only_01" ID="{FEA061B4-F2B6-4250-B723-FE8D75474695}" ShortID="602317489">
+											<Language>SFX</Language>
+											<AudioFile>Dubatech_Toms_Only_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{FED4AD11-EC4B-4453-BB2C-5C4C041587F8}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{794C6A12-3C1C-4FA4-A970-B5B0E0F213AD}">
+											<ClipList>
+												<MusicClip Name="Dubatech_Toms_Only_01" ID="{98473FFF-E7F1-450A-9BFD-9D2010E4BFB3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="4000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Dubatech_Toms_Only_01" ID="{FEA061B4-F2B6-4250-B723-FE8D75474695}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{5147C597-C34C-462D-ACE9-054AC3908D12}"/>
+								<MusicCue Name="Exit Cue" ID="{F4CC3418-7418-49D7-87A0-00F273EE3E5B}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="4000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{AF35345D-86D5-4B28-B344-25BAACAA66C0}">
