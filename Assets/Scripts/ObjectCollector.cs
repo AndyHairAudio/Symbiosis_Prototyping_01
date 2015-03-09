@@ -12,7 +12,6 @@ public class ObjectCollector : MonoBehaviour {
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
-	int numberOfFruitCollectedTotal = 0;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -65,10 +64,7 @@ public class ObjectCollector : MonoBehaviour {
 			if(Input.GetButton ("Fire1") && fruitCollected < 3 && rayHittingFruit) {
 				rayHit.collider.gameObject.SetActive(false);
 				fruitCollected++;
-				if(numberOfFruitCollectedTotal <= 3){
-					AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
-					numberOfFruitCollectedTotal++;
-				}
+				AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
 			}
 		}
 
@@ -92,6 +88,7 @@ public class ObjectCollector : MonoBehaviour {
 		if (Input.GetButtonDown ("Eat")) {
 			if (fruitCollected > 0) {
 				playerHealth = playerHealth + 25;
+				AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 				fruitCollected = fruitCollected - 1;
 			}
 		}

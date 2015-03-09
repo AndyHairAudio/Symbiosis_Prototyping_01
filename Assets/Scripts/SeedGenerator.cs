@@ -16,6 +16,7 @@ public class SeedGenerator : MonoBehaviour {
 	
 	void Awake(){
 		StartCoroutine (GrowingTree (0.05f));
+		AkSoundEngine.PostEvent ("Play_Plant_Tree", this.gameObject);
 	}
 	
 	// Use this for initialization

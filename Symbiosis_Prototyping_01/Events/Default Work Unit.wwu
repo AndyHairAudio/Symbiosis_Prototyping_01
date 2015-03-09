@@ -102,6 +102,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Plant_Tree" ID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}">
+					<ChildrenList>
+						<Action Name="Play" ID="{ADE688D9-767C-41BC-A1D6-A020178A56A2}" ShortID="704646522" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F38871FF-9B27-4BE4-95A8-B65E662DCA73}" Global="false">
+									<ObjectRef Name="Plant Tree" ID="{2AEEDEF7-EFAB-4401-A0F2-1EAE72932F15}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Eat_Fruit" ID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5E457768-5744-4F67-8C91-F01C77F88B70}" ShortID="354834786" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B4D9538C-BF5F-4A84-9A56-A7C644D9D17F}" Global="false">
+									<ObjectRef Name="Eat Fruit" ID="{2C96B865-076C-4B39-A0AE-ABA6A27176EC}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

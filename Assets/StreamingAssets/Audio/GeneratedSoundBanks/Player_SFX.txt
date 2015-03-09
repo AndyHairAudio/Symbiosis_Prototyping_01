@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	503952552	Play_Health_SFX			\Default Work Unit\Play_Health_SFX	
+	898820479	Play_Eat_Fruit			\Default Work Unit\Play_Eat_Fruit	
+	2709727076	Play_Plant_Tree			\Default Work Unit\Play_Plant_Tree	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	
@@ -12,4 +14,8 @@ Effect plug-ins	ID	Name	Type				Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	213280504	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Player\Health SFX\Ringing Noise\Wwise Synth One	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	26934683	Plant_Tree_Sound_FX_44_1_24bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Plant_Tree_Sound_FX_44.1_24bit_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plant Tree\Plant_Tree_Sound_FX_44_1_24bit_01		400532
+	306568844	Player_Eat_Fruit_Bite_44_1_16bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Player_Eat_Fruit_Bite_44.1_16bit_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Eat Fruit\Player_Eat_Fruit_Bite_44_1_16bit_01		264308
 

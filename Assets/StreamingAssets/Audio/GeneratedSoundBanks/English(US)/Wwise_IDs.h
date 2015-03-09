@@ -13,9 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_EAT_FRUIT = 898820479U;
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
         static const AkUniqueID PLAY_HEALTH_SFX = 503952552U;
         static const AkUniqueID PLAY_LAKE_WAVES_LAPPING = 4112892722U;
+        static const AkUniqueID PLAY_PLANT_TREE = 2709727076U;
         static const AkUniqueID PLAY_PLAYER_EVENT_MANAGER = 3690526740U;
         static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
         static const AkUniqueID PLAY_TREE_STATE = 4258997712U;

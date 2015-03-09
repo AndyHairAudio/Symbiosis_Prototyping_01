@@ -14,10 +14,22 @@
 			<ShortName>Player_SFX</ShortName>
 			<Path>Player_SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="898820479" Name="Play_Eat_Fruit" GUID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}"/>
 				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
+				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="26934683" Language="SFX">
+					<ShortName>Plant_Tree_Sound_FX_44.1_24bit_01.wav</ShortName>
+					<Path>SFX\Plant_Tree_Sound_FX_44.1_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="306568844" Language="SFX">
+					<ShortName>Player_Eat_Fruit_Bite_44.1_16bit_01.wav</ShortName>
+					<Path>SFX\Player_Eat_Fruit_Bite_44.1_16bit_01_DDC98EF4.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{4DB80D76-227E-4027-B0CA-D6899E0D197C}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{61276EF7-E4A2-49BA-9998-100DAFF86ECA}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>

@@ -8,7 +8,7 @@
 		<ExternalSourcesOutputRoot>C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{4DB80D76-227E-4027-B0CA-D6899E0D197C}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{61276EF7-E4A2-49BA-9998-100DAFF86ECA}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
