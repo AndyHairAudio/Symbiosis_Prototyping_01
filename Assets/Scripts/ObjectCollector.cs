@@ -15,6 +15,8 @@ public class ObjectCollector : MonoBehaviour {
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
+		AkSoundEngine.SetRTPCValue ("Planting_Trees", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Eating_Fruit", 0.0f);
 	}
 
 	void Start(){
@@ -65,6 +67,7 @@ public class ObjectCollector : MonoBehaviour {
 				rayHit.collider.gameObject.SetActive(false);
 				fruitCollected++;
 				AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
+				AkSoundEngine.SetState ("Player_Events", "Picking_Up_Seeds");
 			}
 		}
 
@@ -81,6 +84,7 @@ public class ObjectCollector : MonoBehaviour {
 				if(Input.GetButtonDown ("Fire2") && fruitCollected > 0 && rayHittingTerrain){
 					Instantiate (treePrefab, rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
 					fruitCollected--;
+					AkSoundEngine.SetRTPCValue("Planting_Trees", 100.0f);
 				}
 			}
 		}
@@ -90,6 +94,7 @@ public class ObjectCollector : MonoBehaviour {
 				playerHealth = playerHealth + 25;
 				AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 				fruitCollected = fruitCollected - 1;
+				AkSoundEngine.SetRTPCValue("Eating_Fruit", 100.0f);
 			}
 		}
 	}
@@ -131,6 +136,7 @@ public class ObjectCollector : MonoBehaviour {
 		if (other.collider.tag == "Tree" && treeDiscovered == false) {
 
 			AkSoundEngine.PostTrigger ("Discovered_Tree", this.gameObject);
+			AkSoundEngine.SetState("Player_Events", "Discovering_Trees");
 			treeDiscovered = true;
 		}
 

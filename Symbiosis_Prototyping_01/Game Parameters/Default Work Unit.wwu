@@ -8,6 +8,8 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Planting_Trees" ID="{9BC7914D-67C6-4500-BF27-D2221806B89B}"/>
+				<GameParameter Name="Eating_Fruit" ID="{EF9B53A1-5DFE-4DF7-AA7A-2A8432F216BB}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

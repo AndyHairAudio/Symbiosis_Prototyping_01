@@ -3,6 +3,8 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	Player_Events			
+	2832474322	Discovering_Trees	Player_Events			
+	3676802885	Picking_Up_Seeds	Player_Events			
 	4134113183	Entered_World	Player_Events			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
