@@ -6,11 +6,14 @@ public class ObjectCollector : MonoBehaviour {
 	int fruitCollected = 0;
 	public int fishCollected = 0;
 	public GameObject treePrefab;
-	public RaycastHit rayHit;
+	public RaycastHit rayHitFruit;
 	public RaycastHit rayHitPlant;
+	public RaycastHit rayHitLake;
 	bool rayHittingFruit;
 	bool rayHittingTerrain;
 	bool rayHittingLake;
+	bool ableToFeedFish;
+	bool ableToFish;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
@@ -57,38 +60,48 @@ public class ObjectCollector : MonoBehaviour {
 
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-		if(Physics.Raycast(cameraRay, out rayHit, 5.0f)){
-			if(rayHit.collider.tag == "TreeFruit"){
+		if(Physics.Raycast(cameraRay, out rayHitFruit, 5.0f)){
+			if(rayHitFruit.collider.tag == "TreeFruit"){
 				rayHittingFruit = true;
 			}
 			else {
 				rayHittingFruit = false;
 			}
 			if(Input.GetButton ("Fire1") && fruitCollected < 3 && rayHittingFruit) {
-				rayHit.collider.gameObject.SetActive(false);
+				rayHitFruit.collider.gameObject.SetActive(false);
 				fruitCollected++;
 				AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
 			}
 		}
 
 		Ray cameraLakeRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-		if(Physics.Raycast(cameraLakeRay, out rayHit, 10.0f)){
-			if(rayHit.collider.tag == "Lakewater"){
+		if (Physics.Raycast (cameraLakeRay, out rayHitLake, 10.0f)) {
+			if (rayHitLake.collider.tag == "Lakewater") {
 				rayHittingLake = true;
-			}
-			else {
+			} else {
 				rayHittingLake = false;
 			}
-			CharacterController controllerFinder = this.GetComponent<CharacterController>();
-			if(Input.GetButtonDown ("Fire1") && fishCollected == 0 && rayHittingLake && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
-				fishCollected++;
-				AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
+			CharacterController controllerFinder = this.GetComponent<CharacterController> ();
+			if (fishCollected < 1 && rayHittingLake) {
+				ableToFish = true;
+				if (Input.GetButtonDown ("Fire1") && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
+					fishCollected++;
+					AkSoundEngine.PostTrigger ("Picked_Up_Seed", this.gameObject);
+				}
+			} else {
+				ableToFish = false;
+			}
+			if (fruitCollected > 0 && rayHittingLake) {
+				ableToFeedFish = true;
+				if (Input.GetButtonDown ("Feed")) {
+				}
+			} else {
+				ableToFeedFish = false;
 			}
 		}
 
 		Ray cameraRayPlant = Camera.main.ViewportPointToRay (new Vector3 (0.5f, 0.5f, 0f));
-		
-		if (Physics.Raycast (cameraRayPlant, out rayHitPlant, 10.0f)) {
+		if (Physics.Raycast (cameraRayPlant, out rayHitPlant, 5.0f)) {
 			if (rayHitPlant.collider.tag == "ForestTerrain") {
 				if(fruitCollected > 0){
 					rayHittingTerrain = true;
@@ -122,17 +135,24 @@ public class ObjectCollector : MonoBehaviour {
 		Texture2D mouseIcon = (Texture2D)Resources.Load("Mouse1ClickIcon", typeof(Texture2D));
 		Texture2D fruitIcon = (Texture2D)Resources.Load("appleicon", typeof(Texture2D));
 		Texture2D fishIcon = (Texture2D)Resources.Load ("fishcollected", typeof(Texture2D));
+		Texture2D fishingIcon = (Texture2D)Resources.Load ("fishi-hi", typeof(Texture2D));
+		Texture2D feedingIcon = (Texture2D)Resources.Load ("handWithSeeds", typeof(Texture2D));
+		Texture2D plantingIcon = (Texture2D)Resources.Load ("treeAbstract", typeof(Texture2D));
 		
 		if(rayHittingFruit){
 			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 		
 		if (rayHittingTerrain){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), plantingIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 
-		if(rayHittingLake){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
+		if(ableToFish){
+			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), fishingIcon, ScaleMode.ScaleToFit, true, 1.0F);
+		}
+
+		if(ableToFeedFish){
+			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), feedingIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 
 		if (fruitCollected >= 1) {
