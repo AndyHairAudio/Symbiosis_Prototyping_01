@@ -29,7 +29,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{293FD8FA-655E-4BEE-A75B-80F6534797EC}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{9906F182-2F1D-4C47-9403-4CD491B5E9A6}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -48,10 +48,6 @@
 				<File Id="158830147" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
 					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_4DC81F9E.wem</Path>
-				</File>
-				<File Id="345201938" Language="SFX">
-					<ShortName>Dubatech_Loop_Pad_Only_01.wav</ShortName>
-					<Path>SFX\Dubatech_Loop_Pad_Only_01_367C9A2E.wem</Path>
 				</File>
 				<File Id="401512083" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02.wav</ShortName>
@@ -73,17 +69,9 @@
 					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
 					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
 				</File>
-				<File Id="947648513" Language="SFX">
-					<ShortName>Dubatech_Kicks_Only_01.wav</ShortName>
-					<Path>SFX\Dubatech_Kicks_Only_01_9ED9C06E.wem</Path>
-				</File>
 				<File Id="951587508" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01.wav</ShortName>
 					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_FC8A8B1E.wem</Path>
-				</File>
-				<File Id="1018177312" Language="SFX">
-					<ShortName>Dubatech_Hats_Only_01.wav</ShortName>
-					<Path>SFX\Dubatech_Hats_Only_01_9ED9C06E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -141,10 +129,6 @@
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_DDC98EF4.wem</Path>
 				</File>
-				<File Id="149338316" Language="SFX">
-					<ShortName>Falling_Fruit_Bell_Tone_C3.wav</ShortName>
-					<Path>SFX\Falling_Fruit_Bell_Tone_C3_DDC98EF4.wem</Path>
-				</File>
 				<File Id="162340508" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1_DDC98EF4.wem</Path>
@@ -188,10 +172,6 @@
 				<File Id="544275846" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_25_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="548044526" Language="SFX">
-					<ShortName>Falling_Fruit_Bell_Tone_G3 .wav</ShortName>
-					<Path>SFX\Falling_Fruit_Bell_Tone_G3 _DDC98EF4.wem</Path>
 				</File>
 				<File Id="566557766" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_23_bip_1.wav</ShortName>
@@ -241,14 +221,6 @@
 					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_05.wav</ShortName>
 					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_05_DDC98EF4.wem</Path>
 				</File>
-				<File Id="743756307" Language="SFX">
-					<ShortName>Falling_Fruit_Bell_Tone_F3.wav</ShortName>
-					<Path>SFX\Falling_Fruit_Bell_Tone_F3_DDC98EF4.wem</Path>
-				</File>
-				<File Id="753439135" Language="SFX">
-					<ShortName>Falling_Fruit_Bell_Tone_D3.wav</ShortName>
-					<Path>SFX\Falling_Fruit_Bell_Tone_D3_DDC98EF4.wem</Path>
-				</File>
 				<File Id="789919579" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_12_bip_1_DDC98EF4.wem</Path>
@@ -264,10 +236,6 @@
 				<File Id="932348603" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1_DDC98EF4.wem</Path>
-				</File>
-				<File Id="934215590" Language="SFX">
-					<ShortName>Falling_Fruit_Bell_Tone_E3.wav</ShortName>
-					<Path>SFX\Falling_Fruit_Bell_Tone_E3_DDC98EF4.wem</Path>
 				</File>
 				<File Id="968246198" Language="SFX">
 					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_02.wav</ShortName>
@@ -288,6 +256,10 @@
 				<File Id="1035449172" Language="SFX">
 					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_06.wav</ShortName>
 					<Path>SFX\Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_06_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1048028149" Language="SFX">
+					<ShortName>Falling_Fruit_Sample_FX_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Sample_FX_44.1kHz_24bit_01_DDC98EF4.wem</Path>
 				</File>
 				<File Id="1052354779" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_24_bip_1.wav</ShortName>

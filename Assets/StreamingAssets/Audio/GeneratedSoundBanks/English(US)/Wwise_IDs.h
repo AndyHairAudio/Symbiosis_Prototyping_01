@@ -94,6 +94,7 @@ namespace AK
     namespace TRIGGERS
     {
         static const AkUniqueID DISCOVERED_TREE = 1946655246U;
+        static const AkUniqueID ENTERED_WORLD = 4134113183U;
         static const AkUniqueID PICKED_UP_SEED = 1600046017U;
     } // namespace TRIGGERS
 

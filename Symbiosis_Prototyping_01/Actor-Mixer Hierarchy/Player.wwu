@@ -168,7 +168,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Player_Eat_Fruit_Bite_44_1_16bit_01" ID="{EA8A3D93-CD2A-4EBC-A2FE-7701190548AE}" ShortID="384506370" Type="SoundFX">
+						<RandomSequenceContainer Name="Eating Fruit Motifs" ID="{1E2A3DDC-0C52-4AC7-B683-3FB8238665B7}" ShortID="172650991">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -177,16 +177,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Player_Eat_Fruit_Bite_44_1_16bit_01" ID="{ACD34715-BBAE-4035-8558-A49297A4A7A0}" ShortID="306568844">
-									<Language>SFX</Language>
-									<AudioFile>Player_Eat_Fruit_Bite_44.1_16bit_01.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Player_Eat_Fruit_Bite_44_1_16bit_01" ID="{ACD34715-BBAE-4035-8558-A49297A4A7A0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</BlendContainer>
 			</ChildrenList>

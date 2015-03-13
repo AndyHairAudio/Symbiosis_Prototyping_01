@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Trigger Name="Discovered_Tree" ID="{B21250E9-1EEF-43B6-935A-13249D697E1B}"/>
 				<Trigger Name="Picked_Up_Seed" ID="{95E05786-5303-4BCE-90BA-D1D36924996D}"/>
+				<Trigger Name="Entered_World" ID="{67FF28F8-6839-42B1-B4F6-759DC335F4A3}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

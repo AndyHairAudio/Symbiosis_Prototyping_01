@@ -60,101 +60,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Falling_Fruit_Bell_Tone_G3" ID="{B887724F-ACF8-4C22-9763-3980044A3F62}" ShortID="141623369" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Falling_Fruit_Bell_Tone_G3 " ID="{C79CBFFD-92EF-4F31-916E-4734D83ED31C}" ShortID="548044526">
-											<Language>SFX</Language>
-											<AudioFile>Falling_Fruit_Bell_Tone_G3 .wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Falling_Fruit_Bell_Tone_G3 " ID="{C79CBFFD-92EF-4F31-916E-4734D83ED31C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Falling_Fruit_Bell_Tone_F3" ID="{0DD30581-6069-4C84-9705-BE59FF06A726}" ShortID="964395939" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Falling_Fruit_Bell_Tone_F3" ID="{83C8F639-13DE-427F-B113-1580593E0EA2}" ShortID="743756307">
-											<Language>SFX</Language>
-											<AudioFile>Falling_Fruit_Bell_Tone_F3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Falling_Fruit_Bell_Tone_F3" ID="{83C8F639-13DE-427F-B113-1580593E0EA2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Falling_Fruit_Bell_Tone_E3" ID="{BE067F57-3BB3-4423-8573-F65031B07D04}" ShortID="800632849" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Falling_Fruit_Bell_Tone_E3" ID="{D52DC478-5537-4C1A-AD32-BE69233703B2}" ShortID="934215590">
-											<Language>SFX</Language>
-											<AudioFile>Falling_Fruit_Bell_Tone_E3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Falling_Fruit_Bell_Tone_E3" ID="{D52DC478-5537-4C1A-AD32-BE69233703B2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Falling_Fruit_Bell_Tone_D3" ID="{21B674BE-3778-4E24-8ED7-4217AFE3FA42}" ShortID="605970056" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Falling_Fruit_Bell_Tone_D3" ID="{5D9C3800-B30F-473E-AC1C-C465B3A2528D}" ShortID="753439135">
-											<Language>SFX</Language>
-											<AudioFile>Falling_Fruit_Bell_Tone_D3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Falling_Fruit_Bell_Tone_D3" ID="{5D9C3800-B30F-473E-AC1C-C465B3A2528D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Falling_Fruit_Bell_Tone_C3" ID="{89D21F78-279D-4715-B83F-D351654A3DE6}" ShortID="343230430" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Falling_Fruit_Bell_Tone_C3" ID="{E35AF1DA-049C-45BA-9832-2AAC06E7BB66}" ShortID="149338316">
-											<Language>SFX</Language>
-											<AudioFile>Falling_Fruit_Bell_Tone_C3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Falling_Fruit_Bell_Tone_C3" ID="{E35AF1DA-049C-45BA-9832-2AAC06E7BB66}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Falling_Fruit_Sample_FX_44_1kHz_24bit_01" ID="{DC9448A9-2964-477A-A743-5B1CB3DE2745}" ShortID="1072308198" Type="SoundFX">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -334,7 +239,7 @@
 												<AudioFileSource Name="SqueakyDoor_Chop_44_1kHz_24bit_01" ID="{5D6FB6A3-B2F2-4FEE-8162-42405811C5B5}" ShortID="616776228">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.210679602256658"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0693375906161151"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="6.93375906161151E-02"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.805382783310261"/>
 													</PropertyList>

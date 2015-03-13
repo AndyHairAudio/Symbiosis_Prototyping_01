@@ -24,10 +24,6 @@
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
 					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_4DC81F9E.wem</Path>
 				</File>
-				<File Id="345201938" Language="SFX">
-					<ShortName>Dubatech_Loop_Pad_Only_01.wav</ShortName>
-					<Path>SFX\Dubatech_Loop_Pad_Only_01_367C9A2E.wem</Path>
-				</File>
 				<File Id="401512083" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02.wav</ShortName>
 					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_FC8A8B1E.wem</Path>
@@ -48,17 +44,9 @@
 					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
 					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
 				</File>
-				<File Id="947648513" Language="SFX">
-					<ShortName>Dubatech_Kicks_Only_01.wav</ShortName>
-					<Path>SFX\Dubatech_Kicks_Only_01_9ED9C06E.wem</Path>
-				</File>
 				<File Id="951587508" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01.wav</ShortName>
 					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_FC8A8B1E.wem</Path>
-				</File>
-				<File Id="1018177312" Language="SFX">
-					<ShortName>Dubatech_Hats_Only_01.wav</ShortName>
-					<Path>SFX\Dubatech_Hats_Only_01_9ED9C06E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

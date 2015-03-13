@@ -3,24 +3,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	3690526740	Play_Player_Event_Manager			\Default Work Unit\Play_Player_Event_Manager	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	164040730	Planting_Trees			\Default Work Unit\Planting_Trees	
 	215992295	Player_health			\Default Work Unit\Player_health	
-	3386581620	Eating_Fruit			\Default Work Unit\Eating_Fruit	
 
 Trigger	ID	Name			Wwise Object Path	Notes
 	1600046017	Picked_Up_Seed			\Default Work Unit\Picked_Up_Seed	
 	1946655246	Discovered_Tree			\Default Work Unit\Discovered_Tree	
+	4134113183	Entered_World			\Default Work Unit\Entered_World	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	147648445	Dubatech_Entry_Pad_Only_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Dubatech_Entry_Pad_Only_01_539B00FA.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\00_Entering The World\Daybreak - Welcome To The World\Dubatech_Entry_Pad_Only_01		3528064
+	147648445	Dubatech_Entry_Pad_Only_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Dubatech_Entry_Pad_Only_01_539B00FA.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Entry_Pad\Dubatech_Entry_Pad_Only_01		3528064
 	158830147	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_4DC81F9E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		352944
-	345201938	Dubatech_Loop_Pad_Only_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Dubatech_Loop_Pad_Only_01_367C9A2E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\01_Discovering A Tree\Dubatech_Loop_Pad_Only_01\Dubatech_Loop_Pad_Only_01		11289664
 	401512083	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_FC8A8B1E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		655504
 	562970709	Daybreak - Welcome To The World	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Daybreak - Welcome To The World_89C298B1.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\00_Entering The World\Daybreak - Welcome To The World\Daybreak - Welcome To The World		11796624
 	567567323	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_4DC81F9E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		352944
 	636317414	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03_A4D98EB5.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		524432
 	773211072	Daybreak_Discover_Tree	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Daybreak_Discover_Tree_C9B2C403.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Daybreak_Discover_Tree\Daybreak_Discover_Tree		917648
-	947648513	Dubatech_Kicks_Only_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Dubatech_Kicks_Only_01_9ED9C06E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\02_Picking Up Seed\Dubatech_Chords_Only_01\Dubatech_Kicks_Only_01		705664
 	951587508	Seed_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_FC8A8B1E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Picked_Up_Seed\Seed_Motif_01		655504
-	1018177312	Dubatech_Hats_Only_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Dubatech_Hats_Only_01_9ED9C06E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\02_Picking Up Seed\Dubatech_Chords_Only_01\Dubatech_Hats_Only_01		705664
 
