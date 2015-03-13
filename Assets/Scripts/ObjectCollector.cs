@@ -3,12 +3,14 @@ using System.Collections;
 
 public class ObjectCollector : MonoBehaviour {
 
-	public int fruitCollected = 0;
+	int fruitCollected = 0;
+	public int fishCollected = 0;
 	public GameObject treePrefab;
 	public RaycastHit rayHit;
 	public RaycastHit rayHitPlant;
 	bool rayHittingFruit;
 	bool rayHittingTerrain;
+	bool rayHittingLake;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
@@ -69,6 +71,21 @@ public class ObjectCollector : MonoBehaviour {
 			}
 		}
 
+		Ray cameraLakeRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+		if(Physics.Raycast(cameraLakeRay, out rayHit, 10.0f)){
+			if(rayHit.collider.tag == "Lakewater"){
+				rayHittingLake = true;
+			}
+			else {
+				rayHittingLake = false;
+			}
+			CharacterController controllerFinder = this.GetComponent<CharacterController>();
+			if(Input.GetButtonDown ("Fire1") && fishCollected == 0 && rayHittingLake && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
+				fishCollected++;
+				AkSoundEngine.PostTrigger("Picked_Up_Seed", this.gameObject);
+			}
+		}
+
 		Ray cameraRayPlant = Camera.main.ViewportPointToRay (new Vector3 (0.5f, 0.5f, 0f));
 		
 		if (Physics.Raycast (cameraRayPlant, out rayHitPlant, 10.0f)) {
@@ -86,25 +103,35 @@ public class ObjectCollector : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetButtonDown ("Eat")) {
-			if (fruitCollected > 0) {
+		if (Input.GetButtonDown ("Eat") && fruitCollected > 0) {
 				playerHealth = playerHealth + 25;
 				AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 				fruitCollected = fruitCollected - 1;
-			}
 		}
+
+		if (Input.GetButtonDown ("Fire3") && fishCollected > 0) {
+			StartCoroutine (EatenFish());
+			fishCollected--;
+		}
+				
+
 	}
 
 	void OnGUI(){
 
 		Texture2D mouseIcon = (Texture2D)Resources.Load("Mouse1ClickIcon", typeof(Texture2D));
 		Texture2D fruitIcon = (Texture2D)Resources.Load("appleicon", typeof(Texture2D));
+		Texture2D fishIcon = (Texture2D)Resources.Load ("fishcollected", typeof(Texture2D));
 		
 		if(rayHittingFruit){
 			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 		
 		if (rayHittingTerrain){
+			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
+		}
+
+		if(rayHittingLake){
 			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 
@@ -117,6 +144,10 @@ public class ObjectCollector : MonoBehaviour {
 				}
 			}
 		}
+
+		if (fishCollected > 0) {
+			GUI.DrawTexture (new Rect (Screen.width / 10 * 9.0f, Screen.height / 10 * 8.5f, 32, 32), fishIcon, ScaleMode.ScaleToFit, true, 1.0F);
+		}
 	}
 
 	IEnumerator HealthDecay (float decayTimer){
@@ -127,6 +158,16 @@ public class ObjectCollector : MonoBehaviour {
 			AkSoundEngine.SetRTPCValue("Player_Health", playerHealth);
 		}
 	}
+
+	IEnumerator EatenFish (){
+		float totalHealthAdded = 0.0f;
+		while (totalHealthAdded < 30.0f){
+			yield return new WaitForSeconds (1.0f);
+			playerHealth = playerHealth + 1.0f;
+			totalHealthAdded = totalHealthAdded + 1.0f;
+		}
+	}
+
 
 	void OnTriggerEnter (Collider other){
 		if (other.collider.tag == "Tree" && treeDiscovered == false) {
