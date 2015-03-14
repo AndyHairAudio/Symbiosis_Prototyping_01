@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ObjectCollector : MonoBehaviour {
 
-	int fruitCollected = 0;
+	public int fruitCollected = 0;
 	public int fishCollected = 0;
 	public GameObject treePrefab;
 	public RaycastHit rayHitFruit;
@@ -17,6 +17,7 @@ public class ObjectCollector : MonoBehaviour {
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
+	public bool fishFedThisFrame = false;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -28,6 +29,8 @@ public class ObjectCollector : MonoBehaviour {
 	}
 
 	void Update (){
+
+		fishFedThisFrame = false;
 
 		if (playerHealth > 100) {
 			playerHealth = 100;
@@ -94,6 +97,9 @@ public class ObjectCollector : MonoBehaviour {
 			if (fruitCollected > 0 && rayHittingLake) {
 				ableToFeedFish = true;
 				if (Input.GetButtonDown ("Feed")) {
+					Debug.Log ("feeding fish");
+					fruitCollected--;
+					fishFedThisFrame = true;
 				}
 			} else {
 				ableToFeedFish = false;
@@ -126,8 +132,6 @@ public class ObjectCollector : MonoBehaviour {
 			StartCoroutine (EatenFish());
 			fishCollected--;
 		}
-				
-
 	}
 
 	void OnGUI(){
