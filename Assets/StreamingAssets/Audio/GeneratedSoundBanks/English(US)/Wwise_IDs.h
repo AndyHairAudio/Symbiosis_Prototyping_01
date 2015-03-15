@@ -34,9 +34,9 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID DISCOVERING_TREES = 2832474322U;
+                static const AkUniqueID COLLECTING = 2908999423U;
                 static const AkUniqueID ENTERED_WORLD = 4134113183U;
-                static const AkUniqueID PICKING_UP_SEEDS = 3676802885U;
+                static const AkUniqueID WANDERING = 342806866U;
             } // namespace STATE
         } // namespace PLAYER_EVENTS
 

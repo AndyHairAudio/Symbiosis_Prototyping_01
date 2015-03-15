@@ -19,17 +19,37 @@
 				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2303710" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_05.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_05_DDC98EF4.wem</Path>
+				</File>
 				<File Id="26934683" Language="SFX">
 					<ShortName>Plant_Tree_Sound_FX_44.1_24bit_01.wav</ShortName>
 					<Path>SFX\Plant_Tree_Sound_FX_44.1_24bit_01_DDC98EF4.wem</Path>
 				</File>
-				<File Id="306568844" Language="SFX">
-					<ShortName>Player_Eat_Fruit_Bite_44.1_16bit_01.wav</ShortName>
-					<Path>SFX\Player_Eat_Fruit_Bite_44.1_16bit_01_DDC98EF4.wem</Path>
+				<File Id="51642955" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="429365018" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_DDC98EF4.wem</Path>
+				</File>
+				<File Id="441631743" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="451263548" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="683543295" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_DDC98EF4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{9906F182-2F1D-4C47-9403-4CD491B5E9A6}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{422D3032-0F7E-44F9-B422-591BBB2E644C}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -41,37 +61,45 @@
 				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="6912507" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44.1khz_24bit_731D4101.wem</Path>
+				</File>
+				<File Id="82985859" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_03_Bright_Strings_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_03_Bright_Strings_32bar_44.1khz_24bit_367C9A2E.wem</Path>
+				</File>
 				<File Id="147648445" Language="SFX">
 					<ShortName>Dubatech_Entry_Pad_Only_01.wav</ShortName>
 					<Path>SFX\Dubatech_Entry_Pad_Only_01_539B00FA.wem</Path>
 				</File>
-				<File Id="158830147" Language="SFX">
-					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
-					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_4DC81F9E.wem</Path>
+				<File Id="420842165" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_03_Claps_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_03_Claps_32bar_44.1khz_24bit_367C9A2E.wem</Path>
 				</File>
-				<File Id="401512083" Language="SFX">
-					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02.wav</ShortName>
-					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_FC8A8B1E.wem</Path>
+				<File Id="440780731" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_03_Wobble_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_03_Wobble_32bar_44.1khz_24bit_367C9A2E.wem</Path>
 				</File>
-				<File Id="562970709" Language="SFX">
-					<ShortName>Daybreak - Welcome To The World.wav</ShortName>
-					<Path>SFX\Daybreak - Welcome To The World_89C298B1.wem</Path>
+				<File Id="441973174" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit_367C9A2E.wem</Path>
 				</File>
-				<File Id="567567323" Language="SFX">
-					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06.wav</ShortName>
-					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_4DC81F9E.wem</Path>
+				<File Id="598515117" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit_89C298B1.wem</Path>
 				</File>
-				<File Id="636317414" Language="SFX">
-					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03.wav</ShortName>
-					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03_A4D98EB5.wem</Path>
+				<File Id="603877188" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit_E13321DB.wem</Path>
 				</File>
 				<File Id="773211072" Language="SFX">
 					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
 					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
 				</File>
-				<File Id="951587508" Language="SFX">
-					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01.wav</ShortName>
-					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_FC8A8B1E.wem</Path>
+				<File Id="942316781" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_02_Bright_Strings_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_02_Bright_Strings_32bar_44.1khz_24bit_367C9A2E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
