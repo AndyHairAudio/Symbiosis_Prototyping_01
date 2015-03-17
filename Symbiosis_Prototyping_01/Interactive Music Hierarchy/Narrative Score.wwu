@@ -580,6 +580,32 @@
 													<ValueList>
 														<Value>9</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{701A7C05-4160-4F8D-9090-F3ACF35B91CA}" ShortID="581203577">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Planting_Trees" ID="{9BC7914D-67C6-4500-BF27-D2221806B89B}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{EE0D498C-33D7-4D0A-A2FE-DDEE1299E30B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -622,6 +648,32 @@
 													<ValueList>
 														<Value>12</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{7E66FE8F-202D-4610-9E13-FE1D42000056}" ShortID="313498776">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Eating_Fruit" ID="{EF9B53A1-5DFE-4DF7-AA7A-2A8432F216BB}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{BC94DC1F-5C3D-4B2D-B560-02B62D878B9E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -659,6 +711,36 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{03799DDB-1687-401F-8FDA-BBA7E8480443}" ShortID="423548965">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{71950CD5-0C35-47A0-A92C-2234747F8A06}" ShortID="816476885">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Feeding_Fish" ID="{5CF568FA-C134-431D-8A36-373B6CB9F139}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{864F3E0A-E732-4D20-979F-13A15A715895}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
@@ -699,6 +781,32 @@
 													<ValueList>
 														<Value>12</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{24D729AA-F2D2-47D9-B2A8-60BEEAA50FE7}" ShortID="116678164">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Eating_Fish" ID="{34B1F676-64BA-41FB-8033-F00FB781B292}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{39D0A505-D7C5-4280-92F1-4595F1C1BFF8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>

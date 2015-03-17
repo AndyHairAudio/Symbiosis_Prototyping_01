@@ -86,7 +86,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID EATING_FISH = 787452368U;
         static const AkUniqueID EATING_FRUIT = 3386581620U;
+        static const AkUniqueID FEEDING_FISH = 2284538032U;
         static const AkUniqueID PLANTING_TREES = 164040730U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS

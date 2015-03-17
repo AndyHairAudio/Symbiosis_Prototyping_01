@@ -18,6 +18,14 @@ public class ObjectCollector : MonoBehaviour {
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
 	public bool fishFedThisFrame = false;
+	float eatingFruitVolume = 0.0f;
+	float lastEatenFruitTime;
+	float plantingTreesVolume = 0.0f;
+	float lastPlantedTreeTime;
+	float feedingFishVolume = 0.0f;
+	float lastFedFishTime;
+	float eatingFishVolume = 0.0f;
+	float lastAteFishTime;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -26,6 +34,10 @@ public class ObjectCollector : MonoBehaviour {
 	void Start(){
 		AkSoundEngine.SetState ("Player_Events", "Entered_World");
 		AkSoundEngine.PostTrigger ("Entered_World", this.gameObject);
+		AkSoundEngine.SetRTPCValue ("Eating_Fruit", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Planting_Trees", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Feeding_Fish", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Eating_Fish", 0.0f);
 	}
 
 	void Update (){
@@ -39,6 +51,7 @@ public class ObjectCollector : MonoBehaviour {
 		if (playerHealth < 0) {
 			playerHealth = 0;
 			Debug.Log ("Game is actually over");
+
 		}
 
 		if (fruitCollected > 3) {
@@ -100,6 +113,8 @@ public class ObjectCollector : MonoBehaviour {
 					Debug.Log ("feeding fish");
 					fruitCollected--;
 					fishFedThisFrame = true;
+					lastFedFishTime = Time.time;
+					AkSoundEngine.SetRTPCValue("Feeding_Fish", feedingFishVolume + 50.0f);
 				}
 			} else {
 				ableToFeedFish = false;
@@ -118,6 +133,8 @@ public class ObjectCollector : MonoBehaviour {
 				if(Input.GetButtonDown ("Fire2") && fruitCollected > 0 && rayHittingTerrain){
 					Instantiate (treePrefab, rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
 					fruitCollected--;
+					AkSoundEngine.SetRTPCValue("Planting_Trees", plantingTreesVolume + 50.0f);
+					lastPlantedTreeTime = Time.time;
 				}
 			}
 		}
@@ -126,14 +143,37 @@ public class ObjectCollector : MonoBehaviour {
 			playerHealth = playerHealth + 25;
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 			fruitCollected = fruitCollected - 1;
+			AkSoundEngine.SetRTPCValue("Eating_Fruit", eatingFruitVolume + 50.0f);
+			lastEatenFruitTime = Time.time;
+
 		}
 
 		if (Input.GetButtonDown ("Fire3") && fishCollected > 0) {
 			StartCoroutine (EatenFish());
 			fishCollected--;
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
+			AkSoundEngine.SetRTPCValue("Eating_Fish", eatingFishVolume + 50.0f);
+			lastAteFishTime = Time.time;
+		}
+
+		if ((Time.time - lastEatenFruitTime) > 20.0f) {
+			AkSoundEngine.SetRTPCValue("Eating_Fruit", 0.0f);
+			Debug.Log ("last eaten fruit timer: " + (Time.time - lastEatenFruitTime));
+		}
+		if ((Time.time - lastPlantedTreeTime) > 20.0f) {
+			AkSoundEngine.SetRTPCValue("Planting_Trees", 0.0f);
+			Debug.Log ("last planted tree timer: " + (Time.time - lastPlantedTreeTime));
+		}
+		if ((Time.time - lastFedFishTime) > 20.0f) {
+			AkSoundEngine.SetRTPCValue("Feeding_Fish", 0.0f);
+			Debug.Log ("last fed fish timer: " + (Time.time - lastFedFishTime));
+		}
+		if ((Time.time - lastAteFishTime) > 20.0f) {
+			AkSoundEngine.SetRTPCValue("Eating_Fish", 0.0f);
+			Debug.Log ("last ate fish timer: " + (Time.time - lastAteFishTime));
 		}
 	}
+	
 
 	void OnGUI(){
 
@@ -143,35 +183,46 @@ public class ObjectCollector : MonoBehaviour {
 		Texture2D fishingIcon = (Texture2D)Resources.Load ("fishi-hi", typeof(Texture2D));
 		Texture2D feedingIcon = (Texture2D)Resources.Load ("handWithSeeds", typeof(Texture2D));
 		Texture2D plantingIcon = (Texture2D)Resources.Load ("treeAbstract", typeof(Texture2D));
+		Texture2D controllerAIcon = (Texture2D)Resources.Load ("ControllerAButton", typeof(Texture2D));
+		Texture2D controllerBIcon = (Texture2D)Resources.Load ("ControllerBButton", typeof(Texture2D));
+		Texture2D controllerYIcon = (Texture2D)Resources.Load ("ControllerYButton", typeof(Texture2D));
+		Texture2D controllerXIcon = (Texture2D)Resources.Load ("ControllerXButton", typeof(Texture2D));
+		Texture2D controllerRBIcon = (Texture2D)Resources.Load ("ControllerRBButton", typeof(Texture2D));
+
 		
 		if(rayHittingFruit){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), mouseIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 5.5f, Screen.height/10 * 8.5f, 32, 32), controllerAIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
-		
-		if (rayHittingTerrain){
+
+		if (rayHittingTerrain && ableToFeedFish != true){
 			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), plantingIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 8.5f, 32, 32), controllerBIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 
 		if(ableToFish){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), fishingIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 3.5f, Screen.height/10 * 7, 64, 64), fishingIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 3.5f, Screen.height/10 * 8.5f, 32, 32), controllerAIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 
 		if(ableToFeedFish){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), feedingIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 2.5f, Screen.height/10 * 7, 64, 64), feedingIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 2.5f, Screen.height/10 * 8.5f, 32, 32), controllerRBIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 
 		if (fruitCollected >= 1) {
-			GUI.DrawTexture(new Rect(Screen.width/10 * 0.5f, Screen.height/10 * 8.5f, 64, 64), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 0.5f, Screen.height/10 * 8.0f, 256/4, 256/4), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 0.5f, Screen.height/10 * 7.0f, 32, 32), controllerYIcon, ScaleMode.ScaleToFit, true, 1.0F);
 			if(fruitCollected >= 2){
-				GUI.DrawTexture(new Rect(Screen.width/10 * 0.75f, Screen.height/10 * 8.5f, 64, 64), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
+				GUI.DrawTexture(new Rect(Screen.width/10 * 1.0f, Screen.height/10 * 8.0f, 256/4, 256/4), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
 				if(fruitCollected == 3){
-					GUI.DrawTexture(new Rect(Screen.width/10 * 1.0f, Screen.height/10 * 8.5f, 64, 64), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
+					GUI.DrawTexture(new Rect(Screen.width/10 * 1.5f, Screen.height/10 * 8.0f, 256/4, 256/4), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
 				}
 			}
 		}
 
 		if (fishCollected > 0) {
-			GUI.DrawTexture (new Rect (Screen.width / 10 * 9.0f, Screen.height / 10 * 8.5f, 32, 32), fishIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture (new Rect (Screen.width / 10 * 9.0f, Screen.height / 10 * 8.0f, 64, 64), fishIcon, ScaleMode.ScaleToFit, true, 1.0F);
+			GUI.DrawTexture(new Rect(Screen.width/10 * 9.0f, Screen.height/10 * 7.5f, 32, 32), controllerXIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 	}
 
@@ -192,8 +243,7 @@ public class ObjectCollector : MonoBehaviour {
 			totalHealthAdded = totalHealthAdded + 1.0f;
 		}
 	}
-
-
+	
 	void OnTriggerEnter (Collider other){
 		if (other.collider.tag == "Tree" && treeDiscovered == false) {
 
