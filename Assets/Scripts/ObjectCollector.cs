@@ -18,14 +18,6 @@ public class ObjectCollector : MonoBehaviour {
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
 	public bool fishFedThisFrame = false;
-	float eatingFruitVolume = 0.0f;
-	float lastEatenFruitTime;
-	float plantingTreesVolume = 0.0f;
-	float lastPlantedTreeTime;
-	float feedingFishVolume = 0.0f;
-	float lastFedFishTime;
-	float eatingFishVolume = 0.0f;
-	float lastAteFishTime;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -113,8 +105,6 @@ public class ObjectCollector : MonoBehaviour {
 					Debug.Log ("feeding fish");
 					fruitCollected--;
 					fishFedThisFrame = true;
-					lastFedFishTime = Time.time;
-					AkSoundEngine.SetRTPCValue("Feeding_Fish", feedingFishVolume + 50.0f);
 				}
 			} else {
 				ableToFeedFish = false;
@@ -133,8 +123,6 @@ public class ObjectCollector : MonoBehaviour {
 				if(Input.GetButtonDown ("Fire2") && fruitCollected > 0 && rayHittingTerrain){
 					Instantiate (treePrefab, rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
 					fruitCollected--;
-					AkSoundEngine.SetRTPCValue("Planting_Trees", plantingTreesVolume + 50.0f);
-					lastPlantedTreeTime = Time.time;
 				}
 			}
 		}
@@ -143,34 +131,12 @@ public class ObjectCollector : MonoBehaviour {
 			playerHealth = playerHealth + 25;
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 			fruitCollected = fruitCollected - 1;
-			AkSoundEngine.SetRTPCValue("Eating_Fruit", eatingFruitVolume + 50.0f);
-			lastEatenFruitTime = Time.time;
-
 		}
 
 		if (Input.GetButtonDown ("Fire3") && fishCollected > 0) {
 			StartCoroutine (EatenFish());
 			fishCollected--;
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
-			AkSoundEngine.SetRTPCValue("Eating_Fish", eatingFishVolume + 50.0f);
-			lastAteFishTime = Time.time;
-		}
-
-		if ((Time.time - lastEatenFruitTime) > 20.0f) {
-			AkSoundEngine.SetRTPCValue("Eating_Fruit", 0.0f);
-			Debug.Log ("last eaten fruit timer: " + (Time.time - lastEatenFruitTime));
-		}
-		if ((Time.time - lastPlantedTreeTime) > 20.0f) {
-			AkSoundEngine.SetRTPCValue("Planting_Trees", 0.0f);
-			Debug.Log ("last planted tree timer: " + (Time.time - lastPlantedTreeTime));
-		}
-		if ((Time.time - lastFedFishTime) > 20.0f) {
-			AkSoundEngine.SetRTPCValue("Feeding_Fish", 0.0f);
-			Debug.Log ("last fed fish timer: " + (Time.time - lastFedFishTime));
-		}
-		if ((Time.time - lastAteFishTime) > 20.0f) {
-			AkSoundEngine.SetRTPCValue("Eating_Fish", 0.0f);
-			Debug.Log ("last ate fish timer: " + (Time.time - lastAteFishTime));
 		}
 	}
 	
@@ -259,4 +225,5 @@ public class ObjectCollector : MonoBehaviour {
 			AkSoundEngine.SetSwitch ("Player_Forest_Zone", "Lakeside", this.gameObject);
 		}
 	}
+
 }

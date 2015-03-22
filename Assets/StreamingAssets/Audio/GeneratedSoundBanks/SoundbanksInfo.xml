@@ -17,6 +17,8 @@
 				<Event Id="898820479" Name="Play_Eat_Fruit" GUID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}"/>
 				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
 				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
+				<Event Id="1955951874" Name="Play_testbeep" GUID="{5999833D-673E-422F-A9E6-04BD852B2EFD}"/>
+				<Event Id="2303144468" Name="Play_testbeep2" GUID="{C862918B-B069-46A9-BFD7-8B8AA90C25E7}"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2303710" Language="SFX">
@@ -47,9 +49,13 @@
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06.wav</ShortName>
 					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_DDC98EF4.wem</Path>
 				</File>
+				<File Id="1068263493" Language="SFX">
+					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_AEF08D81.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{CE309AE1-6C77-4862-89FD-CF22D20904CA}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{B2600618-84B3-4B59-81E5-788D6729564E}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -84,10 +90,6 @@
 				<File Id="441973174" Language="SFX">
 					<ShortName>Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
 					<Path>SFX\Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit_367C9A2E.wem</Path>
-				</File>
-				<File Id="598515117" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit_89C298B1.wem</Path>
 				</File>
 				<File Id="603877188" Language="SFX">
 					<ShortName>Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit.wav</ShortName>

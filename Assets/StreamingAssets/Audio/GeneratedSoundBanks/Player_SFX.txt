@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	503952552	Play_Health_SFX			\Default Work Unit\Play_Health_SFX	
 	898820479	Play_Eat_Fruit			\Default Work Unit\Play_Eat_Fruit	
+	1955951874	Play_testbeep			\Default Work Unit\Play_testbeep	
+	2303144468	Play_testbeep2			\Default Work Unit\Play_testbeep2	
 	2709727076	Play_Plant_Tree			\Default Work Unit\Play_Plant_Tree	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -23,4 +25,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	441631743	Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Eat Fruit\Eating Fruit Motifs\Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_01		655504
 	451263548	Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Eat Fruit\Eating Fruit Motifs\Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_02		655504
 	683543295	Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_06	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Eat Fruit\Eating Fruit Motifs\Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_06		352944
+	1068263493	testbeep	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_AEF08D81.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\testbeep		7132
 

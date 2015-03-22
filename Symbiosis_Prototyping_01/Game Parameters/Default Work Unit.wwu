@@ -8,34 +8,6 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Planting_Trees" ID="{9BC7914D-67C6-4500-BF27-D2221806B89B}">
-					<PropertyList>
-						<Property Name="RTPCRamping" Type="int16" Value="1"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="5"/>
-						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="Eating_Fruit" ID="{EF9B53A1-5DFE-4DF7-AA7A-2A8432F216BB}">
-					<PropertyList>
-						<Property Name="RTPCRamping" Type="int16" Value="1"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="5"/>
-						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="Feeding_Fish" ID="{5CF568FA-C134-431D-8A36-373B6CB9F139}">
-					<PropertyList>
-						<Property Name="RTPCRamping" Type="int16" Value="1"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="5"/>
-						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="Eating_Fish" ID="{34B1F676-64BA-41FB-8033-F00FB781B292}">
-					<PropertyList>
-						<Property Name="RTPCRamping" Type="int16" Value="1"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="5"/>
-						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
-					</PropertyList>
-				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

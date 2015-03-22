@@ -19,6 +19,8 @@ namespace AK
         static const AkUniqueID PLAY_LAKE_WAVES_LAPPING = 4112892722U;
         static const AkUniqueID PLAY_PLANT_TREE = 2709727076U;
         static const AkUniqueID PLAY_PLAYER_EVENT_MANAGER = 3690526740U;
+        static const AkUniqueID PLAY_TESTBEEP = 1955951874U;
+        static const AkUniqueID PLAY_TESTBEEP2 = 2303144468U;
         static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
         static const AkUniqueID PLAY_TREE_STATE = 4258997712U;
         static const AkUniqueID PLAY_ZONES = 3780807851U;
@@ -86,10 +88,6 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID EATING_FISH = 787452368U;
-        static const AkUniqueID EATING_FRUIT = 3386581620U;
-        static const AkUniqueID FEEDING_FISH = 2284538032U;
-        static const AkUniqueID PLANTING_TREES = 164040730U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS
 
