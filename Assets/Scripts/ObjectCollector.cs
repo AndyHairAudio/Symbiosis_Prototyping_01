@@ -14,6 +14,7 @@ public class ObjectCollector : MonoBehaviour {
 	bool rayHittingLake;
 	bool ableToFeedFish;
 	bool ableToFish;
+	public bool playerFishing;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
@@ -26,15 +27,9 @@ public class ObjectCollector : MonoBehaviour {
 	void Start(){
 		AkSoundEngine.SetState ("Player_Events", "Entered_World");
 		AkSoundEngine.PostTrigger ("Entered_World", this.gameObject);
-		AkSoundEngine.SetRTPCValue ("Eating_Fruit", 0.0f);
-		AkSoundEngine.SetRTPCValue ("Planting_Trees", 0.0f);
-		AkSoundEngine.SetRTPCValue ("Feeding_Fish", 0.0f);
-		AkSoundEngine.SetRTPCValue ("Eating_Fish", 0.0f);
 	}
 
 	void Update (){
-
-		fishFedThisFrame = false;
 
 		if (playerHealth > 100) {
 			playerHealth = 100;
@@ -43,7 +38,6 @@ public class ObjectCollector : MonoBehaviour {
 		if (playerHealth < 0) {
 			playerHealth = 0;
 			Debug.Log ("Game is actually over");
-
 		}
 
 		if (fruitCollected > 3) {
@@ -67,7 +61,6 @@ public class ObjectCollector : MonoBehaviour {
 				} else if (Time.time >= 299.5f && Time.time <= 300.5f) {
 						healthDecayRate = 8.0f;
 				}
-
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 		if(Physics.Raycast(cameraRay, out rayHitFruit, 5.0f)){
@@ -94,7 +87,7 @@ public class ObjectCollector : MonoBehaviour {
 			if (fishCollected < 1 && rayHittingLake) {
 				ableToFish = true;
 				if (Input.GetButtonDown ("Fire1") && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
-					fishCollected++;
+					gameObject.AddComponent<FishingController>();
 				}
 			} else {
 				ableToFish = false;
@@ -139,11 +132,9 @@ public class ObjectCollector : MonoBehaviour {
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 		}
 	}
-	
 
 	void OnGUI(){
 
-		Texture2D mouseIcon = (Texture2D)Resources.Load("Mouse1ClickIcon", typeof(Texture2D));
 		Texture2D fruitIcon = (Texture2D)Resources.Load("FruitIcon", typeof(Texture2D));
 		Texture2D fishIcon = (Texture2D)Resources.Load ("fishcollected", typeof(Texture2D));
 		Texture2D fishingIcon = (Texture2D)Resources.Load ("fishi-hi", typeof(Texture2D));
@@ -212,7 +203,6 @@ public class ObjectCollector : MonoBehaviour {
 	
 	void OnTriggerEnter (Collider other){
 		if (other.collider.tag == "Tree" && treeDiscovered == false) {
-
 			AkSoundEngine.PostTrigger ("Discovered_Tree", this.gameObject);
 			treeDiscovered = true;
 		}
@@ -225,5 +215,4 @@ public class ObjectCollector : MonoBehaviour {
 			AkSoundEngine.SetSwitch ("Player_Forest_Zone", "Lakeside", this.gameObject);
 		}
 	}
-
 }

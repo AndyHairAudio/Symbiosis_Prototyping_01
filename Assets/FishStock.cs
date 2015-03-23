@@ -35,8 +35,6 @@ public class FishStock : MonoBehaviour {
 			yield return new WaitForSeconds (spawnTimer * (spawnRateMultiplier/10.0f));
 
 			Instantiate (fishPrefab, new Vector3(Random.Range (this.transform.position.x - 30, this.transform.position.z + 30), this.transform.position.y, Random.Range(this.transform.position.z - 30, this.transform.position.z + 30)), Quaternion.Euler (0, Random.Range (0, 360), 0));
-			
-			Debug.Log ("spawning fish");
 		}
 	}
 

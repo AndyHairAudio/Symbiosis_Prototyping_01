@@ -51,11 +51,11 @@
 				</File>
 				<File Id="1068263493" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
-					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_AEF08D81.wem</Path>
+					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_37F375D4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{B2600618-84B3-4B59-81E5-788D6729564E}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{96DB7865-3380-47E7-8C72-720F2D5D10A2}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
