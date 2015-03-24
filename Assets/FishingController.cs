@@ -47,6 +47,7 @@ public class FishingController : MonoBehaviour {
 
 		if (Input.GetButtonDown ("Combo1")) {
 			combo1PressTime = Time.time;
+			print ("pressed");
 			if((combo1PressTime - sequenceBeginTime) < 0.250f){
 				print ("hitted it after " + (combo1PressTime - timeOfInitiation));
 			}
