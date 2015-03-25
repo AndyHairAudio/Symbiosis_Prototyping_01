@@ -68,9 +68,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="Adaptive_Music_Segment_01_Opening_Pad_32bar_44_1khz_24bit" ID="{A2A6B90A-3BD1-4A5C-928B-ADE1BC9CED07}" ShortID="1015399353">
-											<ExcludedPlatformList>
-												<Platform>Windows</Platform>
-											</ExcludedPlatformList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>

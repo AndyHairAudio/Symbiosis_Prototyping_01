@@ -40,6 +40,10 @@
 					<ShortName>Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
 					<Path>SFX\Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit_367C9A2E.wem</Path>
 				</File>
+				<File Id="598515117" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit_89C298B1.wem</Path>
+				</File>
 				<File Id="603877188" Language="SFX">
 					<ShortName>Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit.wav</ShortName>
 					<Path>SFX\Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit_E13321DB.wem</Path>

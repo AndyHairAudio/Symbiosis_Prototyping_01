@@ -55,7 +55,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{96DB7865-3380-47E7-8C72-720F2D5D10A2}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{F51D756B-FD0F-4D54-8E11-77F733610CD6}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -90,6 +90,10 @@
 				<File Id="441973174" Language="SFX">
 					<ShortName>Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
 					<Path>SFX\Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit_367C9A2E.wem</Path>
+				</File>
+				<File Id="598515117" Language="SFX">
+					<ShortName>Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
+					<Path>SFX\Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit_89C298B1.wem</Path>
 				</File>
 				<File Id="603877188" Language="SFX">
 					<ShortName>Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit.wav</ShortName>

@@ -4,7 +4,7 @@ using System.Collections;
 public class FishingController : MonoBehaviour {
 
 	float timeOfInitiation;
-	bool beatThisFrameRef = false;
+	public bool beatThisFrameRef = false;
 	Texture2D controllerRBIcon = (Texture2D)Resources.Load ("ControllerRBButton", typeof(Texture2D));
 	Texture2D controllerAIcon = (Texture2D)Resources.Load ("ControllerAButton", typeof(Texture2D));
 	bool drawButtonIcon1 = false;
@@ -13,35 +13,25 @@ public class FishingController : MonoBehaviour {
 	float drawTimerTwo = 0.0f;
 	float combo1PressTime;
 	float sequenceBeginTime;
+	MusicSync syncComponent;
+	float initialDelay = 2.0f;
+	int fishDistance = 50;
 
 	// Use this for initialization
 	void Awake () {
 		timeOfInitiation = Time.time;
 	}
 
-	IEnumerator Start (){
-		yield return new WaitForSeconds (2.0f);
-
-		while (beatThisFrameRef == false) {
-			yield return null;
-		}
-		sequenceBeginTime = Time.time;
-		drawButtonIcon1 = true;
-
-		yield return new WaitForSeconds (0.5f);
-
-		while (beatThisFrameRef == false) {
-			yield return null;
-		}
-		drawButtonIcon2 = true;
+	void Start (){
+		syncComponent = gameObject.GetComponent<MusicSync> ();
+		StartCoroutine (FishSequence ());
 	}
-
+	
 	// Update is called once per frame
 	void Update () {
+		beatThisFrameRef = syncComponent.beatThisFrame;
 
-		beatThisFrameRef = gameObject.GetComponent<MusicSync> ().beatThisFrame;
-
-		if (Time.time - timeOfInitiation > 5.0f) {
+		if (Time.time - timeOfInitiation > 10.0f) {
 			Destroy (this);
 		}
 
@@ -51,6 +41,26 @@ public class FishingController : MonoBehaviour {
 			if((combo1PressTime - sequenceBeginTime) < 0.250f){
 				print ("hitted it after " + (combo1PressTime - timeOfInitiation));
 			}
+		}
+	}
+
+	IEnumerator FishSequence (){
+
+		while(fishDistance > 0){
+			yield return new WaitForSeconds (initialDelay);
+
+			while (!beatThisFrameRef) 
+			{
+				yield return null;
+			}
+
+			if ((Time.time - timeOfInitiation) > 1.000f) {
+				initialDelay = 0f;
+			}
+
+			sequenceBeginTime = Time.time;
+			drawTimerOne = 0.0f;
+			drawButtonIcon1 = true;
 		}
 	}
 
