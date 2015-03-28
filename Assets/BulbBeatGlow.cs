@@ -19,7 +19,7 @@ public class BulbBeatGlow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		beatNow = musicCallback.beatThisFrame;
+		beatNow = musicCallback.beatThisFrameGlow;
 
 		if ((Time.time - timeLightEnabled) > 1.0f) {
 			lightComp.enabled = false;
