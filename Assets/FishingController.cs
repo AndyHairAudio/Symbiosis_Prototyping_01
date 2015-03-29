@@ -5,12 +5,11 @@ using System.Collections.Generic;
 
 public class FishingController : MonoBehaviour {
 
-	public enum Dpad{None,Right,Left,Up,Down} private bool flag = true; private Dpad control = Dpad.None;
-	float timeOfInitiation;
+	public enum Dpad{None,Right,Left,Up,Down} private bool flag = true;
 	public bool beatThisFrameRef = false;
 	float buttonPressWindowStart;
 	MusicSync syncComponent;
-	float initialDelay = 2.0f;
+	float initialDelay = 6.0f;
 	int fishDistance = 50;
 	int randomButtonSelection;
 	public string selectedButtonString;
@@ -29,12 +28,7 @@ public class FishingController : MonoBehaviour {
 	bool betweenBeats;
 	List<string> buttonLog = new List<string>();
 	bool canFailAgain = true;
-
-	// Use this for initialization
-	void Awake () {
-		timeOfInitiation = Time.time;
-	}
-
+	
 	void Start (){
 		upArrow = GameObject.Find ("Up");
 		downArrow = GameObject.Find ("Down");
@@ -149,7 +143,6 @@ public class FishingController : MonoBehaviour {
 
 	void PadControl(){
 		if(Input.GetAxis("Combo1")==0.0 && Input.GetAxis("Combo2")==0.0){
-			control= Dpad.None;
 			flag  = true;
 		}
 		if(Input.GetAxis("Combo1")==1f && flag ){
