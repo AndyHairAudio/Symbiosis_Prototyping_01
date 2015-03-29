@@ -6,14 +6,14 @@ public class ObjectCollector : MonoBehaviour {
 	public int fruitCollected = 0;
 	public int fishCollected = 0;
 	public GameObject treePrefab;
-	public RaycastHit rayHitFruit;
-	public RaycastHit rayHitPlant;
-	public RaycastHit rayHitLake;
-	bool rayHittingFruit;
-	bool rayHittingTerrain;
-	bool rayHittingLake;
-	bool ableToFeedFish;
-	bool ableToFish;
+	RaycastHit rayHitFruit;
+	RaycastHit rayHitPlant;
+	RaycastHit rayHitLake;
+	public bool rayHittingFruit;
+	public bool rayHittingTerrain;
+	public bool rayHittingLake;
+	public bool ableToFeedFish;
+	public bool ableToFish;
 	public bool playerFishing;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
@@ -30,7 +30,6 @@ public class ObjectCollector : MonoBehaviour {
 	}
 
 	void Update (){
-
 		if (playerHealth > 100) {
 			playerHealth = 100;
 		}
@@ -130,56 +129,6 @@ public class ObjectCollector : MonoBehaviour {
 			StartCoroutine (EatenFish());
 			fishCollected--;
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
-		}
-	}
-
-	void OnGUI(){
-
-		Texture2D fruitIcon = (Texture2D)Resources.Load("FruitIcon", typeof(Texture2D));
-		Texture2D fishIcon = (Texture2D)Resources.Load ("fishcollected", typeof(Texture2D));
-		Texture2D fishingIcon = (Texture2D)Resources.Load ("fishi-hi", typeof(Texture2D));
-		Texture2D feedingIcon = (Texture2D)Resources.Load ("handWithSeeds", typeof(Texture2D));
-		Texture2D plantingIcon = (Texture2D)Resources.Load ("treeAbstract", typeof(Texture2D));
-		Texture2D controllerAIcon = (Texture2D)Resources.Load ("ControllerAButton", typeof(Texture2D));
-		Texture2D controllerBIcon = (Texture2D)Resources.Load ("ControllerBButton", typeof(Texture2D));
-		Texture2D controllerYIcon = (Texture2D)Resources.Load ("ControllerYButton", typeof(Texture2D));
-		Texture2D controllerXIcon = (Texture2D)Resources.Load ("ControllerXButton", typeof(Texture2D));
-		Texture2D controllerRBIcon = (Texture2D)Resources.Load ("ControllerRBButton", typeof(Texture2D));
-
-		
-		if(rayHittingFruit){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 5.5f, Screen.height/10 * 8.5f, 32, 32), controllerAIcon, ScaleMode.ScaleToFit, true, 1.0F);
-		}
-
-		if (rayHittingTerrain && ableToFeedFish != true){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 7, 64, 64), plantingIcon, ScaleMode.ScaleToFit, true, 1.0F);
-			GUI.DrawTexture(new Rect(Screen.width/10 * 4.5f, Screen.height/10 * 8.5f, 32, 32), controllerBIcon, ScaleMode.ScaleToFit, true, 1.0F);
-		}
-
-		if(ableToFish){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 3.5f, Screen.height/10 * 7, 64, 64), fishingIcon, ScaleMode.ScaleToFit, true, 1.0F);
-			GUI.DrawTexture(new Rect(Screen.width/10 * 3.5f, Screen.height/10 * 8.5f, 32, 32), controllerAIcon, ScaleMode.ScaleToFit, true, 1.0F);
-		}
-
-		if(ableToFeedFish){
-			GUI.DrawTexture(new Rect(Screen.width/10 * 2.5f, Screen.height/10 * 7, 64, 64), feedingIcon, ScaleMode.ScaleToFit, true, 1.0F);
-			GUI.DrawTexture(new Rect(Screen.width/10 * 2.5f, Screen.height/10 * 8.5f, 32, 32), controllerRBIcon, ScaleMode.ScaleToFit, true, 1.0F);
-		}
-
-		if (fruitCollected >= 1) {
-			GUI.DrawTexture(new Rect(Screen.width/10 * 0.5f, Screen.height/10 * 8.0f, 256/4, 256/4), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
-			GUI.DrawTexture(new Rect(Screen.width/10 * 0.5f, Screen.height/10 * 7.0f, 32, 32), controllerYIcon, ScaleMode.ScaleToFit, true, 1.0F);
-			if(fruitCollected >= 2){
-				GUI.DrawTexture(new Rect(Screen.width/10 * 1.0f, Screen.height/10 * 8.0f, 256/4, 256/4), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
-				if(fruitCollected == 3){
-					GUI.DrawTexture(new Rect(Screen.width/10 * 1.5f, Screen.height/10 * 8.0f, 256/4, 256/4), fruitIcon, ScaleMode.ScaleToFit, true, 1.0F);
-				}
-			}
-		}
-
-		if (fishCollected > 0) {
-			GUI.DrawTexture (new Rect (Screen.width / 10 * 9.0f, Screen.height / 10 * 8.0f, 64, 64), fishIcon, ScaleMode.ScaleToFit, true, 1.0F);
-			GUI.DrawTexture(new Rect(Screen.width/10 * 9.0f, Screen.height/10 * 7.5f, 32, 32), controllerXIcon, ScaleMode.ScaleToFit, true, 1.0F);
 		}
 	}
 
