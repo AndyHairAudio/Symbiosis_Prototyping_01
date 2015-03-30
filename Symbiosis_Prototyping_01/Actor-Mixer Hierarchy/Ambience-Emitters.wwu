@@ -63,7 +63,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -516,7 +516,6 @@
 											<GroupingBehavior>
 												<ItemRef Name="Lakeside" ID="{241E1633-B05B-49AD-8178-865C54E858CB}"/>
 												<PropertyList>
-													<Property Name="ContinuePlay" Type="bool" Value="True"/>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>5</Value>
@@ -532,7 +531,6 @@
 											<GroupingBehavior>
 												<ItemRef Name="Cave" ID="{93109861-DF4A-4ADD-89BD-E9A87D21ABC0}"/>
 												<PropertyList>
-													<Property Name="ContinuePlay" Type="bool" Value="True"/>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>5</Value>
@@ -548,7 +546,6 @@
 											<GroupingBehavior>
 												<ItemRef Name="Forest Floor" ID="{0D4D1A7F-2903-4E1B-B2E1-550D1146C352}"/>
 												<PropertyList>
-													<Property Name="ContinuePlay" Type="bool" Value="True"/>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>5</Value>

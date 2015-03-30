@@ -55,7 +55,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{F51D756B-FD0F-4D54-8E11-77F733610CD6}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{99FCDC01-4DEC-402B-A937-6158459A72D7}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>

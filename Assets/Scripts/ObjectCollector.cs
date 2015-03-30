@@ -86,7 +86,9 @@ public class ObjectCollector : MonoBehaviour {
 			if (fishCollected < 1 && rayHittingLake) {
 				ableToFish = true;
 				if (Input.GetButtonDown ("Fire1") && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
-					gameObject.AddComponent<FishingController>();
+					if(gameObject.GetComponent<FishingController>() == null){
+					   gameObject.AddComponent<FishingController>();
+					}
 				}
 			} else {
 				ableToFish = false;
