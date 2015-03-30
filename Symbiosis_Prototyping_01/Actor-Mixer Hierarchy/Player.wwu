@@ -334,8 +334,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{12C6B4FD-34BF-49F8-8F5C-F7A3FE916ABD}" ShortID="1068263493">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -370,8 +370,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{BEDBCD60-C466-48BE-BD01-F76AEECDC388}" ShortID="741639999">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -384,6 +384,425 @@
 						<ActiveSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{BEDBCD60-C466-48BE-BD01-F76AEECDC388}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<BlendContainer Name="Footsteps" ID="{29A3811F-0FFA-40CF-BAB0-D476F900BDA3}" ShortID="873207999">
+					<PropertyList>
+						<Property Name="3DPositionSource" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Surface Type" ID="{EA1D7AFD-9123-401A-9AAD-2ABE632354FD}" ShortID="992362391">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Forest Floor Steps" ID="{D851EACF-A7D9-486C-96A6-EBC495A78954}" ShortID="453443235">
+									<PropertyList>
+										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{47A38661-7E06-4945-BB3F-8326B49B6FC6}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="62"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7C389085-C005-4133-86B1-48C258C34DB0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="13"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DA7C15FD-CC8F-4AAD-930B-B4FA39935E20}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="253"/>
+															<Property Name="Min" Type="Real64" Value="-253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_01" ID="{221356DC-ABE3-4CED-8E79-CC732F4FAEC8}" ShortID="888413121" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_01" ID="{087E8FCB-91BD-4B9D-B21B-97F89ADD89EF}" ShortID="642392921">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_01" ID="{087E8FCB-91BD-4B9D-B21B-97F89ADD89EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_02" ID="{2F0FA854-8BEF-4CB1-9C28-16E146473324}" ShortID="318861880" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_02" ID="{71391460-72F3-4111-9A8B-637F7BFBCA2C}" ShortID="478840049">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_02" ID="{71391460-72F3-4111-9A8B-637F7BFBCA2C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03" ID="{8B297CA8-0A79-4D6D-BDD3-0191DF97AE55}" ShortID="88147537" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03" ID="{69D75E53-DFD8-44F2-896C-B21A40B4547E}" ShortID="879845597">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03" ID="{69D75E53-DFD8-44F2-896C-B21A40B4547E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_04" ID="{A59F0D67-E0A5-4B90-BA8A-393A3F048FBB}" ShortID="101701983" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_04" ID="{10ECF4DE-A5A1-470D-9AD5-8785F26F1940}" ShortID="860823073">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_04" ID="{10ECF4DE-A5A1-470D-9AD5-8785F26F1940}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_05" ID="{5A9A8509-4C20-4098-9877-E1087F007A14}" ShortID="936422189" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_05" ID="{8B91D882-5669-4318-9A74-369204510109}" ShortID="276493410">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_05" ID="{8B91D882-5669-4318-9A74-369204510109}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_06" ID="{65E6DBA6-AD60-4166-8798-FEC9DCE699D5}" ShortID="903229925" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_06" ID="{44C14C95-09BA-49BE-B4DC-9D5305CB5264}" ShortID="781414511">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_06" ID="{44C14C95-09BA-49BE-B4DC-9D5305CB5264}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_07" ID="{8EDB59F2-997B-4BCA-94BC-57D93E924010}" ShortID="413758523" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_07" ID="{DCB87772-34CA-4895-BBE5-2D14DF2191C6}" ShortID="124960342">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_07" ID="{DCB87772-34CA-4895-BBE5-2D14DF2191C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08" ID="{736984B4-E126-4580-95A3-7051EA9CA4AA}" ShortID="943563506" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08" ID="{EDC6E986-7E13-4C18-8485-B84D45C10244}" ShortID="433153393">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08" ID="{EDC6E986-7E13-4C18-8485-B84D45C10244}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_09" ID="{BEF50BD0-3649-40AD-84D3-CC459AEC5D57}" ShortID="676900651" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_09" ID="{3853F271-BF60-4D28-B89D-CFE020CFA9FF}" ShortID="9957349">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_09.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_09" ID="{3853F271-BF60-4D28-B89D-CFE020CFA9FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_10" ID="{119B7E96-31B1-4C39-8471-14B540185F4A}" ShortID="128493404" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_10" ID="{32B25CD4-2B8D-4556-9D79-9D456786AAFC}" ShortID="909208167">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_10" ID="{32B25CD4-2B8D-4556-9D79-9D456786AAFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{291F1849-2719-45D9-8EE8-E60E78CF5E30}" ShortID="718684151" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{60551991-6A7A-408F-AC3A-88C945676569}" ShortID="81513710">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{60551991-6A7A-408F-AC3A-88C945676569}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_12" ID="{C8BD48E4-2DF2-45D7-ACFB-58EBE8FD59F1}" ShortID="629417138" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_12" ID="{939E52B2-6C49-4DF5-AF7D-37E5DCAC4EE5}" ShortID="652557884">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_12.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_12" ID="{939E52B2-6C49-4DF5-AF7D-37E5DCAC4EE5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_13" ID="{D42D71DF-DA19-4251-BF15-62F04426A84E}" ShortID="297339932" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_13" ID="{71792C05-5BAE-4565-A543-53AA83CAE009}" ShortID="1057779616">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_13.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_13" ID="{71792C05-5BAE-4565-A543-53AA83CAE009}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_14" ID="{796793CB-E60C-47E2-BAED-0018907E46CE}" ShortID="753872526" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_14" ID="{EEECDE7D-9790-4664-A057-31940E6A3D09}" ShortID="646935239">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_14.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_14" ID="{EEECDE7D-9790-4664-A057-31940E6A3D09}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_15" ID="{8D6CC444-C661-4398-BB29-EC3A56143FA4}" ShortID="416510744" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_15" ID="{1FA1B68D-0B8F-4A14-8AA6-061654EDE3CD}" ShortID="107361765">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_15.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_15" ID="{1FA1B68D-0B8F-4A14-8AA6-061654EDE3CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Forest Floor Steps" ID="{D851EACF-A7D9-486C-96A6-EBC495A78954}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{0FB528C1-FCBE-4251-B47A-29ED80D57C20}">
+							<PropertyList>
+								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Left" ID="{3A1EEFDD-6477-41D1-A7AB-43BA5DD86356}">
+									<PointList>
+										<Point>
+											<XPos>-4.3288</XPos>
+											<YPos>94.41036</YPos>
+											<ZPos>-62</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Right" ID="{63B8998A-3A7A-4348-A2E2-5DD28553039D}">
+									<PointList>
+										<Point>
+											<XPos>6.39424</XPos>
+											<YPos>94.91364</YPos>
+											<ZPos>-45</ZPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
