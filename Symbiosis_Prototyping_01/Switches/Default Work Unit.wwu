@@ -26,6 +26,11 @@
 						<Switch Name="Mountain" ID="{AEE83AF4-8091-4FA1-BD7B-3A520FBF5EBD}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Footstep_Surface" ID="{57D65749-B789-4B71-9E3F-A3AB182E9B4A}">
+					<ChildrenList>
+						<Switch Name="Forest_Floor" ID="{8151C761-AC14-407E-8147-61367924D7B0}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

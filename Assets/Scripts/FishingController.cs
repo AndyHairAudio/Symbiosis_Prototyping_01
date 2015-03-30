@@ -9,7 +9,7 @@ public class FishingController : MonoBehaviour {
 	public bool beatThisFrameRef = false;
 	float buttonPressWindowStart;
 	MusicSync syncComponent;
-	float initialDelay = 6.0f;
+	float initialDelay = 4.0f;
 	int fishDistance = 50;
 	int randomButtonSelection;
 	public string selectedButtonString;
@@ -56,10 +56,11 @@ public class FishingController : MonoBehaviour {
 		PadControl();
 		beatThisFrameRef = syncComponent.beatThisFrameFish;
 
-		if (betweenBeats && buttonLog.Count > 0 && canFailAgain) {
-			fishDistance = fishDistance + 10;
-			canFailAgain = false;
-		}
+//		if (betweenBeats && buttonLog.Count > 0 && canFailAgain) {
+//			fishDistance = fishDistance + 10;
+//			print("adding 10");
+//			canFailAgain = false;
+//		}
 
 		string tempString = fishDistance.ToString ("##");
 		fishDistText.text = tempString;
@@ -106,7 +107,7 @@ public class FishingController : MonoBehaviour {
 			while (!beatThisFrameRef) 
 			{yield return null;}
 
-			yield return new WaitForSeconds(0.2f);
+			yield return new WaitForSeconds(0.3f);
 			if(buttonLog.Count > 0){
 				if(buttonLog[0] == selectedButtonString){
 					if(buttonLog.Count >= 2){fishDistance = fishDistance + 10;}
@@ -129,12 +130,14 @@ public class FishingController : MonoBehaviour {
 				objCollector.fishCollected = objCollector.fishCollected + 1;
 				fishingText.enabled = false;
 				fishDistText.enabled = false;
+				objCollector.playerFishing = false;
 				//play success sound cue
 				Destroy (this);
 			}
 			if(fishDistance >= 100){
 				fishingText.enabled = false;
 				fishDistText.enabled = false;
+				objCollector.playerFishing = false;
 				//play failure sound cue
 				Destroy (this);
 			}

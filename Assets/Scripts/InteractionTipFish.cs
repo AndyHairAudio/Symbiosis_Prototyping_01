@@ -24,7 +24,7 @@ public class InteractionTipFish : MonoBehaviour {
 			images[0].enabled = true;
 			images[1].enabled = true;
 			promptText.enabled = true;
-		} else if(!canFish) {
+		} else if(!canFish || objCollect.playerFishing) {
 			images[0].enabled = false;
 			images[1].enabled = false;
 			promptText.enabled = false;

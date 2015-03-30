@@ -334,8 +334,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{12C6B4FD-34BF-49F8-8F5C-F7A3FE916ABD}" ShortID="1068263493">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
+								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
+								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -370,8 +370,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{BEDBCD60-C466-48BE-BD01-F76AEECDC388}" ShortID="741639999">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
+								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
+								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -386,7 +386,6 @@
 				</Sound>
 				<BlendContainer Name="Footsteps" ID="{29A3811F-0FFA-40CF-BAB0-D476F900BDA3}" ShortID="873207999">
 					<PropertyList>
-						<Property Name="3DPositionSource" Type="int16" Value="0"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
@@ -416,13 +415,15 @@
 										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>33</Value>
+												<Value>21</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{47A38661-7E06-4945-BB3F-8326B49B6FC6}">
 														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="62"/>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-7"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -434,34 +435,32 @@
 													<Modifier Name="" ID="{7C389085-C005-4133-86B1-48C258C34DB0}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="13"/>
+															<Property Name="Max" Type="Real64" Value="6"/>
 															<Property Name="Min" Type="Real64" Value="-5"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>-17</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{DA7C15FD-CC8F-4AAD-930B-B4FA39935E20}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="253"/>
-															<Property Name="Min" Type="Real64" Value="-253"/>
+															<Property Name="Max" Type="Real64" Value="227"/>
+															<Property Name="Min" Type="Real64" Value="-303"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -473,6 +472,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_01" ID="{221356DC-ABE3-4CED-8E79-CC732F4FAEC8}" ShortID="888413121" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Windows</Platform>
+											</ExcludedPlatformList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -502,6 +504,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_02" ID="{71391460-72F3-4111-9A8B-637F7BFBCA2C}" ShortID="478840049">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.127537505068252"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_02.wav</AudioFile>
 												</AudioFileSource>
@@ -521,6 +526,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03" ID="{69D75E53-DFD8-44F2-896C-B21A40B4547E}" ShortID="879845597">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="3.47678615228284E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_03.wav</AudioFile>
 												</AudioFileSource>
@@ -540,6 +548,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_04" ID="{10ECF4DE-A5A1-470D-9AD5-8785F26F1940}" ShortID="860823073">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="5.87690528750132E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04.wav</AudioFile>
 												</AudioFileSource>
@@ -559,6 +570,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_05" ID="{8B91D882-5669-4318-9A74-369204510109}" ShortID="276493410">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.153179458685608"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05.wav</AudioFile>
 												</AudioFileSource>
@@ -578,6 +592,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_06" ID="{44C14C95-09BA-49BE-B4DC-9D5305CB5264}" ShortID="781414511">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.103569501384071"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06.wav</AudioFile>
 												</AudioFileSource>
@@ -587,6 +604,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_07" ID="{8EDB59F2-997B-4BCA-94BC-57D93E924010}" ShortID="413758523" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Windows</Platform>
+											</ExcludedPlatformList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -597,6 +617,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_07" ID="{DCB87772-34CA-4895-BBE5-2D14DF2191C6}" ShortID="124960342">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.54332229580574"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_07.wav</AudioFile>
 												</AudioFileSource>
@@ -616,6 +639,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08" ID="{EDC6E986-7E13-4C18-8485-B84D45C10244}" ShortID="433153393">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="7.99743208541695E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08.wav</AudioFile>
 												</AudioFileSource>
@@ -635,6 +661,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_09" ID="{3853F271-BF60-4D28-B89D-CFE020CFA9FF}" ShortID="9957349">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="5.91382719386504E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.535591896802872"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_09.wav</AudioFile>
 												</AudioFileSource>
@@ -663,6 +693,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{291F1849-2719-45D9-8EE8-E60E78CF5E30}" ShortID="718684151" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Windows</Platform>
+											</ExcludedPlatformList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -673,6 +706,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{60551991-6A7A-408F-AC3A-88C945676569}" ShortID="81513710">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="7.89177716708463E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_11.wav</AudioFile>
 												</AudioFileSource>
@@ -692,6 +728,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_12" ID="{939E52B2-6C49-4DF5-AF7D-37E5DCAC4EE5}" ShortID="652557884">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="0.228887762610563"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_12.wav</AudioFile>
 												</AudioFileSource>
@@ -701,6 +740,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_13" ID="{D42D71DF-DA19-4251-BF15-62F04426A84E}" ShortID="297339932" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Windows</Platform>
+											</ExcludedPlatformList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -720,6 +762,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_14" ID="{796793CB-E60C-47E2-BAED-0018907E46CE}" ShortID="753872526" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-150</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -739,6 +788,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_15" ID="{8D6CC444-C661-4398-BB29-EC3A56143FA4}" ShortID="416510744" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>480</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -761,13 +817,21 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
-								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
-								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+								<GroupRef Name="Footstep_Surface" ID="{57D65749-B789-4B71-9E3F-A3AB182E9B4A}"/>
+								<DefaultSwitchRef Name="Forest_Floor" ID="{8151C761-AC14-407E-8147-61367924D7B0}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Forest Floor Steps" ID="{D851EACF-A7D9-486C-96A6-EBC495A78954}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Forest_Floor" ID="{8151C761-AC14-407E-8147-61367924D7B0}"/>
+										<ItemList>
+											<ItemRef Name="Forest Floor Steps" ID="{D851EACF-A7D9-486C-96A6-EBC495A78954}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_EAT_FRUIT = 898820479U;
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_HEALTH_SFX = 503952552U;
         static const AkUniqueID PLAY_LAKE_WAVES_LAPPING = 4112892722U;
         static const AkUniqueID PLAY_PLANT_TREE = 2709727076U;
@@ -46,6 +47,16 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FOOTSTEP_SURFACE
+        {
+            static const AkUniqueID GROUP = 1833605183U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FOREST_FLOOR = 2592332705U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_SURFACE
+
         namespace PLAYER_FOREST_ZONE
         {
             static const AkUniqueID GROUP = 2958763795U;

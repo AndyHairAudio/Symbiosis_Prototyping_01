@@ -87,6 +87,7 @@ public class ObjectCollector : MonoBehaviour {
 				ableToFish = true;
 				if (Input.GetButtonDown ("Fire1") && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
 					if(gameObject.GetComponent<FishingController>() == null){
+						playerFishing = true;
 					   gameObject.AddComponent<FishingController>();
 					}
 				}
@@ -118,6 +119,9 @@ public class ObjectCollector : MonoBehaviour {
 					Instantiate (treePrefab, rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
 					fruitCollected--;
 				}
+			}
+			else {
+				rayHittingTerrain = false;
 			}
 		}
 

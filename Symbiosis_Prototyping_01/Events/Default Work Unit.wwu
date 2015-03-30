@@ -146,6 +146,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Footsteps" ID="{A06E640A-1736-412E-BF85-11D84B8D1069}">
+					<ChildrenList>
+						<Action Name="Play" ID="{625B5301-ACA3-4745-A948-580BB349733A}" ShortID="437638768" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D65451ED-87DA-4FE9-9428-4781C10F51B3}" Global="false">
+									<ObjectRef Name="Footsteps" ID="{29A3811F-0FFA-40CF-BAB0-D476F900BDA3}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
