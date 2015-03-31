@@ -157,6 +157,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Fishing_Reel" ID="{DBF3ED0B-04CB-4CC9-B640-AE388587F46E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{11C0636E-2CE3-456B-88CE-AC2AD34D3219}" ShortID="22694810" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8785E612-D88C-4326-AD1D-E7A18B1A06C1}" Global="false">
+									<ObjectRef Name="Fishing Reel" ID="{545FA235-C615-44A7-91FA-6F57836FBCD8}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

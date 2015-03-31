@@ -8,6 +8,7 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Fish_Distance" ID="{6DDA89B8-8536-4F0A-970D-6FDF216B7C07}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
