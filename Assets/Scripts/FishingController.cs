@@ -52,7 +52,7 @@ public class FishingController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		AkSoundEngine.SetRTPCValue ("Fish_Distance", fishDistance);
 		PadControl();
 		beatThisFrameRef = syncComponent.beatThisFrameFish;
 
@@ -111,7 +111,10 @@ public class FishingController : MonoBehaviour {
 			if(buttonLog.Count > 0){
 				if(buttonLog[0] == selectedButtonString){
 					if(buttonLog.Count >= 2){fishDistance = fishDistance + 10;}
-					else{fishDistance = fishDistance - 10;}
+					else{
+						fishDistance = fishDistance - 10;
+						AkSoundEngine.PostEvent("Play_Fishing_Reel", this.gameObject);
+					}
 				}
 				else {fishDistance = fishDistance + 10;}
 			} else {fishDistance = fishDistance + 10;}

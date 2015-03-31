@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_EAT_FRUIT = 898820479U;
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
+        static const AkUniqueID PLAY_FISHING_REEL = 4160459651U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_HEALTH_SFX = 503952552U;
         static const AkUniqueID PLAY_LAKE_WAVES_LAPPING = 4112892722U;
@@ -99,6 +100,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID FISH_DISTANCE = 1567132679U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS
 
