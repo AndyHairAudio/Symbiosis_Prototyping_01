@@ -161,6 +161,16 @@
 				<BlendContainer Name="Eat Fruit" ID="{2C96B865-076C-4B39-A0AE-ABA6A27176EC}" ShortID="334879791">
 					<PropertyList>
 						<Property Name="3DPositionSource" Type="int16" Value="0"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>28</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>17</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -172,6 +182,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Eating Fruit Motifs" ID="{1E2A3DDC-0C52-4AC7-B683-3FB8238665B7}" ShortID="172650991">
+							<ExcludedPlatformList>
+								<Platform>Windows</Platform>
+							</ExcludedPlatformList>
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -304,6 +317,44 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Fruit Bite" ID="{F2154BF1-EAFD-4132-B783-500D8533174A}" ShortID="377970316">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Apple_munch_44_1kHz_24bit_Chop_01" ID="{C2AB17EF-8F34-4CB7-925C-764E5277D834}" ShortID="677372103" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Apple_munch_44_1kHz_24bit_Chop_01" ID="{F9FF0A4F-00DA-45CE-ADE3-ECE15CD54D24}" ShortID="542295832">
+											<Language>SFX</Language>
+											<AudioFile>Apple_munch_44.1kHz_24bit_Chop_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Apple_munch_44_1kHz_24bit_Chop_01" ID="{F9FF0A4F-00DA-45CE-ADE3-ECE15CD54D24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Position Name="" ID="{19FF64AB-6FD5-4900-8D79-06DC14E5F1CA}"/>
@@ -334,8 +385,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{12C6B4FD-34BF-49F8-8F5C-F7A3FE916ABD}" ShortID="1068263493">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -370,8 +421,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{BEDBCD60-C466-48BE-BD01-F76AEECDC388}" ShortID="741639999">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -527,7 +578,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03" ID="{69D75E53-DFD8-44F2-896C-B21A40B4547E}" ShortID="879845597">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="3.47678615228284E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0347678615228284"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_03.wav</AudioFile>
@@ -549,7 +600,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_04" ID="{10ECF4DE-A5A1-470D-9AD5-8785F26F1940}" ShortID="860823073">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="5.87690528750132E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0587690528750132"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04.wav</AudioFile>
@@ -640,7 +691,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08" ID="{EDC6E986-7E13-4C18-8485-B84D45C10244}" ShortID="433153393">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="7.99743208541695E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0799743208541695"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08.wav</AudioFile>
@@ -662,7 +713,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_09" ID="{3853F271-BF60-4D28-B89D-CFE020CFA9FF}" ShortID="9957349">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="5.91382719386504E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0591382719386504"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.535591896802872"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -707,7 +758,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{60551991-6A7A-408F-AC3A-88C945676569}" ShortID="81513710">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="7.89177716708463E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0789177716708463"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_11.wav</AudioFile>
@@ -884,12 +935,12 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>239</YPos>
+												<YPos>300</YPos>
 												<Flags>5</Flags>
 											</Point>
 											<Point>
 												<XPos>100</XPos>
-												<YPos>-300</YPos>
+												<YPos>0</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -926,6 +977,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
@@ -941,7 +993,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_01" ID="{580A4CF3-F2B8-4FD7-B50E-0A6BCB0E4A15}" ShortID="1068620948" Type="SoundFX">
+								<Sound Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_02" ID="{76EE1507-DA0E-47D6-B7D7-194D2E91544B}" ShortID="236858829" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
@@ -951,13 +1015,41 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_01" ID="{C3CDEE7D-3F61-4EEE-80B7-2066662700CC}" ShortID="549767018">
+										<AudioFileSource Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_01" ID="{04ED1E14-7CC7-44FE-A994-C1FA2D96BC15}" ShortID="491775724">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="0.995053811458937"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Fishing_Reel_Wind_Up_Toy_44.1kHz_24bit_Chop_01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="549767018"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_01" ID="{C3CDEE7D-3F61-4EEE-80B7-2066662700CC}" Platform="Linked"/>
+										<ActiveSource Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_01" ID="{04ED1E14-7CC7-44FE-A994-C1FA2D96BC15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_03" ID="{CEB32F5A-8A6B-44FF-98AD-44CF13CB65B9}" ShortID="248085651" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_02" ID="{3CAE4357-347C-485F-A131-61BE292913C0}" ShortID="95266188">
+											<PropertyList>
+												<Property Name="TrimEnd" Type="Real64" Value="1.00155743114168"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Fishing_Reel_Wind_Up_Toy_44.1kHz_24bit_Chop_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fishing_Reel_Wind_Up_Toy_44_1kHz_24bit_Chop_02" ID="{3CAE4357-347C-485F-A131-61BE292913C0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
