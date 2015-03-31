@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{68DF7FD4-89F7-4A01-A21F-0E797CD3144D}" SchemaVersion="69">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{68DF7FD4-89F7-4A01-A21F-0E797CD3144D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{68DF7FD4-89F7-4A01-A21F-0E797CD3144D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Expander" ID="{5073BAA0-F180-4A60-B278-CED8BFB7DE5E}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
