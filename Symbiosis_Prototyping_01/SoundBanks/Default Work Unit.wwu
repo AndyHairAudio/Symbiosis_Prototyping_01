@@ -21,8 +21,7 @@
 				</SoundBank>
 				<SoundBank Name="Tree_Ambient" ID="{2B2927C0-BA6F-4952-B307-18B01ECF428B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Tree_Emitter" ID="{BA583110-534E-4932-9111-8C72238A0EEC}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Falling_Fruit" ID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Tree (Forest)" ID="{C70690FC-788B-4CE0-9613-CE6210F107A2}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

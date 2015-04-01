@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_TREE_STATE = 4258997712U;
         static const AkUniqueID PLAY_ZONES = 3780807851U;
         static const AkUniqueID STOP_PLAYER_EVENT_MANAGER = 1721880682U;
+        static const AkUniqueID STOP_TREE_EMITTER = 1538482647U;
         static const AkUniqueID STOP_TREE_STATE = 116774218U;
     } // namespace EVENTS
 

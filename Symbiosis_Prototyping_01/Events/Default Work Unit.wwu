@@ -168,6 +168,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Tree_Emitter" ID="{81739252-1FB7-4234-9EF5-ABF75B426D7A}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{10ECD01D-E7E0-4409-8EF0-F87A8C47DD49}" ShortID="991952701" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{261DE4C3-83F8-45B5-BE65-4ACA838E3C75}" Global="false">
+									<ObjectRef Name="Tree_Emitter" ID="{9A82A11C-81AF-4215-B290-87515DDFE80F}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

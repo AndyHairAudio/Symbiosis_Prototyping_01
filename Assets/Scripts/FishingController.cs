@@ -25,9 +25,9 @@ public class FishingController : MonoBehaviour {
 	Text fishingText;
 	Text fishDistText;
 	bool buttonPressFallsOnBeat;
-	bool betweenBeats;
+	//bool betweenBeats;
 	List<string> buttonLog = new List<string>();
-	bool canFailAgain = true;
+	//bool canFailAgain = true;
 	
 	void Start (){
 		upArrow = GameObject.Find ("Up");
@@ -101,7 +101,7 @@ public class FishingController : MonoBehaviour {
 			leftImage.color = Color.green;
 			rightImage.color = Color.green;
 
-			betweenBeats = false;
+			//betweenBeats = false;
 			buttonLog.Clear();
 
 			while (!beatThisFrameRef) 
@@ -118,7 +118,7 @@ public class FishingController : MonoBehaviour {
 				}
 				else {fishDistance = fishDistance + 10;}
 			} else {fishDistance = fishDistance + 10;}
-			betweenBeats = true;
+			//betweenBeats = true;
 			buttonLog.Clear ();
 			downImage.color = Color.white;
 			upImage.color = Color.white;
@@ -128,7 +128,7 @@ public class FishingController : MonoBehaviour {
 			upImage.enabled = false;
 			leftImage.enabled = false;
 			rightImage.enabled = false;
-			canFailAgain = true;
+			//canFailAgain = true;
 			if (fishDistance <= 0) {
 				objCollector.fishCollected = objCollector.fishCollected + 1;
 				fishingText.enabled = false;

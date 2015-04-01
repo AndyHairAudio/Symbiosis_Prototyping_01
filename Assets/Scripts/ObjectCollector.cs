@@ -19,6 +19,7 @@ public class ObjectCollector : MonoBehaviour {
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
 	public bool fishFedThisFrame = false;
+	public int playerScore = 0;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -48,17 +49,17 @@ public class ObjectCollector : MonoBehaviour {
 		}
 
 		if (Time.time >= 59.5f && Time.time <= 60.5f) {
-						healthDecayRate = 0.5f;
+						healthDecayRate = 0.1f;
 			AkSoundEngine.SetState ("Player_Events", "Wandering");
 				} else if (Time.time >= 119.5f && Time.time <= 120.5f) {
-						healthDecayRate = 1.0f;
+						healthDecayRate = 0.25f;
 			AkSoundEngine.SetState ("Player_Events", "Collecting");
 				} else if (Time.time >= 179.5f && Time.time <= 180.5f) {
-						healthDecayRate = 2.0f;
+						healthDecayRate = 0.5f;
 				} else if (Time.time >= 239.5f && Time.time <= 240.5f) {
-						healthDecayRate = 4.0f;
+						healthDecayRate = 0.75f;
 				} else if (Time.time >= 299.5f && Time.time <= 300.5f) {
-						healthDecayRate = 8.0f;
+						healthDecayRate = 1.0f;
 				}
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
@@ -100,6 +101,7 @@ public class ObjectCollector : MonoBehaviour {
 					Debug.Log ("feeding fish");
 					fruitCollected--;
 					fishFedThisFrame = true;
+					playerScore = playerScore + 30;
 				}
 			} else {
 				ableToFeedFish = false;
@@ -118,6 +120,7 @@ public class ObjectCollector : MonoBehaviour {
 				if(Input.GetButtonDown ("Fire2") && fruitCollected > 0 && rayHittingTerrain){
 					Instantiate (treePrefab, rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
 					fruitCollected--;
+					playerScore = playerScore + 10;
 				}
 			}
 			else {

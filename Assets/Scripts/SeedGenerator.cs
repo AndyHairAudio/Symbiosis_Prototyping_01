@@ -13,10 +13,21 @@ public class SeedGenerator : MonoBehaviour {
 	public GameObject fruitPrefab;
 	public int seedsSpawned = 0;
 	public float treeEnergy = 0.0f;
-	
+	float timeOfStart;
+
 	void Awake(){
 		StartCoroutine (GrowingTree (0.05f));
 		AkSoundEngine.PostEvent ("Play_Plant_Tree", this.gameObject);
+		AkSoundEngine.PostEvent ("Play_Tree_Emitter", this.gameObject);
+		timeOfStart = Time.time;
+	}
+
+	void Update(){
+		Vector3 one = new Vector3(0.1f, 0.1f, 0.1f);
+		if (transform.localScale.x < 1.0f) {
+			float speed = 0.02f;
+			transform.localScale += one * speed * Time.deltaTime;
+		}
 	}
 	
 	// Use this for initialization
@@ -44,6 +55,10 @@ public class SeedGenerator : MonoBehaviour {
 			}
 			if(treeEnergy < 0){
 				treeEnergy = 0;
+			}
+
+			if((timeOfStart + 60.0f) < Time.time){
+				AkSoundEngine.PostEvent("Stop_Tree_Emitter", this.gameObject);
 			}
 			
 			if(treeEnergy >= 0){

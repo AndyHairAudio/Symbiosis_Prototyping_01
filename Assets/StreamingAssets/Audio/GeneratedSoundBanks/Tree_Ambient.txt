@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1538482647	Stop_Tree_Emitter			\Default Work Unit\Stop_Tree_Emitter	
 	3564794469	Play_Tree_Emitter			\Default Work Unit\Play_Tree_Emitter	
 	3771967532	Play_Falling_Fruit			\Default Work Unit\Play_Falling_Fruit	
 

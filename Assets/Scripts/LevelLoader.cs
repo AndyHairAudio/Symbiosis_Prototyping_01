@@ -5,6 +5,7 @@ public class LevelLoader : MonoBehaviour {
 
 	public Texture2D fadeOverlay;
 	public float fadeSpeed = 0.8f;
+	public bool playerDead = false;
 
 	private int drawDepth = 1000;
 	private float alpha = 1.0f;
@@ -13,6 +14,10 @@ public class LevelLoader : MonoBehaviour {
 	bool levelLoading;
 
 	public float timeOfLastInput = 120.0f;
+
+	void Start(){
+		StartCoroutine (GameOverScreen (1.0f));
+	}
 
 	void OnGUI(){
 
@@ -66,6 +71,11 @@ public class LevelLoader : MonoBehaviour {
 		if (Input.GetButtonDown ("Back") && Application.loadedLevelName == "TreeScene") {
 			StartCoroutine ("fadeoutTimer");
 		}
+
+		if (playerDead) {
+			StartCoroutine ("fadeoutTimer");
+		}
+		
 	}
 
 	IEnumerator fadeoutTimer (){
@@ -79,6 +89,20 @@ public class LevelLoader : MonoBehaviour {
 		}
 		else if (Application.loadedLevelName == "TreeScene"){
 			Application.LoadLevel ("MenuScene");
+		}
+	}
+
+	IEnumerator GameOverScreen (float overTimer){
+		
+		while (true) {
+			yield return new WaitForSeconds (overTimer);
+			
+			GameObject player = GameObject.FindGameObjectWithTag ("Player");
+			ObjectCollector controller = player.GetComponent<ObjectCollector> ();
+			
+			if (controller.playerHealth <= 0) {
+				playerDead = true;
+			}
 		}
 	}
 }
