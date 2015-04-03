@@ -180,7 +180,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -442,7 +442,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -518,12 +518,12 @@
 												<PropertyList>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
-															<Value>10</Value>
+															<Value>5</Value>
 														</ValueList>
 													</Property>
 													<Property Name="FadeOutTime" Type="Real64">
 														<ValueList>
-															<Value>10</Value>
+															<Value>5</Value>
 														</ValueList>
 													</Property>
 												</PropertyList>
@@ -548,12 +548,12 @@
 												<PropertyList>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
-															<Value>10</Value>
+															<Value>5</Value>
 														</ValueList>
 													</Property>
 													<Property Name="FadeOutTime" Type="Real64">
 														<ValueList>
-															<Value>10</Value>
+															<Value>5</Value>
 														</ValueList>
 													</Property>
 												</PropertyList>
