@@ -16,6 +16,7 @@ public class FishingController : MonoBehaviour {
 	GameObject fishingTextObj;
 	GameObject fishingDistObj;
 	GameObject fpController;
+	GameObject wwiseGlobal;
 	GameObject upArrow;
 	GameObject downArrow;
 	GameObject leftArrow; 
@@ -46,7 +47,8 @@ public class FishingController : MonoBehaviour {
 		fishDistText = fishingDistObj.GetComponent<Text> ();
 		fishingText.enabled = true;
 		fishDistText.enabled = true;
-		syncComponent = gameObject.GetComponent<MusicSync> ();
+		wwiseGlobal = GameObject.Find ("WwiseGlobal");
+		syncComponent = wwiseGlobal.GetComponent<MusicSync> ();
 		StartCoroutine (FishSequence ());
 	}
 	

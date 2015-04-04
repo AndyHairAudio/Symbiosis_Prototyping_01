@@ -182,6 +182,44 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Zones" ID="{61F95812-9EF9-4677-8261-655E6532D346}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{D20DFACA-6E7E-4F8A-A3F4-7F48F2BCEEC2}" ShortID="441224067" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F51675A5-438C-4C9A-BEF0-B2B0A82BD205}" Global="false">
+									<ObjectRef Name="Zones" ID="{E2E5464E-68BA-4E10-B943-BBFF2BD88CEB}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Health_SFX" ID="{737D1EE1-03E1-4465-B867-7A366BB5B547}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{38D528C7-B7C6-4035-A254-7E7DF0D3398B}" ShortID="799890602" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1D8DAE91-CA12-4179-BCDA-324A08D31B70}" Global="false">
+									<ObjectRef Name="Health SFX" ID="{485AA2FB-C1AE-4E39-9DE3-E5516C2FF5AE}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Lake_Waves_Lapping" ID="{95B785C4-EBFC-4FC9-868C-C0A984847862}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{8D74BF34-7A04-431A-8DDF-391C8CDE3E72}" ShortID="686590523" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C1FB81BE-1638-410F-9285-49E6B6216B0E}" Global="false">
+									<ObjectRef Name="Lake Waves Lapping" ID="{C26937AC-CDD8-4FBE-80AB-F5233916B4DA}" WorkUnitID="{A96DBE0E-C209-46B7-84DA-0F91D60889B9}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_All" ID="{85CA60AE-29DD-4878-8531-6C903A8AE66B}">
+					<ChildrenList>
+						<Action Name="Stop All" ID="{4221D3FA-E190-4C04-97EE-17C775078AD8}" ShortID="155319135" Type="Stop" Scope="All" Global="true"/>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

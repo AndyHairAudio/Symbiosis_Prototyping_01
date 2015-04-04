@@ -16,7 +16,9 @@ public class LevelLoader : MonoBehaviour {
 	public float timeOfLastInput = 120.0f;
 
 	void Start(){
-		StartCoroutine (GameOverScreen (1.0f));
+		if (Application.loadedLevelName == "TreeScene") {
+			StartCoroutine (GameOverScreen (1.0f));
+		}
 	}
 
 	void OnGUI(){
@@ -82,6 +84,9 @@ public class LevelLoader : MonoBehaviour {
 
 		beginFade (1);
 
+		AkSoundEngine.SetState ("Player_Events", "None");
+		//AkSoundEngine.PostEvent ("Stop_All", this.gameObject);
+
 		yield return new WaitForSeconds (1.0f);
 
 		if (Application.loadedLevelName == "MenuScene"){
@@ -93,7 +98,7 @@ public class LevelLoader : MonoBehaviour {
 	}
 
 	IEnumerator GameOverScreen (float overTimer){
-		
+
 		while (true) {
 			yield return new WaitForSeconds (overTimer);
 			

@@ -14,6 +14,8 @@
 			<IncludedEvents>
 				<Event Id="4112892722" Name="Play_Lake_Waves_Lapping" GUID="{2B15A29D-1858-487E-B76D-48704109603B}" MaxAttenuation="50.000000"/>
 				<Event Id="3780807851" Name="Play_Zones" GUID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}"/>
+				<Event Id="1724707056" Name="Stop_Lake_Waves_Lapping" GUID="{95B785C4-EBFC-4FC9-868C-C0A984847862}" MaxAttenuation="0.000000"/>
+				<Event Id="914123949" Name="Stop_Zones" GUID="{61F95812-9EF9-4677-8261-655E6532D346}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="32486016" Language="SFX">

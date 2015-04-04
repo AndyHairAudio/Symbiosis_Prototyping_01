@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	452547817	Stop_All			\Default Work Unit\Stop_All	
 	1721880682	Stop_Player_Event_Manager			\Default Work Unit\Stop_Player_Event_Manager	
 	3690526740	Play_Player_Event_Manager			\Default Work Unit\Play_Player_Event_Manager	
 

@@ -21,6 +21,7 @@
 				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
 				<Event Id="1955951874" Name="Play_testbeep" GUID="{5999833D-673E-422F-A9E6-04BD852B2EFD}"/>
 				<Event Id="2303144468" Name="Play_testbeep2" GUID="{C862918B-B069-46A9-BFD7-8B8AA90C25E7}"/>
+				<Event Id="2472861354" Name="Stop_Health_SFX" GUID="{737D1EE1-03E1-4465-B867-7A366BB5B547}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="9957349" Language="SFX">
@@ -89,7 +90,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{A047BB2B-6D50-460D-A531-F11BE8481EAE}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{4484D5B5-8635-4340-BB21-8ED9E53C4146}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -98,6 +99,7 @@
 			<Path>Narrative_Score.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3690526740" Name="Play_Player_Event_Manager" GUID="{82A11A14-395E-4F8F-B520-1356F1C78375}"/>
+				<Event Id="452547817" Name="Stop_All" GUID="{85CA60AE-29DD-4878-8531-6C903A8AE66B}" MaxAttenuation="0.000000"/>
 				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -350,6 +352,8 @@
 			<IncludedEvents>
 				<Event Id="4112892722" Name="Play_Lake_Waves_Lapping" GUID="{2B15A29D-1858-487E-B76D-48704109603B}" MaxAttenuation="50.000000"/>
 				<Event Id="3780807851" Name="Play_Zones" GUID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}"/>
+				<Event Id="1724707056" Name="Stop_Lake_Waves_Lapping" GUID="{95B785C4-EBFC-4FC9-868C-C0A984847862}" MaxAttenuation="0.000000"/>
+				<Event Id="914123949" Name="Stop_Zones" GUID="{61F95812-9EF9-4677-8261-655E6532D346}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="32486016" Language="SFX">

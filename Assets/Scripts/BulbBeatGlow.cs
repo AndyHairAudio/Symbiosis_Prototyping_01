@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BulbBeatGlow : MonoBehaviour {
 
-	GameObject fpController;
+	GameObject wwiseGlobal;
 	MusicSync musicCallback;
 	Light lightComp;
 	public bool beatNow = false;
@@ -12,8 +12,8 @@ public class BulbBeatGlow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		StartCoroutine (GlowTimer(Random.Range(1.0f, 20.0f)));
-		fpController = GameObject.Find ("First Person Controller");
-		musicCallback = fpController.GetComponent<MusicSync> ();
+		wwiseGlobal = GameObject.Find ("WwiseGlobal");
+		musicCallback = wwiseGlobal.GetComponent<MusicSync> ();
 		lightComp = gameObject.GetComponent<Light> ();
 	}
 	

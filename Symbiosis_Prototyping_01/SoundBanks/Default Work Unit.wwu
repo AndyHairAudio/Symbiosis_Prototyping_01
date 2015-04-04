@@ -29,6 +29,7 @@
 				<SoundBank Name="Narrative_Score" ID="{37F97473-1F94-4419-BA1A-AB78D603E3A0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Narrative Score" ID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_All" ID="{85CA60AE-29DD-4878-8531-6C903A8AE66B}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

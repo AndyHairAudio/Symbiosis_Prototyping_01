@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	898820479	Play_Eat_Fruit			\Default Work Unit\Play_Eat_Fruit	
 	1955951874	Play_testbeep			\Default Work Unit\Play_testbeep	
 	2303144468	Play_testbeep2			\Default Work Unit\Play_testbeep2	
+	2472861354	Stop_Health_SFX			\Default Work Unit\Stop_Health_SFX	
 	2709727076	Play_Plant_Tree			\Default Work Unit\Play_Plant_Tree	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 	4160459651	Play_Fishing_Reel			\Default Work Unit\Play_Fishing_Reel	

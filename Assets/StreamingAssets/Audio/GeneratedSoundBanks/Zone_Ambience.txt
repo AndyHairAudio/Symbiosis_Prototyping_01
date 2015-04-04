@@ -1,4 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
+	914123949	Stop_Zones			\Default Work Unit\Stop_Zones	
+	1724707056	Stop_Lake_Waves_Lapping			\Default Work Unit\Stop_Lake_Waves_Lapping	
 	3780807851	Play_Zones			\Default Work Unit\Play_Zones	
 	4112892722	Play_Lake_Waves_Lapping			\Default Work Unit\Play_Lake_Waves_Lapping	
 

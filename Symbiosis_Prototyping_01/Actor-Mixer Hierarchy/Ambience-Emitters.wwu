@@ -195,7 +195,19 @@
 											<ChildrenList>
 												<Sound Name="Forest Floor Wind" ID="{71D18B6A-73AC-485C-B577-6A1C4660B3B2}" ShortID="769989016" Type="SoundFX">
 													<PropertyList>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-5</Value>
@@ -260,8 +272,20 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
@@ -457,7 +481,19 @@
 											<ChildrenList>
 												<Sound Name="Lakeside Wind" ID="{027D3219-0049-4389-8151-56F808CA9ED3}" ShortID="207295584" Type="SoundFX">
 													<PropertyList>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -516,6 +552,7 @@
 											<GroupingBehavior>
 												<ItemRef Name="Lakeside" ID="{241E1633-B05B-49AD-8178-865C54E858CB}"/>
 												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>5</Value>
@@ -531,6 +568,7 @@
 											<GroupingBehavior>
 												<ItemRef Name="Cave" ID="{93109861-DF4A-4ADD-89BD-E9A87D21ABC0}"/>
 												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>5</Value>
@@ -546,6 +584,7 @@
 											<GroupingBehavior>
 												<ItemRef Name="Forest Floor" ID="{0D4D1A7F-2903-4E1B-B2E1-550D1146C352}"/>
 												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
 													<Property Name="FadeInTime" Type="Real64">
 														<ValueList>
 															<Value>5</Value>

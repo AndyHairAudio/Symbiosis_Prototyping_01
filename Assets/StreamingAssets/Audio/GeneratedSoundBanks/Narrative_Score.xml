@@ -13,6 +13,7 @@
 			<Path>Narrative_Score.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3690526740" Name="Play_Player_Event_Manager" GUID="{82A11A14-395E-4F8F-B520-1356F1C78375}"/>
+				<Event Id="452547817" Name="Stop_All" GUID="{85CA60AE-29DD-4878-8531-6C903A8AE66B}" MaxAttenuation="0.000000"/>
 				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

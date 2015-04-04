@@ -83,8 +83,15 @@
 						</RandomSequenceContainer>
 						<BlendContainer Name="Tree_Emitter" ID="{9A82A11C-81AF-4215-B290-87515DDFE80F}" ShortID="521051865">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">

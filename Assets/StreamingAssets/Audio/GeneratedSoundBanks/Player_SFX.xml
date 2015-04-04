@@ -19,6 +19,7 @@
 				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
 				<Event Id="1955951874" Name="Play_testbeep" GUID="{5999833D-673E-422F-A9E6-04BD852B2EFD}"/>
 				<Event Id="2303144468" Name="Play_testbeep2" GUID="{C862918B-B069-46A9-BFD7-8B8AA90C25E7}"/>
+				<Event Id="2472861354" Name="Stop_Health_SFX" GUID="{737D1EE1-03E1-4465-B867-7A366BB5B547}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="9957349" Language="SFX">
