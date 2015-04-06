@@ -29,8 +29,11 @@ public class FishingController : MonoBehaviour {
 	//bool betweenBeats;
 	List<string> buttonLog = new List<string>();
 	//bool canFailAgain = true;
+	GameObject[] fishObjs;
+	CharacterController controllerFinder;
 	
 	void Start (){
+		fishObjs = GameObject.FindGameObjectsWithTag ("Fish");
 		upArrow = GameObject.Find ("Up");
 		downArrow = GameObject.Find ("Down");
 		leftArrow = GameObject.Find ("Left"); 
@@ -41,6 +44,7 @@ public class FishingController : MonoBehaviour {
 		rightImage = rightArrow.GetComponent<Image> ();
 		fpController = GameObject.Find ("First Person Controller");
 		objCollector = fpController.GetComponent<ObjectCollector> ();
+		controllerFinder = fpController.GetComponent<CharacterController> ();
 		fishingTextObj = GameObject.Find ("Fish Distance");
 		fishingDistObj = GameObject.Find ("FishDistanceNo");
 		fishingText = fishingTextObj.GetComponent<Text> ();
@@ -66,6 +70,13 @@ public class FishingController : MonoBehaviour {
 
 		string tempString = fishDistance.ToString ("##");
 		fishDistText.text = tempString;
+
+		if (controllerFinder.velocity.x != 0 || controllerFinder.velocity.z != 0) {
+			fishingText.enabled = false;
+			fishDistText.enabled = false;
+			objCollector.playerFishing = false;
+			Destroy (this);
+		}
 	}
 
 	IEnumerator FishSequence (){
@@ -133,6 +144,8 @@ public class FishingController : MonoBehaviour {
 			//canFailAgain = true;
 			if (fishDistance <= 0) {
 				objCollector.fishCollected = objCollector.fishCollected + 1;
+				fishObjs = GameObject.FindGameObjectsWithTag ("Fish");
+				Destroy(fishObjs[Random.Range (0, fishObjs.Length)]);
 				fishingText.enabled = false;
 				fishDistText.enabled = false;
 				objCollector.playerFishing = false;

@@ -14,6 +14,8 @@ public class SeedGenerator : MonoBehaviour {
 	public int seedsSpawned = 0;
 	public float treeEnergy = 0.0f;
 	float timeOfStart;
+	float timeBecameBigTree;
+	bool hasFinishedGrowing;
 
 	void Awake(){
 		StartCoroutine (GrowingTree (0.05f));
@@ -73,13 +75,25 @@ public class SeedGenerator : MonoBehaviour {
 						if(treeEnergy >= 60){
 							
 							mTreeBool = true;
-							if(treeEnergy >= 80){
-								
+							if(treeEnergy >= 80 && !hasFinishedGrowing){
+								timeBecameBigTree = Time.time;
 								bTreeBool = true;
+								hasFinishedGrowing = true;
 							}
 						}
 					}
 				}
+			}
+		}
+	}
+
+	IEnumerator DestroyTree (float destroyTimer){
+
+		while (true) {
+			yield return new WaitForSeconds (destroyTimer);
+
+			if((timeBecameBigTree + 60.0f) < Time.time){
+				Destroy (this.gameObject);
 			}
 		}
 	}

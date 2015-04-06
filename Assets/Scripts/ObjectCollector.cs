@@ -19,7 +19,9 @@ public class ObjectCollector : MonoBehaviour {
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
 	public bool fishFedThisFrame = false;
+	public float timeOfLastFeed;
 	public int playerScore = 0;
+	GameObject[] fishObjs;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -31,6 +33,8 @@ public class ObjectCollector : MonoBehaviour {
 	}
 
 	void Update (){
+		fishFedThisFrame = false;
+
 		if (playerHealth > 100) {
 			playerHealth = 100;
 		}
@@ -87,7 +91,11 @@ public class ObjectCollector : MonoBehaviour {
 			if (fishCollected < 1 && rayHittingLake) {
 				ableToFish = true;
 				if (Input.GetButtonDown ("Fire1") && controllerFinder.velocity.x == 0 && controllerFinder.velocity.y == 0 && controllerFinder.velocity.z == 0) {
-					if(gameObject.GetComponent<FishingController>() == null){
+					fishObjs = GameObject.FindGameObjectsWithTag("Fish");
+					if(fishObjs.Length == 0){
+						print ("no fish left to fish!");
+					}
+					else if(gameObject.GetComponent<FishingController>() == null){
 						playerFishing = true;
 					   gameObject.AddComponent<FishingController>();
 					}
@@ -101,6 +109,7 @@ public class ObjectCollector : MonoBehaviour {
 					Debug.Log ("feeding fish");
 					fruitCollected--;
 					fishFedThisFrame = true;
+					timeOfLastFeed = Time.time;
 					playerScore = playerScore + 30;
 				}
 			} else {

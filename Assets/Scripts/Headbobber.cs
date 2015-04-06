@@ -5,7 +5,7 @@ public class Headbobber: MonoBehaviour
 {
 	
 	private float timer = 0.0f;
-	float bobbingSpeed = 0.0225f;
+	float bobbingSpeed = 0.015f;
 	float bobbingAmount = 0.075f;
 	float midpoint = 0.5f;
 	
