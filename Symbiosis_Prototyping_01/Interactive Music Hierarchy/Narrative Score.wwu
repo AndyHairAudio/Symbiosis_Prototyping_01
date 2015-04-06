@@ -52,7 +52,7 @@
 						<MusicPlaylistContainer Name="00_Entering The World" ID="{65949699-6F0A-439D-A93C-682F5B2D55A5}" ShortID="381496227">
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-								<Property Name="Tempo" Type="Real64" Value="30"/>
+								<Property Name="Tempo" Type="Real64" Value="60"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -106,6 +106,89 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="Adaptive_Music_Segment_01_Opening_Pad_32bar_44_1khz_24bit" ID="{3135A6F1-9202-4AF2-94F4-F9C69DE163B9}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{E79FB2CC-2C1D-4DBD-B416-DD249B0AFB7E}" ShortID="86909986">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{B8796EAF-CAC1-45CC-98CC-3D51C6705683}" ShortID="136685801">
+													<Language>SFX</Language>
+													<AudioFile>Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44.1khz_24bit.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="6912507"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{9421E311-1AF2-4E47-8B85-4ACF50BCCD6C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{F79E42B5-EBA8-4F03-A350-FF6CD38F988F}">
+													<ClipList>
+														<MusicClip Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{054410AE-9075-4F0D-A942-E72B5AA8182F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="72817.7777777778"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{B8796EAF-CAC1-45CC-98CC-3D51C6705683}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{081DD62A-77AF-465E-B540-5E4D98C4029F}" ShortID="890255105">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{CC727678-DCD3-4FF4-8222-92DED038027F}" ShortID="879211635">
+													<Language>SFX</Language>
+													<AudioFile>Adaptive_Music_Segment_03_Claps_32bar_44.1khz_24bit.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="420842165"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1D6AB70D-E6DA-4398-AD1E-05A329C628BD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{1DA74308-984B-419A-BD9F-730D03DEBCFA}">
+													<ClipList>
+														<MusicClip Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{EBAE2ADE-27C8-4596-A9D8-E7D59794635F}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{CC727678-DCD3-4FF4-8222-92DED038027F}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -367,7 +450,7 @@
 						<MusicPlaylistContainer Name="01_Wandering" ID="{867A1BDB-9BD8-43B1-842E-73031B4BD139}" ShortID="786300417">
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-								<Property Name="Tempo" Type="Real64" Value="30"/>
+								<Property Name="Tempo" Type="Real64" Value="60"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -497,6 +580,89 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="Adaptive_Music_Segment_02_Opening_Pad_32bar_44_1khz_24bit" ID="{EC132776-8B24-48DE-99C8-83AD09A2084B}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{855F8EA7-C4CF-4852-B2C9-BA2BF57BF7F4}" ShortID="889442257">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{DCA124F8-BA03-4FC0-96CC-A319E59904BB}" ShortID="255777982">
+													<Language>SFX</Language>
+													<AudioFile>Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44.1khz_24bit.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="6912507"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7CC429B0-B470-4E55-BB81-DD3C0D87C446}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{0D3BF040-86AF-4C1C-BB21-A3120CBB525D}">
+													<ClipList>
+														<MusicClip Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{1DADDAB8-A3D0-4401-99F5-D7CBEBE00D66}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="72817.7777777778"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44_1khz_24bit" ID="{DCA124F8-BA03-4FC0-96CC-A319E59904BB}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{C5199549-2540-4C76-B117-DADB016E70B2}" ShortID="936867537">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{6F174274-AC2F-4BC4-B7F0-BE8CABEA93AF}" ShortID="517704423">
+													<Language>SFX</Language>
+													<AudioFile>Adaptive_Music_Segment_03_Claps_32bar_44.1khz_24bit.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="420842165"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{8C4EF36F-C279-42B6-91A2-F6FF19B3F0A4}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{32DA784E-33B5-401F-A8F2-E1087C3B9094}">
+													<ClipList>
+														<MusicClip Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{635A8277-2917-479E-BCE7-8F58DCB2C2C1}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="Adaptive_Music_Segment_03_Claps_32bar_44_1khz_24bit" ID="{6F174274-AC2F-4BC4-B7F0-BE8CABEA93AF}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -868,7 +1034,6 @@
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{50979CAE-B2E4-491A-9C65-225D720F0CC5}">

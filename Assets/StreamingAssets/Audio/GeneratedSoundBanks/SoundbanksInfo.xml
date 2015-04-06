@@ -24,6 +24,10 @@
 				<Event Id="2472861354" Name="Stop_Health_SFX" GUID="{737D1EE1-03E1-4465-B867-7A366BB5B547}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2303710" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_05.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_05_DDC98EF4.wem</Path>
+				</File>
 				<File Id="9957349" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_09.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_09_F4AD594A.wem</Path>
@@ -31,6 +35,10 @@
 				<File Id="26934683" Language="SFX">
 					<ShortName>Plant_Tree_Sound_FX_44.1_24bit_01.wav</ShortName>
 					<Path>SFX\Plant_Tree_Sound_FX_44.1_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="51642955" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_03_DDC98EF4.wem</Path>
 				</File>
 				<File Id="95266188" Language="SFX">
 					<ShortName>Fishing_Reel_Wind_Up_Toy_44.1kHz_24bit_Chop_02.wav</ShortName>
@@ -44,9 +52,21 @@
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05_029662BF.wem</Path>
 				</File>
+				<File Id="429365018" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_DDC98EF4.wem</Path>
+				</File>
 				<File Id="433153393" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08_DF5AC860.wem</Path>
+				</File>
+				<File Id="441631743" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="451263548" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_02_DDC98EF4.wem</Path>
 				</File>
 				<File Id="478840049" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_02.wav</ShortName>
@@ -67,6 +87,10 @@
 				<File Id="652557884" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_12.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_12_925B50CB.wem</Path>
+				</File>
+				<File Id="683543295" Language="SFX">
+					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06.wav</ShortName>
+					<Path>SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_06_DDC98EF4.wem</Path>
 				</File>
 				<File Id="781414511" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06.wav</ShortName>
@@ -90,7 +114,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{4484D5B5-8635-4340-BB21-8ED9E53C4146}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{6FA0261E-6F24-4BC6-B491-C8A97A5BB2EA}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>

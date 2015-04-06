@@ -217,7 +217,13 @@
 				</Event>
 				<Event Name="Stop_All" ID="{85CA60AE-29DD-4878-8531-6C903A8AE66B}">
 					<ChildrenList>
-						<Action Name="Stop All" ID="{4221D3FA-E190-4C04-97EE-17C775078AD8}" ShortID="155319135" Type="Stop" Scope="All" Global="true"/>
+						<Action Name="Stop All Except" ID="{4221D3FA-E190-4C04-97EE-17C775078AD8}" ShortID="155319135" Type="Stop" Scope="AllExcept" Global="true">
+							<ElementList>
+								<Element ID="{37B5642B-1B15-4082-817E-B5F88E9D64CE}" Global="true">
+									<ObjectRef Name="Player Event Manager" ID="{381F0BD5-216C-4E41-AC65-991030990608}" WorkUnitID="{70135E90-E790-4DB2-90DC-AFF1613702C9}"/>
+								</Element>
+							</ElementList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

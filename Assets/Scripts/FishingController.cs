@@ -74,6 +74,10 @@ public class FishingController : MonoBehaviour {
 		if (controllerFinder.velocity.x != 0 || controllerFinder.velocity.z != 0) {
 			fishingText.enabled = false;
 			fishDistText.enabled = false;
+			downImage.enabled = false;
+			upImage.enabled = false;
+			leftImage.enabled = false;
+			rightImage.enabled = false;
 			objCollector.playerFishing = false;
 			Destroy (this);
 		}
@@ -119,6 +123,7 @@ public class FishingController : MonoBehaviour {
 
 			while (!beatThisFrameRef) 
 			{yield return null;}
+			AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
 
 			yield return new WaitForSeconds(0.3f);
 			if(buttonLog.Count > 0){
@@ -196,8 +201,5 @@ public class FishingController : MonoBehaviour {
 			buttonLog.Add("Down");
 		}
 		StopCoroutine ("DpadControl");
-	}
-
-	void OnGUI(){
 	}
 }

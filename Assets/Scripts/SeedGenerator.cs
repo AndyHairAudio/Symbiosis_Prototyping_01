@@ -86,15 +86,4 @@ public class SeedGenerator : MonoBehaviour {
 			}
 		}
 	}
-
-	IEnumerator DestroyTree (float destroyTimer){
-
-		while (true) {
-			yield return new WaitForSeconds (destroyTimer);
-
-			if((timeBecameBigTree + 60.0f) < Time.time){
-				Destroy (this.gameObject);
-			}
-		}
-	}
 }

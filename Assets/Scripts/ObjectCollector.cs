@@ -7,7 +7,7 @@ public class ObjectCollector : MonoBehaviour {
 	public int fishCollected = 0;
 	public GameObject treePrefab;
 	RaycastHit rayHitFruit;
-	RaycastHit rayHitPlant;
+	public RaycastHit rayHitPlant;
 	RaycastHit rayHitLake;
 	public bool rayHittingFruit;
 	public bool rayHittingTerrain;
@@ -15,6 +15,7 @@ public class ObjectCollector : MonoBehaviour {
 	public bool ableToFeedFish;
 	public bool ableToFish;
 	public bool playerFishing;
+	public bool playerPlanting;
 	public float playerHealth = 100.0f;
 	public bool treeDiscovered = false;
 	public float healthDecayRate = 0.1f;
@@ -52,19 +53,20 @@ public class ObjectCollector : MonoBehaviour {
 			fruitCollected = 0;
 		}
 
-		if (Time.time >= 59.5f && Time.time <= 60.5f) {
-						healthDecayRate = 0.1f;
+		if (Time.time >= 179.5f && Time.time <= 180.5f) {
 			AkSoundEngine.SetState ("Player_Events", "Wandering");
-				} else if (Time.time >= 119.5f && Time.time <= 120.5f) {
-						healthDecayRate = 0.25f;
+			healthDecayRate = 0.25f;
+		} 
+		else if (Time.time >= 359.5f && Time.time <= 360.5f) {
 			AkSoundEngine.SetState ("Player_Events", "Collecting");
-				} else if (Time.time >= 179.5f && Time.time <= 180.5f) {
-						healthDecayRate = 0.5f;
-				} else if (Time.time >= 239.5f && Time.time <= 240.5f) {
-						healthDecayRate = 0.75f;
-				} else if (Time.time >= 299.5f && Time.time <= 300.5f) {
-						healthDecayRate = 1.0f;
-				}
+			healthDecayRate = 0.5f;
+		}
+		else if (Time.time >= 539.5f && Time.time <= 540.5f) {
+			healthDecayRate = 0.75f;
+		} 
+		else if (Time.time >= 719.5f && Time.time <= 720.5f) {
+			healthDecayRate = 1.0f;
+		}
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 		if(Physics.Raycast(cameraRay, out rayHitFruit, 5.0f)){
@@ -127,9 +129,10 @@ public class ObjectCollector : MonoBehaviour {
 					rayHittingTerrain = false;
 				}
 				if(Input.GetButtonDown ("Fire2") && fruitCollected > 0 && rayHittingTerrain){
-					Instantiate (treePrefab, rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
-					fruitCollected--;
-					playerScore = playerScore + 10;
+					if(gameObject.GetComponent<PlantingController>() == null){
+						gameObject.AddComponent<PlantingController>();
+						playerPlanting = true;
+					}
 				}
 			}
 			else {
