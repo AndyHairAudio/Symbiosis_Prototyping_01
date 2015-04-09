@@ -226,6 +226,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Monolith" ID="{B8CEC474-6BD2-430D-BA2D-0152AAD2D920}">
+					<ChildrenList>
+						<Action Name="Play" ID="{47550C50-934E-4B01-9E0D-150851774623}" ShortID="528629422" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8B9D12D9-FA8B-49D3-A167-186BA047A3AA}" Global="false">
+									<ObjectRef Name="Monolith" ID="{B2D1F375-065B-4B7E-9B3E-43F45AC789EA}" WorkUnitID="{297E24E7-03B5-47A4-B2F3-5DC6272B0202}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Collect_Fruit" ID="{533229C2-AEAD-42BF-B13B-534EA74D49DD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{459F5CC7-57B7-4CD6-BD77-C6204F216BA8}" ShortID="768790781" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CB94D6FC-8DB6-4EF6-9770-6E6A053E3F15}" Global="false">
+									<ObjectRef Name="Collect Fruit" ID="{08B90FAB-F785-4345-9B19-3AC8930185A7}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
