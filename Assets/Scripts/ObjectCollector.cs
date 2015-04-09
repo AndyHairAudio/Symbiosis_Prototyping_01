@@ -78,6 +78,7 @@ public class ObjectCollector : MonoBehaviour {
 			}
 			if(Input.GetButton ("Fire1") && fruitCollected < 3 && rayHittingFruit) {
 				rayHitFruit.collider.gameObject.SetActive(false);
+				AkSoundEngine.PostEvent("Play_Collect_Fruit", this.gameObject);
 				fruitCollected++;
 			}
 		}

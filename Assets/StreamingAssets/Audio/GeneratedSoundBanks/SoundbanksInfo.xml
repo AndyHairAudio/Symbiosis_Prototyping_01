@@ -14,6 +14,7 @@
 			<ShortName>Player_SFX</ShortName>
 			<Path>Player_SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="726221595" Name="Play_Collect_Fruit" GUID="{533229C2-AEAD-42BF-B13B-534EA74D49DD}"/>
 				<Event Id="898820479" Name="Play_Eat_Fruit" GUID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}"/>
 				<Event Id="4160459651" Name="Play_Fishing_Reel" GUID="{DBF3ED0B-04CB-4CC9-B640-AE388587F46E}"/>
 				<Event Id="3854155799" Name="Play_Footsteps" GUID="{A06E640A-1736-412E-BF85-11D84B8D1069}"/>
@@ -51,6 +52,10 @@
 				<File Id="276493410" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05_029662BF.wem</Path>
+				</File>
+				<File Id="299518163" Language="SFX">
+					<ShortName>Fruit Grab 44.1kHz Stereo 02.wav</ShortName>
+					<Path>SFX\Fruit Grab 44.1kHz Stereo 02_DDC98EF4.wem</Path>
 				</File>
 				<File Id="429365018" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
@@ -96,6 +101,10 @@
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06_84822894.wem</Path>
 				</File>
+				<File Id="803760937" Language="SFX">
+					<ShortName>Fruit Grab 44.1kHz Stereo 03.wav</ShortName>
+					<Path>SFX\Fruit Grab 44.1kHz Stereo 03_DDC98EF4.wem</Path>
+				</File>
 				<File Id="860823073" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04_7918685D.wem</Path>
@@ -108,13 +117,17 @@
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_10.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_10_DDC98EF4.wem</Path>
 				</File>
+				<File Id="935691233" Language="SFX">
+					<ShortName>Bag Rustle 44.1kHz Stereo_Chop_01.wav</ShortName>
+					<Path>SFX\Bag Rustle 44.1kHz Stereo_Chop_01_DDC98EF4.wem</Path>
+				</File>
 				<File Id="1068263493" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_37F375D4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{6FA0261E-6F24-4BC6-B491-C8A97A5BB2EA}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{6C9C2626-37EC-46B7-82B0-938519B18A33}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -375,6 +388,7 @@
 			<Path>Zone_Ambience.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4112892722" Name="Play_Lake_Waves_Lapping" GUID="{2B15A29D-1858-487E-B76D-48704109603B}" MaxAttenuation="50.000000"/>
+				<Event Id="2134478874" Name="Play_Monolith" GUID="{B8CEC474-6BD2-430D-BA2D-0152AAD2D920}" MaxAttenuation="70.000000"/>
 				<Event Id="3780807851" Name="Play_Zones" GUID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}"/>
 				<Event Id="1724707056" Name="Stop_Lake_Waves_Lapping" GUID="{95B785C4-EBFC-4FC9-868C-C0A984847862}" MaxAttenuation="0.000000"/>
 				<Event Id="914123949" Name="Stop_Zones" GUID="{61F95812-9EF9-4677-8261-655E6532D346}" MaxAttenuation="0.000000"/>
@@ -395,6 +409,10 @@
 				<File Id="526195681" Language="SFX">
 					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_03.wav</ShortName>
 					<Path>SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="924647221" Language="SFX">
+					<ShortName>SFX_Loop_Monolith_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\SFX_Loop_Monolith_44.1kHz_24bit_01_FC2C46B1.wem</Path>
 				</File>
 				<File Id="986347298" Language="SFX">
 					<ShortName>Freesound_Lake_Waves_Lapping_44.1kHz_16bit_05.wav</ShortName>

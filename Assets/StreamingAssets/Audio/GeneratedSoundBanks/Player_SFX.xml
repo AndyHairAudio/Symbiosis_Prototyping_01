@@ -12,6 +12,7 @@
 			<ShortName>Player_SFX</ShortName>
 			<Path>Player_SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="726221595" Name="Play_Collect_Fruit" GUID="{533229C2-AEAD-42BF-B13B-534EA74D49DD}"/>
 				<Event Id="898820479" Name="Play_Eat_Fruit" GUID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}"/>
 				<Event Id="4160459651" Name="Play_Fishing_Reel" GUID="{DBF3ED0B-04CB-4CC9-B640-AE388587F46E}"/>
 				<Event Id="3854155799" Name="Play_Footsteps" GUID="{A06E640A-1736-412E-BF85-11D84B8D1069}"/>
@@ -49,6 +50,10 @@
 				<File Id="276493410" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05_029662BF.wem</Path>
+				</File>
+				<File Id="299518163" Language="SFX">
+					<ShortName>Fruit Grab 44.1kHz Stereo 02.wav</ShortName>
+					<Path>SFX\Fruit Grab 44.1kHz Stereo 02_DDC98EF4.wem</Path>
 				</File>
 				<File Id="429365018" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
@@ -94,6 +99,10 @@
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_06_84822894.wem</Path>
 				</File>
+				<File Id="803760937" Language="SFX">
+					<ShortName>Fruit Grab 44.1kHz Stereo 03.wav</ShortName>
+					<Path>SFX\Fruit Grab 44.1kHz Stereo 03_DDC98EF4.wem</Path>
+				</File>
 				<File Id="860823073" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04_7918685D.wem</Path>
@@ -105,6 +114,10 @@
 				<File Id="909208167" Language="SFX">
 					<ShortName>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_10.wav</ShortName>
 					<Path>SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_10_DDC98EF4.wem</Path>
+				</File>
+				<File Id="935691233" Language="SFX">
+					<ShortName>Bag Rustle 44.1kHz Stereo_Chop_01.wav</ShortName>
+					<Path>SFX\Bag Rustle 44.1kHz Stereo_Chop_01_DDC98EF4.wem</Path>
 				</File>
 				<File Id="1068263493" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>

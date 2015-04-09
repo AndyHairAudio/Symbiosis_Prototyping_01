@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	914123949	Stop_Zones			\Default Work Unit\Stop_Zones	
 	1724707056	Stop_Lake_Waves_Lapping			\Default Work Unit\Stop_Lake_Waves_Lapping	
+	2134478874	Play_Monolith			\Default Work Unit\Play_Monolith	
 	3780807851	Play_Zones			\Default Work Unit\Play_Zones	
 	4112892722	Play_Lake_Waves_Lapping			\Default Work Unit\Play_Lake_Waves_Lapping	
 
@@ -33,5 +34,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	228440681	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_01_C32C625A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_01		2822544
 	248262535	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_02_9C15DAF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_02		2822544
 	526195681	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_03		2822544
+	924647221	Monolith Drone	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\SFX_Loop_Monolith_44.1kHz_24bit_01_FC2C46B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience-Emitters\Monolith\Monolith Drone		11285884
 	986347298	Freesound_Lake_Waves_Lapping_44_1kHz_16bit_05	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Freesound_Lake_Waves_Lapping_44.1kHz_16bit_05_DF4100CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lake (Forest)\Lake Waves Lapping\Freesound_Lake_Waves_Lapping_44_1kHz_16bit_05		3288808
 
