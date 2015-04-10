@@ -13,11 +13,13 @@
 			<Path>Player_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="726221595" Name="Play_Collect_Fruit" GUID="{533229C2-AEAD-42BF-B13B-534EA74D49DD}"/>
+				<Event Id="813141615" Name="Play_Digging" GUID="{A7D84935-CD83-4A5A-9D12-8658D7C9D0F7}"/>
 				<Event Id="898820479" Name="Play_Eat_Fruit" GUID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}"/>
+				<Event Id="2110151795" Name="Play_Fish_Escaping" GUID="{E16A4A25-A56D-4C52-9E8D-267BBBE845DE}"/>
 				<Event Id="4160459651" Name="Play_Fishing_Reel" GUID="{DBF3ED0B-04CB-4CC9-B640-AE388587F46E}"/>
 				<Event Id="3854155799" Name="Play_Footsteps" GUID="{A06E640A-1736-412E-BF85-11D84B8D1069}"/>
 				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
-				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
+				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="30.000000"/>
 				<Event Id="1955951874" Name="Play_testbeep" GUID="{5999833D-673E-422F-A9E6-04BD852B2EFD}"/>
 				<Event Id="2303144468" Name="Play_testbeep2" GUID="{C862918B-B069-46A9-BFD7-8B8AA90C25E7}"/>
 				<Event Id="2472861354" Name="Stop_Health_SFX" GUID="{737D1EE1-03E1-4465-B867-7A366BB5B547}" MaxAttenuation="0.000000"/>
@@ -54,6 +56,14 @@
 				<File Id="299518163" Language="SFX">
 					<ShortName>Fruit Grab 44.1kHz Stereo 02.wav</ShortName>
 					<Path>SFX\Fruit Grab 44.1kHz Stereo 02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="366932519" Language="SFX">
+					<ShortName>Escaping_Fish_Water_Splash_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="411358099" Language="SFX">
+					<ShortName>Digging_Plant_Tree_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Digging_Plant_Tree_44.1kHz_24bit_02_DDC98EF4.wem</Path>
 				</File>
 				<File Id="429365018" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
@@ -118,6 +128,22 @@
 				<File Id="935691233" Language="SFX">
 					<ShortName>Bag Rustle 44.1kHz Stereo_Chop_01.wav</ShortName>
 					<Path>SFX\Bag Rustle 44.1kHz Stereo_Chop_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="935966958" Language="SFX">
+					<ShortName>Escaping_Fish_Water_Splash_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="978382683" Language="SFX">
+					<ShortName>Digging_Plant_Tree_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Digging_Plant_Tree_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1026664677" Language="SFX">
+					<ShortName>Escaping_Fish_Water_Splash_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1060465696" Language="SFX">
+					<ShortName>Digging_Plant_Tree_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Digging_Plant_Tree_44.1kHz_24bit_03_DDC98EF4.wem</Path>
 				</File>
 				<File Id="1068263493" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>

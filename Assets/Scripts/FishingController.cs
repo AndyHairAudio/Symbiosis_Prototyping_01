@@ -128,14 +128,23 @@ public class FishingController : MonoBehaviour {
 			yield return new WaitForSeconds(0.3f);
 			if(buttonLog.Count > 0){
 				if(buttonLog[0] == selectedButtonString){
-					if(buttonLog.Count >= 2){fishDistance = fishDistance + 10;}
+					if(buttonLog.Count >= 2){
+						fishDistance = fishDistance + 10;
+						AkSoundEngine.PostEvent("Play_Fish_Escaping", this.gameObject);
+					}
 					else{
 						fishDistance = fishDistance - 10;
 						AkSoundEngine.PostEvent("Play_Fishing_Reel", this.gameObject);
 					}
 				}
-				else {fishDistance = fishDistance + 10;}
-			} else {fishDistance = fishDistance + 10;}
+				else {
+					fishDistance = fishDistance + 10;
+					AkSoundEngine.PostEvent("Play_Fish_Escaping", this.gameObject);
+				}
+			} else {
+				fishDistance = fishDistance + 10;
+				AkSoundEngine.PostEvent("Play_Fish_Escaping", this.gameObject);
+			}
 			//betweenBeats = true;
 			buttonLog.Clear ();
 			downImage.color = Color.white;

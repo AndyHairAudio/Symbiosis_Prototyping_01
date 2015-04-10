@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	503952552	Play_Health_SFX			\Default Work Unit\Play_Health_SFX	
 	726221595	Play_Collect_Fruit			\Default Work Unit\Play_Collect_Fruit	
+	813141615	Play_Digging			\Default Work Unit\Play_Digging	
 	898820479	Play_Eat_Fruit			\Default Work Unit\Play_Eat_Fruit	
 	1955951874	Play_testbeep			\Default Work Unit\Play_testbeep	
+	2110151795	Play_Fish_Escaping			\Default Work Unit\Play_Fish_Escaping	
 	2303144468	Play_testbeep2			\Default Work Unit\Play_testbeep2	
 	2472861354	Stop_Health_SFX			\Default Work Unit\Stop_Health_SFX	
 	2709727076	Play_Plant_Tree			\Default Work Unit\Play_Plant_Tree	
@@ -17,6 +19,7 @@ Switch	ID	Name	Switch Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	
+	1139232757	Depth_Dug			\Default Work Unit\Depth_Dug	
 	1567132679	Fish_Distance			\Default Work Unit\Fish_Distance	
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
@@ -37,6 +40,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	107361765	Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_15	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_15_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Surface Type\Forest Floor Steps\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_15		86874
 	276493410	Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_05	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_05_029662BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Surface Type\Forest Floor Steps\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_05		56182
 	299518163	Fruit Grab 44_1kHz Stereo 02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Fruit Grab 44.1kHz Stereo 02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collect Fruit\Bag Rustle\Fruit Grab 44_1kHz Stereo 02		262288
+	366932519	Escaping_Fish_Water_Splash_44_1kHz_24bit_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Fish Escaping\Splashing Water\Escaping_Fish_Water_Splash_44_1kHz_24bit_02		194916
+	411358099	Digging_Plant_Tree_44_1kHz_24bit_02	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Digging_Plant_Tree_44.1kHz_24bit_02_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Digging\Shovel Dig\Digging_Plant_Tree_44_1kHz_24bit_02		194184
 	429365018	Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_04	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plant Tree\Plant Tree Motifs\Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_04		352944
 	433153393	Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08_DF5AC860.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Surface Type\Forest Floor Steps\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08		61076
 	441631743	Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Plant Tree\Plant Tree Motifs\Pickup_Seed_Synth_String_Flutter_44_1kHz_24bit_01		655504
@@ -53,5 +58,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	879845597	Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_03_E9E3AEA3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Surface Type\Forest Floor Steps\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03		46690
 	909208167	Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_10	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_10_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Surface Type\Forest Floor Steps\Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_10		68130
 	935691233	Bag Rustle 44_1kHz Stereo_Chop_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Bag Rustle 44.1kHz Stereo_Chop_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collect Fruit\Bag Rustle\Bag Rustle 44_1kHz Stereo_Chop_01		131216
+	935966958	Escaping_Fish_Water_Splash_44_1kHz_24bit_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Fish Escaping\Splashing Water\Escaping_Fish_Water_Splash_44_1kHz_24bit_03		183892
+	978382683	Digging_Plant_Tree_44_1kHz_24bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Digging_Plant_Tree_44.1kHz_24bit_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Digging\Shovel Dig\Digging_Plant_Tree_44_1kHz_24bit_01		200064
+	1026664677	Escaping_Fish_Water_Splash_44_1kHz_24bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_01_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Fish Escaping\Splashing Water\Escaping_Fish_Water_Splash_44_1kHz_24bit_01		191244
+	1060465696	Digging_Plant_Tree_44_1kHz_24bit_03	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Digging_Plant_Tree_44.1kHz_24bit_03_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Digging\Shovel Dig\Digging_Plant_Tree_44_1kHz_24bit_03		191424
 	1068263493	testbeep	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_37F375D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\testbeep		7132
 

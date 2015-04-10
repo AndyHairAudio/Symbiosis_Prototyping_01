@@ -13,7 +13,6 @@ public class MusicSync : MonoBehaviour {
 		DontDestroyOnLoad(this.gameObject);
 
 		AkSoundEngine.PostEvent ("Play_Player_Event_Manager", this.gameObject, (uint)AkCallbackType.AK_MusicSyncBeat | (uint)AkCallbackType.AK_MusicSyncBar, MusicCallback, this);
-		AkSoundEngine.SetState ("Player_Events", "None");
 	}
 
 	void MusicCallback (object in_cookie, AkCallbackType in_type, object in_callbackInfo)

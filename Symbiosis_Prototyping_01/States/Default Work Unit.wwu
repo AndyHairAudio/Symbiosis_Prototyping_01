@@ -9,6 +9,7 @@
 						<State Name="Entered_World" ID="{889842C4-CA1B-4E1E-A84D-9312E7577E96}"/>
 						<State Name="Wandering" ID="{3B3B07BB-27CC-4149-9093-AA767ACCC5F2}"/>
 						<State Name="Collecting" ID="{7013A9A7-C6E8-4C64-BF17-B18D6F08AAFE}"/>
+						<State Name="Empty" ID="{B8162FBC-258D-4910-9714-7E40E4DCEFB3}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

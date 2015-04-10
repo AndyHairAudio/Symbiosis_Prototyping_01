@@ -12,7 +12,7 @@
 			<ShortName>Tree_Ambient</ShortName>
 			<Path>Tree_Ambient.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="20.000000"/>
+				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="30.000000"/>
 				<Event Id="3564794469" Name="Play_Tree_Emitter" GUID="{BA583110-534E-4932-9111-8C72238A0EEC}" MaxAttenuation="70.000000"/>
 				<Event Id="1538482647" Name="Stop_Tree_Emitter" GUID="{81739252-1FB7-4234-9EF5-ABF75B426D7A}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>

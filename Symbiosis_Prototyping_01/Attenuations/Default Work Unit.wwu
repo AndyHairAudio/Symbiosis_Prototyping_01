@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="amb_emitter_medium" ID="{7659AE14-0B78-4547-AC1C-0EB64F9977E9}" ShortID="328800155">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,7 +22,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>30</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -53,7 +53,7 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>30</XPos>
 											<YPos>49</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -74,12 +74,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>8.69842</XPos>
+											<XPos>13.04763</XPos>
 											<YPos>52.51397</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>30</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

@@ -14,8 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_COLLECT_FRUIT = 726221595U;
+        static const AkUniqueID PLAY_DIGGING = 813141615U;
         static const AkUniqueID PLAY_EAT_FRUIT = 898820479U;
         static const AkUniqueID PLAY_FALLING_FRUIT = 3771967532U;
+        static const AkUniqueID PLAY_FISH_ESCAPING = 2110151795U;
         static const AkUniqueID PLAY_FISHING_REEL = 4160459651U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_HEALTH_SFX = 503952552U;
@@ -46,6 +48,7 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID COLLECTING = 2908999423U;
+                static const AkUniqueID EMPTY = 3354297748U;
                 static const AkUniqueID ENTERED_WORLD = 4134113183U;
                 static const AkUniqueID WANDERING = 342806866U;
             } // namespace STATE
@@ -107,6 +110,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DEPTH_DUG = 1139232757U;
         static const AkUniqueID FISH_DISTANCE = 1567132679U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS
@@ -115,7 +119,6 @@ namespace AK
     {
         static const AkUniqueID DISCOVERED_TREE = 1946655246U;
         static const AkUniqueID ENTERED_WORLD = 4134113183U;
-        static const AkUniqueID PICKED_UP_SEED = 1600046017U;
     } // namespace TRIGGERS
 
     namespace BANKS

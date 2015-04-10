@@ -15,11 +15,13 @@
 			<Path>Player_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="726221595" Name="Play_Collect_Fruit" GUID="{533229C2-AEAD-42BF-B13B-534EA74D49DD}"/>
+				<Event Id="813141615" Name="Play_Digging" GUID="{A7D84935-CD83-4A5A-9D12-8658D7C9D0F7}"/>
 				<Event Id="898820479" Name="Play_Eat_Fruit" GUID="{AEC1A729-ED15-4289-9DC8-D2AA5C81A888}"/>
+				<Event Id="2110151795" Name="Play_Fish_Escaping" GUID="{E16A4A25-A56D-4C52-9E8D-267BBBE845DE}"/>
 				<Event Id="4160459651" Name="Play_Fishing_Reel" GUID="{DBF3ED0B-04CB-4CC9-B640-AE388587F46E}"/>
 				<Event Id="3854155799" Name="Play_Footsteps" GUID="{A06E640A-1736-412E-BF85-11D84B8D1069}"/>
 				<Event Id="503952552" Name="Play_Health_SFX" GUID="{1B78CBA9-7D0C-45D5-8D0A-CB70852B1B36}"/>
-				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="20.000000"/>
+				<Event Id="2709727076" Name="Play_Plant_Tree" GUID="{C4395552-9FA8-490E-80E8-5B31B9CCAE21}" MaxAttenuation="30.000000"/>
 				<Event Id="1955951874" Name="Play_testbeep" GUID="{5999833D-673E-422F-A9E6-04BD852B2EFD}"/>
 				<Event Id="2303144468" Name="Play_testbeep2" GUID="{C862918B-B069-46A9-BFD7-8B8AA90C25E7}"/>
 				<Event Id="2472861354" Name="Stop_Health_SFX" GUID="{737D1EE1-03E1-4465-B867-7A366BB5B547}" MaxAttenuation="0.000000"/>
@@ -56,6 +58,14 @@
 				<File Id="299518163" Language="SFX">
 					<ShortName>Fruit Grab 44.1kHz Stereo 02.wav</ShortName>
 					<Path>SFX\Fruit Grab 44.1kHz Stereo 02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="366932519" Language="SFX">
+					<ShortName>Escaping_Fish_Water_Splash_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_02_DDC98EF4.wem</Path>
+				</File>
+				<File Id="411358099" Language="SFX">
+					<ShortName>Digging_Plant_Tree_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Digging_Plant_Tree_44.1kHz_24bit_02_DDC98EF4.wem</Path>
 				</File>
 				<File Id="429365018" Language="SFX">
 					<ShortName>Pickup_Seed_Synth_String_Flutter_44.1kHz_24bit_04.wav</ShortName>
@@ -121,13 +131,29 @@
 					<ShortName>Bag Rustle 44.1kHz Stereo_Chop_01.wav</ShortName>
 					<Path>SFX\Bag Rustle 44.1kHz Stereo_Chop_01_DDC98EF4.wem</Path>
 				</File>
+				<File Id="935966958" Language="SFX">
+					<ShortName>Escaping_Fish_Water_Splash_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_03_DDC98EF4.wem</Path>
+				</File>
+				<File Id="978382683" Language="SFX">
+					<ShortName>Digging_Plant_Tree_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Digging_Plant_Tree_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1026664677" Language="SFX">
+					<ShortName>Escaping_Fish_Water_Splash_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Escaping_Fish_Water_Splash_44.1kHz_24bit_01_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1060465696" Language="SFX">
+					<ShortName>Digging_Plant_Tree_44.1kHz_24bit_03.wav</ShortName>
+					<Path>SFX\Digging_Plant_Tree_44.1kHz_24bit_03_DDC98EF4.wem</Path>
+				</File>
 				<File Id="1068263493" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_37F375D4.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{5ABF40B1-A2DF-4B30-B06B-8861D0EF8930}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{42D80A17-3B75-4C66-909B-2DC29AA17294}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -216,7 +242,7 @@
 			<ShortName>Tree_Ambient</ShortName>
 			<Path>Tree_Ambient.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="20.000000"/>
+				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="30.000000"/>
 				<Event Id="3564794469" Name="Play_Tree_Emitter" GUID="{BA583110-534E-4932-9111-8C72238A0EEC}" MaxAttenuation="70.000000"/>
 				<Event Id="1538482647" Name="Stop_Tree_Emitter" GUID="{81739252-1FB7-4234-9EF5-ABF75B426D7A}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -388,7 +414,7 @@
 			<Path>Zone_Ambience.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4112892722" Name="Play_Lake_Waves_Lapping" GUID="{2B15A29D-1858-487E-B76D-48704109603B}" MaxAttenuation="50.000000"/>
-				<Event Id="2134478874" Name="Play_Monolith" GUID="{B8CEC474-6BD2-430D-BA2D-0152AAD2D920}" MaxAttenuation="70.000000"/>
+				<Event Id="2134478874" Name="Play_Monolith" GUID="{B8CEC474-6BD2-430D-BA2D-0152AAD2D920}" MaxAttenuation="50.000000"/>
 				<Event Id="3780807851" Name="Play_Zones" GUID="{2351A83D-C3AB-4B3A-9E0C-19C82B8E7A0E}"/>
 				<Event Id="1724707056" Name="Stop_Lake_Waves_Lapping" GUID="{95B785C4-EBFC-4FC9-868C-C0A984847862}" MaxAttenuation="0.000000"/>
 				<Event Id="914123949" Name="Stop_Zones" GUID="{61F95812-9EF9-4677-8261-655E6532D346}" MaxAttenuation="0.000000"/>

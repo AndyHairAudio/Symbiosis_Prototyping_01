@@ -27,6 +27,7 @@ public class PlantingController : MonoBehaviour {
 	CharacterController controllerFinder;
 	
 	void Start (){
+		AkSoundEngine.PostTrigger ("Entered_World", this.gameObject);
 		treePrefab = Resources.Load ("PolygonTreePrefab") as GameObject;
 		upArrow = GameObject.Find ("Up");
 		downArrow = GameObject.Find ("Down");
@@ -108,6 +109,7 @@ public class PlantingController : MonoBehaviour {
 					}
 					else{
 						depthDug = depthDug - 10;
+						AkSoundEngine.PostEvent("Play_Digging", this.gameObject);
 					}
 				}
 			}
