@@ -3,7 +3,12 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{68DF7FD4-89F7-4A01-A21F-0E797CD3144D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="New_Wwise_Expander" ID="{5073BAA0-F180-4A60-B278-CED8BFB7DE5E}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3"/>
+				<Effect Name="New_Wwise_Expander" ID="{5073BAA0-F180-4A60-B278-CED8BFB7DE5E}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+					<PropertyList>
+						<Property Name="Ratio" Type="Real32" Value="31.4"/>
+						<Property Name="Threshold" Type="Real32" Value="-81.1"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

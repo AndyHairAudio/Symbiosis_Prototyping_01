@@ -180,7 +180,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>4</Value>
+														<Value>6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -316,6 +316,7 @@
 																<Property Name="GustinessRandom" Type="Real32" Value="0.05"/>
 																<Property Name="Variability" Type="Real32" Value="0.29"/>
 																<Property Name="VariabilityRandom" Type="Real32" Value="0.1"/>
+																<Property Name="VelocityDynamicRange" Type="Real32" Value="0.52"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<PluginData>
@@ -345,8 +346,8 @@
 																<List Name="Deflectors">
 																	<PluginInnerObject Name="" ID="{ABCA5FDA-F30E-425B-BDCA-9E91CB61E7FC}" PluginName="Deflector" CompanyID="0" PluginID="121">
 																		<PropertyList>
-																			<Property Name="Frequency" Type="Real32" Value="490"/>
-																			<Property Name="QFactor" Type="Real32" Value="0.63"/>
+																			<Property Name="Frequency" Type="Real32" Value="146"/>
+																			<Property Name="QFactor" Type="Real32" Value="1.41"/>
 																		</PropertyList>
 																	</PluginInnerObject>
 																</List>
