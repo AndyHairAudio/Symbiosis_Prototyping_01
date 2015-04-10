@@ -248,6 +248,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Fish_Escaping" ID="{E16A4A25-A56D-4C52-9E8D-267BBBE845DE}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2A006E23-526B-4AF3-A0CB-5BCA415D1821}" ShortID="194718942" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0E01A01D-67AC-4108-9EDD-04CC009D3766}" Global="false">
+									<ObjectRef Name="Fish Escaping" ID="{18F40D27-36C6-4290-8E97-273710437369}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Digging" ID="{A7D84935-CD83-4A5A-9D12-8658D7C9D0F7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EEA9CE2C-398F-4C3B-A683-2E1A026DADFA}" ShortID="82257364" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{24F45D59-5BDC-4BE1-AD50-C9DC3F910A51}" Global="false">
+									<ObjectRef Name="Digging" ID="{164FA04B-9006-48C4-BD77-5C10587B42A6}" WorkUnitID="{720EB467-7467-4081-97BE-82ED4D783EB1}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

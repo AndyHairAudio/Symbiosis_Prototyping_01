@@ -400,8 +400,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{12C6B4FD-34BF-49F8-8F5C-F7A3FE916ABD}" ShortID="1068263493">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -436,8 +436,8 @@
 						<AudioFileSource Name="Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1" ID="{BEDBCD60-C466-48BE-BD01-F76AEECDC388}" ShortID="741639999">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="3.95584988962472E-02"/>
-								<Property Name="TrimEnd" Type="Real64" Value="7.57262693156739E-02"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0395584988962472"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.0757262693156739"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</AudioFile>
@@ -593,7 +593,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_03" ID="{69D75E53-DFD8-44F2-896C-B21A40B4547E}" ShortID="879845597">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="3.47678615228284E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0347678615228284"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_03.wav</AudioFile>
@@ -615,7 +615,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_04" ID="{10ECF4DE-A5A1-470D-9AD5-8785F26F1940}" ShortID="860823073">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="5.87690528750132E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0587690528750132"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_04.wav</AudioFile>
@@ -706,7 +706,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_08" ID="{EDC6E986-7E13-4C18-8485-B84D45C10244}" ShortID="433153393">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="7.99743208541695E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0799743208541695"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_08.wav</AudioFile>
@@ -728,7 +728,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_09" ID="{3853F271-BF60-4D28-B89D-CFE020CFA9FF}" ShortID="9957349">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="5.91382719386504E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0591382719386504"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.535591896802872"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -773,7 +773,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44_1kHz_24bit_Chop_11" ID="{60551991-6A7A-408F-AC3A-88C945676569}" ShortID="81513710">
 													<PropertyList>
-														<Property Name="TrimBegin" Type="Real64" Value="7.89177716708463E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0789177716708463"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Forest_Floor_Steps__Paper_Shreds_Celery_Sweet_Wrappers_AKG451_44.1kHz_24bit_Chop_11.wav</AudioFile>
@@ -989,6 +989,12 @@
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RenderEffect0" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-8</Value>
@@ -998,6 +1004,43 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Tremolo (Custom)" ID="{FDAF32CE-91A4-49D6-96E6-FF5EDB3B7742}" ShortID="734475067" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+											<PropertyList>
+												<Property Name="ModFrequency" Type="Real32" Value="5.62">
+													<RTPCList>
+														<RTPC Name="" ID="{ED6E6A64-F3D9-42EF-B3EB-CA1E2213F86B}" ShortID="906556252">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Fish_Distance" ID="{6DDA89B8-8536-4F0A-970D-6FDF216B7C07}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{681D571E-BB0C-4657-A8C7-0F8E51914849}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>3.09433</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>6.76377</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OutputGain" Type="Real32" Value="9"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
@@ -1170,6 +1213,249 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Bag Rustle 44_1kHz Stereo_Chop_01" ID="{3CD7183D-D6C3-44FF-8C3D-D207E69A54F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="Fish Escaping" ID="{18F40D27-36C6-4290-8E97-273710437369}" ShortID="456283152">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{D5970E9C-8BA6-40DA-AD3A-44782130DF2D}" ShortID="225235520">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Fish_Distance" ID="{6DDA89B8-8536-4F0A-970D-6FDF216B7C07}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{51A02879-7CFF-4927-B78A-9568E2741277}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>67</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Splashing Water" ID="{68E0A7A3-153C-4CF3-BD83-91ECA6A53E3B}" ShortID="91337291">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_01" ID="{DF61C4C2-49BC-4C3B-99C3-2BADD4151047}" ShortID="421225652" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_01" ID="{07348627-7A74-492D-BF1B-F7504D30902C}" ShortID="1026664677">
+											<Language>SFX</Language>
+											<AudioFile>Escaping_Fish_Water_Splash_44.1kHz_24bit_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_01" ID="{07348627-7A74-492D-BF1B-F7504D30902C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_02" ID="{9D08EBE0-F8C5-426D-8760-8A712DCF9DFC}" ShortID="499289234" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_02" ID="{2E5C27B9-133C-4481-AFB4-BAE1147B066F}" ShortID="366932519">
+											<Language>SFX</Language>
+											<AudioFile>Escaping_Fish_Water_Splash_44.1kHz_24bit_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_02" ID="{2E5C27B9-133C-4481-AFB4-BAE1147B066F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_03" ID="{FC310728-1714-4012-8C0D-D58AE8B4142C}" ShortID="647597954" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_03" ID="{BB9D9282-00E6-4247-8972-CBF24F44838D}" ShortID="935966958">
+											<Language>SFX</Language>
+											<AudioFile>Escaping_Fish_Water_Splash_44.1kHz_24bit_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Escaping_Fish_Water_Splash_44_1kHz_24bit_03" ID="{BB9D9282-00E6-4247-8972-CBF24F44838D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="Digging" ID="{164FA04B-9006-48C4-BD77-5C10587B42A6}" ShortID="1030008678">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{A06B2040-7B79-4DA9-96E8-DD30BFE95A1F}" ShortID="621233785">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Depth_Dug" ID="{C489B1AA-06FB-421C-A45D-19390F07F1FD}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{99E5257D-2A0F-4DC0-9505-B04B8327A410}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-358</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>30</XPos>
+												<YPos>357</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Shovel Dig" ID="{923DFA3A-8C9D-4822-BE67-7D998E83C215}" ShortID="704018678">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Digging_Plant_Tree_44_1kHz_24bit_01" ID="{1B0A4F90-66AC-4E2F-B821-50097D6672BC}" ShortID="917189398" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Digging_Plant_Tree_44_1kHz_24bit_01" ID="{72D632C3-96B9-456B-A374-CCD131A69D07}" ShortID="978382683">
+											<Language>SFX</Language>
+											<AudioFile>Digging_Plant_Tree_44.1kHz_24bit_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Digging_Plant_Tree_44_1kHz_24bit_01" ID="{72D632C3-96B9-456B-A374-CCD131A69D07}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Digging_Plant_Tree_44_1kHz_24bit_02" ID="{620B1036-9FCD-40E7-98AA-3D1BAD3E7061}" ShortID="798698076" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Digging_Plant_Tree_44_1kHz_24bit_02" ID="{36F12880-9FE4-420E-9E36-09631D024E46}" ShortID="411358099">
+											<Language>SFX</Language>
+											<AudioFile>Digging_Plant_Tree_44.1kHz_24bit_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Digging_Plant_Tree_44_1kHz_24bit_02" ID="{36F12880-9FE4-420E-9E36-09631D024E46}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Digging_Plant_Tree_44_1kHz_24bit_03" ID="{ADF1A739-81CC-42AE-9DD5-B9DA83830194}" ShortID="394395721" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Digging_Plant_Tree_44_1kHz_24bit_03" ID="{51F53F23-E404-4129-B8C3-8CFAD6FC96B2}" ShortID="1060465696">
+											<Language>SFX</Language>
+											<AudioFile>Digging_Plant_Tree_44.1kHz_24bit_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Digging_Plant_Tree_44_1kHz_24bit_03" ID="{51F53F23-E404-4129-B8C3-8CFAD6FC96B2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
