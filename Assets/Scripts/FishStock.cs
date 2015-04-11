@@ -27,11 +27,11 @@ public class FishStock : MonoBehaviour {
 		ObjectCollector objCollectorPlayer = fpController.GetComponent<ObjectCollector> ();
 
 		if (objCollectorPlayer.fishFedThisFrame) {
-			spawnRateMultiplier = spawnRateMultiplier + 2.0f;
+			spawnRateMultiplier = spawnRateMultiplier + 5.0f;
 		}
 
-		if (spawnRateMultiplier > 5.0f) {
-			spawnRateMultiplier = 5.0f;
+		if (spawnRateMultiplier > 10.0f) {
+			spawnRateMultiplier = 10.0f;
 		}
 	}
 
@@ -52,7 +52,7 @@ public class FishStock : MonoBehaviour {
 			yield return new WaitForSeconds (decayTimer);
 
 			if(spawnRateMultiplier > 1.0f){
-				spawnRateMultiplier = spawnRateMultiplier - 0.1f;
+				spawnRateMultiplier = spawnRateMultiplier - 0.02f;
 			}
 		}
 	}

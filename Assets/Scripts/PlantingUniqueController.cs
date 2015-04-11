@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlantingController : MonoBehaviour {
+public class PlantingUniqueController : MonoBehaviour {
 	
 	public enum Dpad{None,Right,Left,Up,Down} private bool flag = true;
 	public bool beatThisFrameRef = false;
@@ -27,7 +27,7 @@ public class PlantingController : MonoBehaviour {
 	CharacterController controllerFinder;
 	
 	void Start (){
-		treePrefab = Resources.Load ("PolygonTreePrefab") as GameObject;
+		treePrefab = Resources.Load ("UniqueTree") as GameObject;
 		upArrow = GameObject.Find ("Up");
 		downArrow = GameObject.Find ("Down");
 		leftArrow = GameObject.Find ("Left"); 
@@ -125,8 +125,8 @@ public class PlantingController : MonoBehaviour {
 			//canFailAgain = true;
 			if (depthDug <= 0) {
 				Instantiate (treePrefab, objCollector.rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
-				objCollector.playerScore = objCollector.playerScore + 10;
-				objCollector.fruitCollected = objCollector.fruitCollected - 1;
+				objCollector.playerScore = objCollector.playerScore + 100;
+				objCollector.uniqueFruitCollected = objCollector.uniqueFruitCollected - 1;
 				//disable UI tips
 				//play success sound cue
 				objCollector.playerPlanting = false;

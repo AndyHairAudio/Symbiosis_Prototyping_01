@@ -4,13 +4,16 @@ using System.Collections;
 public class ObjectCollector : MonoBehaviour {
 
 	public int fruitCollected = 0;
+	public int uniqueFruitCollected = 0;
 	public int fishCollected = 0;
 	public GameObject treePrefab;
 	RaycastHit rayHitFruit;
+	RaycastHit rayHitUniqueFruit;
 	public RaycastHit rayHitPlant;
 	RaycastHit rayHitLake;
 	public bool rayHittingFruit;
 	public bool rayHittingTerrain;
+	public bool rayHittingUniqueTerrain;
 	public bool rayHittingLake;
 	public bool ableToFeedFish;
 	public bool ableToFish;
@@ -23,6 +26,7 @@ public class ObjectCollector : MonoBehaviour {
 	public float timeOfLastFeed;
 	public int playerScore = 0;
 	GameObject[] fishObjs;
+	public bool rayHittingUniqueFruit;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -53,6 +57,14 @@ public class ObjectCollector : MonoBehaviour {
 			fruitCollected = 0;
 		}
 
+		if (uniqueFruitCollected > 3) {
+			uniqueFruitCollected = 3;
+		}
+		
+		if (uniqueFruitCollected < 0) {
+			uniqueFruitCollected = 0;
+		}
+
 		if (Time.time >= 179.5f && Time.time <= 180.5f) {
 			AkSoundEngine.SetState ("Player_Events", "Entered_World");
 			healthDecayRate = 0.25f;
@@ -81,6 +93,21 @@ public class ObjectCollector : MonoBehaviour {
 				rayHitFruit.collider.gameObject.SetActive(false);
 				AkSoundEngine.PostEvent("Play_Collect_Fruit", this.gameObject);
 				fruitCollected++;
+			}
+		}
+
+		Ray cameraUniqueRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+		if(Physics.Raycast(cameraUniqueRay, out rayHitUniqueFruit, 5.0f)){
+			if(rayHitUniqueFruit.collider.tag == "UniqueTreeFruit"){
+				rayHittingUniqueFruit = true;
+			}
+			else {
+				rayHittingUniqueFruit = false;
+			}
+			if(Input.GetButton ("Fire1") && uniqueFruitCollected < 3 && rayHittingUniqueFruit) {
+				rayHitUniqueFruit.collider.gameObject.SetActive(false);
+				AkSoundEngine.PostEvent("Play_Collect_Fruit", this.gameObject);
+				uniqueFruitCollected++;
 			}
 		}
 
@@ -130,15 +157,31 @@ public class ObjectCollector : MonoBehaviour {
 				else {
 					rayHittingTerrain = false;
 				}
+
+				if(uniqueFruitCollected > 0){
+					rayHittingUniqueTerrain = true;
+				}
+				else {
+					rayHittingUniqueTerrain = false;
+				}
+				
 				if(Input.GetButtonDown ("Fire2") && fruitCollected > 0 && rayHittingTerrain){
-					if(gameObject.GetComponent<PlantingController>() == null){
+					if(gameObject.GetComponent<PlantingController>() == null && gameObject.GetComponent<PlantingUniqueController>() == null){
 						gameObject.AddComponent<PlantingController>();
+						playerPlanting = true;
+					}
+				}
+
+				if(Input.GetButtonDown ("Plant Special") && uniqueFruitCollected > 0 && rayHittingUniqueTerrain){
+					if(gameObject.GetComponent<PlantingUniqueController>() == null && gameObject.GetComponent<PlantingController>() == null){
+						gameObject.AddComponent<PlantingUniqueController>();
 						playerPlanting = true;
 					}
 				}
 			}
 			else {
 				rayHittingTerrain = false;
+				rayHittingUniqueTerrain = false;
 			}
 		}
 
@@ -146,6 +189,12 @@ public class ObjectCollector : MonoBehaviour {
 			playerHealth = playerHealth + 25;
 			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
 			fruitCollected = fruitCollected - 1;
+		}
+
+		if (Input.GetButtonDown ("Eat Special") && uniqueFruitCollected > 0) {
+			playerHealth = playerHealth + 100;
+			AkSoundEngine.PostEvent ("Play_Eat_Fruit", this.gameObject);
+			uniqueFruitCollected = uniqueFruitCollected - 1;
 		}
 
 		if (Input.GetButtonDown ("Fire3") && fishCollected > 0) {

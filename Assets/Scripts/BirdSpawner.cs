@@ -24,6 +24,24 @@ public class BirdSpawner : MonoBehaviour {
 		} else {
 			birdPopMaxed = false;
 		}
+
+		if (spawnRateMultiplier < 1.0f){
+			spawnRateMultiplier = 1.0f;
+		}
+
+		if (fruitObjs.Length <= 10) {
+						spawnRateMultiplier = 1.0f;
+				} else if (fruitObjs.Length > 10 && fruitObjs.Length <= 20) {
+						spawnRateMultiplier = 2.0f;
+				} else if (fruitObjs.Length > 20 && fruitObjs.Length <= 30) {
+						spawnRateMultiplier = 3.0f;
+				} else if (fruitObjs.Length > 30 && fruitObjs.Length <= 40) {
+						spawnRateMultiplier = 4.0f;
+				} else if (fruitObjs.Length > 40 && fruitObjs.Length <= 50) {
+						spawnRateMultiplier = 5.0f;
+				} else {
+						spawnRateMultiplier = 6.0f;
+				}
 	}
 	
 	IEnumerator BirdCreator (float spawnTimer){
@@ -31,16 +49,6 @@ public class BirdSpawner : MonoBehaviour {
 		while (true) {
 			yield return new WaitForSeconds (spawnTimer / spawnRateMultiplier);
 
-			for(int i = 0; i < 20 && i < fruitObjs.Length; i++){
-				if(spawnRateMultiplier < 10.0f){
-					spawnRateMultiplier = spawnRateMultiplier + 0.05f;
-				}
-			}
-
-			if (spawnRateMultiplier < 1.0f){
-				spawnRateMultiplier = 1.0f;
-			}
-			
 			if(!birdPopMaxed){
 				Instantiate (birdPrefab, new Vector3(Random.Range (this.transform.position.x - 30, this.transform.position.x + 30), this.transform.position.y, Random.Range(this.transform.position.z - 30, this.transform.position.z + 30)), Quaternion.Euler (0, Random.Range (0, 360), 0));
 				print ("spawning");
@@ -54,7 +62,7 @@ public class BirdSpawner : MonoBehaviour {
 			yield return new WaitForSeconds (decayTimer);
 			
 			if(spawnRateMultiplier > 1.0f){
-				spawnRateMultiplier = spawnRateMultiplier - 0.005f;
+				spawnRateMultiplier = spawnRateMultiplier - 0.01f;
 			}
 		}
 	}
