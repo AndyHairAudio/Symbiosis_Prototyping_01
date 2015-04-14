@@ -2,11 +2,9 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2993354578	Player_Events			\Default Work Unit\Player_Events	
 
 State	ID	Name	State Group			Notes
-	342806866	Wandering	Player_Events			
 	748895195	None	Player_Events			
-	2908999423	Collecting	Player_Events			
+	2273743309	In_World	Player_Events			
 	3354297748	Empty	Player_Events			
-	4134113183	Entered_World	Player_Events			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	

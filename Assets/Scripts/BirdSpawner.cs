@@ -32,13 +32,13 @@ public class BirdSpawner : MonoBehaviour {
 		if (fruitObjs.Length <= 10) {
 						spawnRateMultiplier = 1.0f;
 				} else if (fruitObjs.Length > 10 && fruitObjs.Length <= 20) {
-						spawnRateMultiplier = 2.0f;
+						spawnRateMultiplier = 2.5f;
 				} else if (fruitObjs.Length > 20 && fruitObjs.Length <= 30) {
-						spawnRateMultiplier = 3.0f;
-				} else if (fruitObjs.Length > 30 && fruitObjs.Length <= 40) {
-						spawnRateMultiplier = 4.0f;
-				} else if (fruitObjs.Length > 40 && fruitObjs.Length <= 50) {
 						spawnRateMultiplier = 5.0f;
+				} else if (fruitObjs.Length > 30 && fruitObjs.Length <= 40) {
+						spawnRateMultiplier = 10.0f;
+				} else if (fruitObjs.Length > 40 && fruitObjs.Length <= 50) {
+						spawnRateMultiplier = 20.0f;
 				} else {
 						spawnRateMultiplier = 6.0f;
 				}

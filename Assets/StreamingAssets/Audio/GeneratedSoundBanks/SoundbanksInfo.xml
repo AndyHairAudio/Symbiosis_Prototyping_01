@@ -153,7 +153,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{42D80A17-3B75-4C66-909B-2DC29AA17294}" Language="SFX">
+		<SoundBank Id="1355168291" GUID="{D6A63CCF-08C0-49C3-B9DA-BB7D183537D0}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
@@ -166,75 +166,29 @@
 				<Event Id="1721880682" Name="Stop_Player_Event_Manager" GUID="{63325CB2-92D7-4E67-B542-CEE435D71821}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="6912507" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_03_Kicks_and_Perc_32bar_44.1khz_24bit_731D4101.wem</Path>
-				</File>
-				<File Id="82985859" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_03_Bright_Strings_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_03_Bright_Strings_32bar_44.1khz_24bit_367C9A2E.wem</Path>
-				</File>
 				<File Id="147648445" Language="SFX">
 					<ShortName>Dubatech_Entry_Pad_Only_01.wav</ShortName>
 					<Path>SFX\Dubatech_Entry_Pad_Only_01_539B00FA.wem</Path>
 				</File>
-				<File Id="420842165" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_03_Claps_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_03_Claps_32bar_44.1khz_24bit_367C9A2E.wem</Path>
+				<File Id="276532981" Language="SFX">
+					<ShortName>Digging_Fishing_Percussion_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Digging_Fishing_Percussion_44.1kHz_24bit_01_1F2C8B7E.wem</Path>
 				</File>
-				<File Id="440780731" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_03_Wobble_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_03_Wobble_32bar_44.1khz_24bit_367C9A2E.wem</Path>
+				<File Id="311212858" Language="SFX">
+					<ShortName>Success_Drum_Reward_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Success_Drum_Reward_44.1kHz_24bit_01_87605FCC.wem</Path>
 				</File>
-				<File Id="441973174" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_02_Opening_Pad_32bar_44.1khz_24bit_367C9A2E.wem</Path>
+				<File Id="399856987" Language="SFX">
+					<ShortName>Digging_Fishing_Percussion_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Digging_Fishing_Percussion_44.1kHz_24bit_02_1F2C8B7E.wem</Path>
 				</File>
-				<File Id="598515117" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_01_Opening_Pad_32bar_44.1khz_24bit_89C298B1.wem</Path>
-				</File>
-				<File Id="603877188" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_02_Bass_32bar_44.1khz_24bit_E13321DB.wem</Path>
+				<File Id="768903203" Language="SFX">
+					<ShortName>Success_Drum_Reward_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Success_Drum_Reward_44.1kHz_24bit_02_D4DF649D.wem</Path>
 				</File>
 				<File Id="773211072" Language="SFX">
 					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
 					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
-				</File>
-				<File Id="942316781" Language="SFX">
-					<ShortName>Adaptive_Music_Segment_02_Bright_Strings_32bar_44.1khz_24bit.wav</ShortName>
-					<Path>SFX\Adaptive_Music_Segment_02_Bright_Strings_32bar_44.1khz_24bit_367C9A2E.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="2261192469" GUID="{EBE870FD-5134-4985-9F2E-07241B95E522}" Language="SFX">
-			<ShortName>Tree_Music</ShortName>
-			<Path>Tree_Music.bnk</Path>
-			<IncludedEvents>
-				<Event Id="4258997712" Name="Play_Tree_State" GUID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}" MaxAttenuation="50.000000"/>
-				<Event Id="116774218" Name="Stop_Tree_State" GUID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}" MaxAttenuation="0.000000"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="169555437" Language="SFX">
-					<ShortName>Forest_Four_Four_Large_Tree_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Large_Tree_Motif_01_5DAC705E.wem</Path>
-				</File>
-				<File Id="208265393" Language="SFX">
-					<ShortName>Forest_Four_Four_Bush_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Bush_Motif_01_23E654FE.wem</Path>
-				</File>
-				<File Id="254176593" Language="SFX">
-					<ShortName>Forest_Four_Four_Sapling_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Sapling_Motif_01_9ED9C06E.wem</Path>
-				</File>
-				<File Id="568921389" Language="SFX">
-					<ShortName>Forest_Four_Four_Small_Tree_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Small_Tree_Motif_01_74F7F5CE.wem</Path>
-				</File>
-				<File Id="678859308" Language="SFX">
-					<ShortName>Forest_Four_Four_Medium_Tree_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Medium_Tree_Motif_01_5DAC705E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

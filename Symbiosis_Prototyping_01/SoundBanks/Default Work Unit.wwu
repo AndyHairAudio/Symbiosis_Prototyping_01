@@ -11,14 +11,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Tree_Music" ID="{EBE870FD-5134-4985-9F2E-07241B95E522}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Stop_Tree_State" ID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_Tree_State" ID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}" WorkUnitID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="Tree_Ambient" ID="{2B2927C0-BA6F-4952-B307-18B01ECF428B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Tree (Forest)" ID="{C70690FC-788B-4CE0-9613-CE6210F107A2}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}" Filter="7" Origin="Manual"/>

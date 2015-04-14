@@ -33,6 +33,7 @@ public class FishingController : MonoBehaviour {
 	CharacterController controllerFinder;
 	
 	void Start (){
+		AkSoundEngine.SetRTPCValue ("Interaction_Percussion", 100.0f);
 		fishObjs = GameObject.FindGameObjectsWithTag ("Fish");
 		upArrow = GameObject.Find ("Up");
 		downArrow = GameObject.Find ("Down");
@@ -60,7 +61,7 @@ public class FishingController : MonoBehaviour {
 	void Update () {
 		AkSoundEngine.SetRTPCValue ("Fish_Distance", fishDistance);
 		PadControl();
-		beatThisFrameRef = syncComponent.beatThisFrameFish;
+		beatThisFrameRef = syncComponent.beatThisFrameGlow;
 
 //		if (betweenBeats && buttonLog.Count > 0 && canFailAgain) {
 //			fishDistance = fishDistance + 10;
@@ -84,8 +85,42 @@ public class FishingController : MonoBehaviour {
 	}
 
 	IEnumerator FishSequence (){
+
 		yield return new WaitForSeconds (initialDelay);
+
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+
 		while(fishDistance > 0){
+
+			while (!beatThisFrameRef) 
+			{yield return null;}
+
 			yield return new WaitForSeconds(0.05f);
 			randomButtonSelection = Random.Range(1, 5);
 			switch (randomButtonSelection)
@@ -111,7 +146,7 @@ public class FishingController : MonoBehaviour {
 				break;
 			}
 
-			yield return new WaitForSeconds (0.6f);
+			yield return new WaitForSeconds (0.83f);
 
 			downImage.color = Color.green;
 			upImage.color = Color.green;
@@ -123,7 +158,6 @@ public class FishingController : MonoBehaviour {
 
 			while (!beatThisFrameRef) 
 			{yield return null;}
-			AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
 
 			yield return new WaitForSeconds(0.3f);
 			if(buttonLog.Count > 0){
@@ -158,6 +192,7 @@ public class FishingController : MonoBehaviour {
 			//canFailAgain = true;
 			if (fishDistance <= 0) {
 				objCollector.fishCollected = objCollector.fishCollected + 1;
+				AkSoundEngine.SetRTPCValue ("Interaction_Success_Rhythm", 100.0f);
 				fishObjs = GameObject.FindGameObjectsWithTag ("Fish");
 				Destroy(fishObjs[Random.Range (0, fishObjs.Length)]);
 				fishingText.enabled = false;

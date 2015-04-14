@@ -14,7 +14,7 @@ public class TextSequencerPlanting : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (playerObj.GetComponent<PlantingController> ()) {
+		if (playerObj.GetComponent<PlantingController> () || playerObj.GetComponent<PlantingUniqueController>()) {
 			gameObject.GetComponent<Image> ().enabled = true;
 			toolTipText.enabled = true;
 		} else {

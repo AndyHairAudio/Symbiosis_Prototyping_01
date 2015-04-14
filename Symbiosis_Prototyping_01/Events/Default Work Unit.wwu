@@ -3,28 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{1E799122-61DB-46AF-8152-83E9144CDD8F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Tree_State" ID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}">
-					<ChildrenList>
-						<Action Name="Play" ID="{19C3589C-C777-4850-9ADB-1C19AE9B4294}" ShortID="948132867" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{A7CAE61B-52C3-43C9-8104-C1CB51095FCE}" Global="false">
-									<ObjectRef Name="Tree_State" ID="{9453A87B-40BA-459D-B0AA-6F94B3356456}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Tree_State" ID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}">
-					<ChildrenList>
-						<Action Name="Stop" ID="{29BA855F-15C5-41F1-89E4-2D3CB8D41CB7}" ShortID="621676122" Type="Stop" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D07FC3EA-D78F-4C19-8DAC-4C213AB6FE60}" Global="false">
-									<ObjectRef Name="Tree_State" ID="{9453A87B-40BA-459D-B0AA-6F94B3356456}" WorkUnitID="{3676C9C7-5639-429D-A359-7F346A6CAB95}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Falling_Fruit" ID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}">
 					<ChildrenList>
 						<Action Name="Play" ID="{8552A3CC-79F5-4393-A7C1-59477EB6CA8C}" ShortID="341167238" Type="Play" Scope="One" Global="false">

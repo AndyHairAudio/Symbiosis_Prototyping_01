@@ -12,31 +12,9 @@
 			<ShortName>Tree_Music</ShortName>
 			<Path>Tree_Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4258997712" Name="Play_Tree_State" GUID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}" MaxAttenuation="50.000000"/>
+				<Event Id="4258997712" Name="Play_Tree_State" GUID="{34D7BDC9-B663-444B-A433-65E2B2FF543B}" MaxAttenuation="0.000000"/>
 				<Event Id="116774218" Name="Stop_Tree_State" GUID="{FEF242B8-BF00-43BA-8DE0-23315FFCFFB4}" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="169555437" Language="SFX">
-					<ShortName>Forest_Four_Four_Large_Tree_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Large_Tree_Motif_01_5DAC705E.wem</Path>
-				</File>
-				<File Id="208265393" Language="SFX">
-					<ShortName>Forest_Four_Four_Bush_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Bush_Motif_01_23E654FE.wem</Path>
-				</File>
-				<File Id="254176593" Language="SFX">
-					<ShortName>Forest_Four_Four_Sapling_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Sapling_Motif_01_9ED9C06E.wem</Path>
-				</File>
-				<File Id="568921389" Language="SFX">
-					<ShortName>Forest_Four_Four_Small_Tree_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Small_Tree_Motif_01_74F7F5CE.wem</Path>
-				</File>
-				<File Id="678859308" Language="SFX">
-					<ShortName>Forest_Four_Four_Medium_Tree_Motif_01.wav</ShortName>
-					<Path>SFX\Forest_Four_Four_Medium_Tree_Motif_01_5DAC705E.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

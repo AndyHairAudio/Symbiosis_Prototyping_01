@@ -27,6 +27,7 @@ public class PlantingUniqueController : MonoBehaviour {
 	CharacterController controllerFinder;
 	
 	void Start (){
+		AkSoundEngine.SetRTPCValue ("Interaction_Percussion", 100.0f);
 		treePrefab = Resources.Load ("UniqueTree") as GameObject;
 		upArrow = GameObject.Find ("Up");
 		downArrow = GameObject.Find ("Down");
@@ -47,7 +48,7 @@ public class PlantingUniqueController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		PadControl();
-		beatThisFrameRef = syncComponent.beatThisFrameFish;
+		beatThisFrameRef = syncComponent.beatThisFrameGlow;
 		
 		if (controllerFinder.velocity.x != 0 || controllerFinder.velocity.z != 0) {
 			downImage.enabled = false;
@@ -60,12 +61,45 @@ public class PlantingUniqueController : MonoBehaviour {
 	}
 	
 	IEnumerator DigSequence (){
+		
 		yield return new WaitForSeconds (initialDelay);
-		while(depthDug > 0){
-			yield return new WaitForSeconds(0.05f);
-			randomButtonSelection = Random.Range(1, 5);
-			switch (randomButtonSelection)
-			{
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (!beatThisFrameRef) 
+		{yield return null;}
+		
+		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
+		
+		yield return new WaitForSeconds (0.1f);
+		
+		while (depthDug > 0) {
+			
+			while (!beatThisFrameRef) 
+			{yield return null;}
+			
+			yield return new WaitForSeconds (0.05f);
+			randomButtonSelection = Random.Range (1, 5);
+			switch (randomButtonSelection) {
 			case 1:
 				selectedButtonString = "Down";
 				downImage.enabled = true;
@@ -87,19 +121,17 @@ public class PlantingUniqueController : MonoBehaviour {
 				break;
 			}
 			
-			yield return new WaitForSeconds (0.6f);
-			
+			yield return new WaitForSeconds (0.83f);
 			downImage.color = Color.green;
 			upImage.color = Color.green;
 			leftImage.color = Color.green;
 			rightImage.color = Color.green;
 			
 			//betweenBeats = false;
-			buttonLog.Clear();
+			buttonLog.Clear ();
 			
 			while (!beatThisFrameRef) 
 			{yield return null;}
-			AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
 			
 			yield return new WaitForSeconds(0.3f);
 			if(buttonLog.Count > 0){
@@ -125,10 +157,9 @@ public class PlantingUniqueController : MonoBehaviour {
 			//canFailAgain = true;
 			if (depthDug <= 0) {
 				Instantiate (treePrefab, objCollector.rayHitPlant.point, Quaternion.Euler (0, Random.Range (0, 360), 0));
-				objCollector.playerScore = objCollector.playerScore + 100;
+				objCollector.playerScore = objCollector.playerScore + 10;
 				objCollector.uniqueFruitCollected = objCollector.uniqueFruitCollected - 1;
-				//disable UI tips
-				//play success sound cue
+				AkSoundEngine.SetRTPCValue ("Interaction_Success_Rhythm", 100.0f);
 				objCollector.playerPlanting = false;
 				Destroy (this);
 			}

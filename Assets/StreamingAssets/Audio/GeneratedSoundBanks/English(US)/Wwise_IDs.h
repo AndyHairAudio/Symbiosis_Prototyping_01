@@ -28,14 +28,12 @@ namespace AK
         static const AkUniqueID PLAY_TESTBEEP = 1955951874U;
         static const AkUniqueID PLAY_TESTBEEP2 = 2303144468U;
         static const AkUniqueID PLAY_TREE_EMITTER = 3564794469U;
-        static const AkUniqueID PLAY_TREE_STATE = 4258997712U;
         static const AkUniqueID PLAY_ZONES = 3780807851U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOP_HEALTH_SFX = 2472861354U;
         static const AkUniqueID STOP_LAKE_WAVES_LAPPING = 1724707056U;
         static const AkUniqueID STOP_PLAYER_EVENT_MANAGER = 1721880682U;
         static const AkUniqueID STOP_TREE_EMITTER = 1538482647U;
-        static const AkUniqueID STOP_TREE_STATE = 116774218U;
         static const AkUniqueID STOP_ZONES = 914123949U;
     } // namespace EVENTS
 
@@ -47,10 +45,8 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID COLLECTING = 2908999423U;
                 static const AkUniqueID EMPTY = 3354297748U;
-                static const AkUniqueID ENTERED_WORLD = 4134113183U;
-                static const AkUniqueID WANDERING = 342806866U;
+                static const AkUniqueID IN_WORLD = 2273743309U;
             } // namespace STATE
         } // namespace PLAYER_EVENTS
 
@@ -80,20 +76,6 @@ namespace AK
             } // namespace SWITCH
         } // namespace PLAYER_FOREST_ZONE
 
-        namespace TREE_STATES
-        {
-            static const AkUniqueID GROUP = 4072258362U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID BTREE = 656847401U;
-                static const AkUniqueID BUSH = 1427625975U;
-                static const AkUniqueID MTREE = 2169647486U;
-                static const AkUniqueID SAPLING = 1558384023U;
-                static const AkUniqueID STREE = 1094844220U;
-            } // namespace SWITCH
-        } // namespace TREE_STATES
-
         namespace WORLD_ZONE
         {
             static const AkUniqueID GROUP = 2657943960U;
@@ -112,6 +94,8 @@ namespace AK
     {
         static const AkUniqueID DEPTH_DUG = 1139232757U;
         static const AkUniqueID FISH_DISTANCE = 1567132679U;
+        static const AkUniqueID INTERACTION_PERCUSSION = 1898339869U;
+        static const AkUniqueID INTERACTION_SUCCESS_RHYTHM = 2807882626U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
     } // namespace GAME_PARAMETERS
 
@@ -127,7 +111,6 @@ namespace AK
         static const AkUniqueID NARRATIVE_SCORE = 1554040882U;
         static const AkUniqueID PLAYER_SFX = 817096458U;
         static const AkUniqueID TREE_AMBIENT = 3749599892U;
-        static const AkUniqueID TREE_MUSIC = 2261192469U;
         static const AkUniqueID ZONE_AMBIENCE = 4262403134U;
     } // namespace BANKS
 

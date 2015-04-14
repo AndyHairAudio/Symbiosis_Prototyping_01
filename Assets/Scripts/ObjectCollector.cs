@@ -33,7 +33,9 @@ public class ObjectCollector : MonoBehaviour {
 	}
 
 	void Start(){
-		AkSoundEngine.SetState ("Player_Events", "Empty");
+		AkSoundEngine.SetRTPCValue ("Interaction_Percussion", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Interaction_Success_Rhythm", 0.0f);
+		AkSoundEngine.SetState ("Player_Events", "In_World");
 		AkSoundEngine.PostTrigger ("Entered_World", GameObject.FindGameObjectWithTag ("WwiseGlobal"));
 	}
 
@@ -66,15 +68,12 @@ public class ObjectCollector : MonoBehaviour {
 		}
 
 		if (Time.time >= 179.5f && Time.time <= 180.5f) {
-			AkSoundEngine.SetState ("Player_Events", "Entered_World");
 			healthDecayRate = 0.25f;
 		} 
 		else if (Time.time >= 359.5f && Time.time <= 360.5f) {
-			AkSoundEngine.SetState ("Player_Events", "Wandering");
 			healthDecayRate = 0.5f;
 		}
 		else if (Time.time >= 539.5f && Time.time <= 540.5f) {
-			AkSoundEngine.SetState ("Player_Events", "Collecting");
 			healthDecayRate = 0.75f;
 		} 
 		else if (Time.time >= 719.5f && Time.time <= 720.5f) {
@@ -149,7 +148,7 @@ public class ObjectCollector : MonoBehaviour {
 		}
 
 		Ray cameraRayPlant = Camera.main.ViewportPointToRay (new Vector3 (0.5f, 0.5f, 0f));
-		if (Physics.Raycast (cameraRayPlant, out rayHitPlant, 5.0f)) {
+		if (Physics.Raycast (cameraRayPlant, out rayHitPlant, 15.0f)) {
 			if (rayHitPlant.collider.tag == "ForestTerrain") {
 				if(fruitCollected > 0){
 					rayHittingTerrain = true;

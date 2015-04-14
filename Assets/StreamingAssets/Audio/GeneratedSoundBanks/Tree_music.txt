@@ -2,10 +2,3 @@ Event	ID	Name			Wwise Object Path	Notes
 	116774218	Stop_Tree_State			\Default Work Unit\Stop_Tree_State	
 	4258997712	Play_Tree_State			\Default Work Unit\Play_Tree_State	
 
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	169555437	Forest_Four_Four_Large_Tree_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Large_Tree_Motif_01_5DAC705E.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Large_Tree_Loop\Large Tree\Forest_Four_Four_Large_Tree_Motif_01		5644864
-	208265393	Forest_Four_Four_Bush_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Bush_Motif_01_23E654FE.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Bush_Loop\Bush\Forest_Four_Four_Bush_Motif_01		1411264
-	254176593	Forest_Four_Four_Sapling_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Sapling_Motif_01_9ED9C06E.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Sapling_Loop\Sapling\Forest_Four_Four_Sapling_Motif_01		705664
-	568921389	Forest_Four_Four_Small_Tree_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Small_Tree_Motif_01_74F7F5CE.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Small_Tree_Loop\Small Tree\Forest_Four_Four_Small_Tree_Motif_01		2822464
-	678859308	Forest_Four_Four_Medium_Tree_Motif_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Forest_Four_Four_Medium_Tree_Motif_01_5DAC705E.wem		\Interactive Music Hierarchy\Default Work Unit\Tree (Forest)\Tree_State\Medium_Tree_Loop\Medium Tree\Forest_Four_Four_Medium_Tree_Motif_01		5644864
-

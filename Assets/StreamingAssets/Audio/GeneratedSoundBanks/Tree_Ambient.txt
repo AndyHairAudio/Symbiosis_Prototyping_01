@@ -8,7 +8,10 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	96315637	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Tree (Forest)\Emitters\Tree_Emitter\Tree Creaking\Silence\Wwise Silence	
+	373018314	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Tree (Forest)\Emitters\Unique_Tree_Emitter\Tree Creaking\Silence\Wwise Silence	
 	590415848	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Tree (Forest)\Emitters\Tree_Emitter\Bird Flutters\Silence\Wwise Silence	
+	622263373	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Tree (Forest)\Emitters\Unique_Tree_Emitter\Bird Chirp\Silence\Wwise Silence	
+	767998574	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Tree (Forest)\Emitters\Unique_Tree_Emitter\Bird Flutters\Silence\Wwise Silence	
 	785635438	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Tree (Forest)\Emitters\Tree_Emitter\Bird Chirp\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size

@@ -18,6 +18,7 @@ public class MusicSync : MonoBehaviour {
 	void MusicCallback (object in_cookie, AkCallbackType in_type, object in_callbackInfo)
 	{
 		timeOfLastBeat = Time.time;
+		//AkSoundEngine.PostEvent ("Play_testbeep", this.gameObject);
 	}
 
 	void Update(){

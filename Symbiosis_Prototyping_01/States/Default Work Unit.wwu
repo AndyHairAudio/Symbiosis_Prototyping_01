@@ -6,10 +6,8 @@
 				<StateGroup Name="Player_Events" ID="{AEF1737A-AB9D-4288-A514-ED9564838A7A}">
 					<ChildrenList>
 						<State Name="None" ID="{0A540A64-E1B8-4BD1-ABF3-DABFB33CF437}"/>
-						<State Name="Entered_World" ID="{889842C4-CA1B-4E1E-A84D-9312E7577E96}"/>
-						<State Name="Wandering" ID="{3B3B07BB-27CC-4149-9093-AA767ACCC5F2}"/>
-						<State Name="Collecting" ID="{7013A9A7-C6E8-4C64-BF17-B18D6F08AAFE}"/>
-						<State Name="Empty" ID="{B8162FBC-258D-4910-9714-7E40E4DCEFB3}"/>
+						<State Name="In_World" ID="{E20ECE67-2D0D-4E4C-A805-21619AAF2CA8}"/>
+						<State Name="Empty" ID="{C32125EF-A11B-490E-B39E-79B2FA8CAF0A}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

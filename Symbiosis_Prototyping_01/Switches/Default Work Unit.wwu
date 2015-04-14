@@ -3,15 +3,6 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{65017D20-A643-4B2F-AAA8-926DA6B3A286}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Tree_States" ID="{0ADDD756-7F6D-4A83-9FA6-4BFFD2F80739}">
-					<ChildrenList>
-						<Switch Name="Sapling" ID="{53300485-C45C-4C12-806B-C2D0F549F659}"/>
-						<Switch Name="Bush" ID="{D1E3F37A-46AF-4263-92D3-B9B70CD5AE66}"/>
-						<Switch Name="STree" ID="{1D41DB80-0614-44DF-B1BF-D213054489F8}"/>
-						<Switch Name="MTree" ID="{69DB03C0-8BDD-4A97-96B7-9C347EFCD851}"/>
-						<Switch Name="BTree" ID="{11520B3B-D43C-4C3B-901C-234DCCEEDFB3}"/>
-					</ChildrenList>
-				</SwitchGroup>
 				<SwitchGroup Name="Player_Forest_Zone" ID="{81E14E53-652D-46B7-853C-D4685FB98EB6}">
 					<ChildrenList>
 						<Switch Name="Cave" ID="{97DC4673-213A-4227-9819-1C02801D1618}"/>
