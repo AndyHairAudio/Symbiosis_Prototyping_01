@@ -7,6 +7,7 @@ public class FishingController : MonoBehaviour {
 
 	public enum Dpad{None,Right,Left,Up,Down} private bool flag = true;
 	public bool beatThisFrameRef = false;
+	public bool barThisFrameRef = false;
 	float buttonPressWindowStart;
 	MusicSync syncComponent;
 	float initialDelay = 4.0f;
@@ -45,6 +46,7 @@ public class FishingController : MonoBehaviour {
 		rightImage = rightArrow.GetComponent<Image> ();
 		fpController = GameObject.Find ("First Person Controller");
 		objCollector = fpController.GetComponent<ObjectCollector> ();
+		objCollector.timeOfLastAttemptedCatch = Time.time;
 		controllerFinder = fpController.GetComponent<CharacterController> ();
 		fishingTextObj = GameObject.Find ("Fish Distance");
 		fishingDistObj = GameObject.Find ("FishDistanceNo");
@@ -62,6 +64,7 @@ public class FishingController : MonoBehaviour {
 		AkSoundEngine.SetRTPCValue ("Fish_Distance", fishDistance);
 		PadControl();
 		beatThisFrameRef = syncComponent.beatThisFrameGlow;
+		barThisFrameRef = syncComponent.barThisFrame;
 
 //		if (betweenBeats && buttonLog.Count > 0 && canFailAgain) {
 //			fishDistance = fishDistance + 10;
@@ -88,7 +91,7 @@ public class FishingController : MonoBehaviour {
 
 		yield return new WaitForSeconds (initialDelay);
 
-		while (!beatThisFrameRef) 
+		while (!barThisFrameRef) 
 		{yield return null;}
 		
 		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
@@ -198,6 +201,8 @@ public class FishingController : MonoBehaviour {
 				fishingText.enabled = false;
 				fishDistText.enabled = false;
 				objCollector.playerFishing = false;
+				objCollector.timeOfLastUniquePlant = Time.time;
+				objCollector.successfulInteractions.Add(Time.time);
 				//play success sound cue
 				Destroy (this);
 			}

@@ -51,7 +51,6 @@ public class BirdSpawner : MonoBehaviour {
 
 			if(!birdPopMaxed){
 				Instantiate (birdPrefab, new Vector3(Random.Range (this.transform.position.x - 30, this.transform.position.x + 30), this.transform.position.y, Random.Range(this.transform.position.z - 30, this.transform.position.z + 30)), Quaternion.Euler (0, Random.Range (0, 360), 0));
-				print ("spawning");
 			}
 		}
 	}

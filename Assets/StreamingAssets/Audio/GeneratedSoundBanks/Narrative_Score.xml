@@ -41,6 +41,18 @@
 					<ShortName>Daybreak_Discover_Tree.wav</ShortName>
 					<Path>SFX\Daybreak_Discover_Tree_C9B2C403.wem</Path>
 				</File>
+				<File Id="826000989" Language="SFX">
+					<ShortName>Bird_Theme_Gentle_Keys_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Bird_Theme_Gentle_Keys_44.1kHz_24bit_01_367C9A2E.wem</Path>
+				</File>
+				<File Id="851707956" Language="SFX">
+					<ShortName>Bass_Combo_44.1kHz_24bit_02.wav</ShortName>
+					<Path>SFX\Bass_Combo_44.1kHz_24bit_02_D4DF649D.wem</Path>
+				</File>
+				<File Id="958042052" Language="SFX">
+					<ShortName>Bass_Combo_44.1kHz_24bit_01.wav</ShortName>
+					<Path>SFX\Bass_Combo_44.1kHz_24bit_01_87605FCC.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>

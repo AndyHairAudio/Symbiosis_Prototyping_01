@@ -5,8 +5,11 @@ public class MusicSync : MonoBehaviour {
 
 	public float timeOfLastBeat;
 	public float timeSinceLastBeat;
+	public float timeOfLastBar;
+	public float timeSinceLastBar;
 	public bool beatThisFrameFish = false;
 	public bool beatThisFrameGlow = false;
+	public bool barThisFrame = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,12 +20,20 @@ public class MusicSync : MonoBehaviour {
 
 	void MusicCallback (object in_cookie, AkCallbackType in_type, object in_callbackInfo)
 	{
-		timeOfLastBeat = Time.time;
-		//AkSoundEngine.PostEvent ("Play_testbeep", this.gameObject);
+		if (in_type == AkCallbackType.AK_MusicSyncBeat) {
+			timeOfLastBeat = Time.time;
+			//AkSoundEngine.PostEvent ("Play_testbeep", this.gameObject);
+		}
+
+		if (in_type == AkCallbackType.AK_MusicSyncBar) {
+			timeOfLastBar = Time.time;
+			AkSoundEngine.PostEvent ("Play_testbeep", this.gameObject);
+		}
 	}
 
 	void Update(){
 		timeSinceLastBeat = Time.time - timeOfLastBeat;
+		timeSinceLastBar = Time.time - timeOfLastBar;
 
 		if(timeSinceLastBeat < (Time.deltaTime * 10)){
 			beatThisFrameFish = true;
@@ -36,6 +47,13 @@ public class MusicSync : MonoBehaviour {
 		}
 		else {
 			beatThisFrameGlow = false;
+		}
+
+		if(timeSinceLastBar < (Time.deltaTime * 5)){
+			barThisFrame = true;
+		}
+		else {
+			barThisFrame = false;
 		}
 	}
 }

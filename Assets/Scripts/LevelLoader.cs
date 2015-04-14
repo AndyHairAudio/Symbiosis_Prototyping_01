@@ -62,7 +62,6 @@ public class LevelLoader : MonoBehaviour {
 		}
 
 		if (Input.anyKeyDown) {
-			print ("press detected");
 			timeOfLastInput = Time.time;
 		}
 

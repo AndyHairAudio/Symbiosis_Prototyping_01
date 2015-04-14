@@ -6,6 +6,8 @@ Event	ID	Name			Wwise Object Path	Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	215992295	Player_health			\Default Work Unit\Player_health	
 	1898339869	Interaction_Percussion			\Default Work Unit\Interaction_Percussion	
+	2556877779	Combo_Strength			\Default Work Unit\Combo_Strength	
+	2770716474	Bird_Population			\Default Work Unit\Bird_Population	
 	2807882626	Interaction_Success_Rhythm			\Default Work Unit\Interaction_Success_Rhythm	
 
 Trigger	ID	Name			Wwise Object Path	Notes
@@ -19,4 +21,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	399856987	Interactions Switch Base Perc	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Digging_Fishing_Percussion_44.1kHz_24bit_02_1F2C8B7E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\In The World\Interactions\Interactions Switch Base Perc		8913040
 	768903203	Interactions Switch Success	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Success_Drum_Reward_44.1kHz_24bit_02_D4DF649D.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\In The World\Interactions\Interactions Switch Success		9961616
 	773211072	Daybreak_Discover_Tree	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Daybreak_Discover_Tree_C9B2C403.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\Daybreak_Discover_Tree\Daybreak_Discover_Tree		917648
+	826000989	Bird_Theme_Gentle_Keys_44_1kHz_24bit_01	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Bird_Theme_Gentle_Keys_44.1kHz_24bit_01_367C9A2E.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\In The World\Interactions\Bird_Theme_Gentle_Keys_44_1kHz_24bit_01		11289744
+	851707956	Bass Switch	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Bass_Combo_44.1kHz_24bit_02_D4DF649D.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\In The World\Interactions\Bass Switch		9961616
+	958042052	Bass Switch	C:\Users\Andy\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\.cache\Windows\SFX\Bass_Combo_44.1kHz_24bit_01_87605FCC.wem		\Interactive Music Hierarchy\Default Work Unit\Narrative Score\Player Event Manager\In The World\Interactions\Bass Switch		9699472
 

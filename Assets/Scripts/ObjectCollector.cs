@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ObjectCollector : MonoBehaviour {
 
@@ -27,6 +28,14 @@ public class ObjectCollector : MonoBehaviour {
 	public int playerScore = 0;
 	GameObject[] fishObjs;
 	public bool rayHittingUniqueFruit;
+	public float timeOfLastPlant;
+	public float timeOfLastUniquePlant;
+	public float timeOfLastFishFeed;
+	public float timeOfLastFishCatch;
+	public float timeOfLastAttemptedPlant;
+	public float timeOfLastAttemptedUniquePlant;
+	public float timeOfLastAttemptedCatch;
+	public List<float> successfulInteractions = new List<float>();
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -78,6 +87,29 @@ public class ObjectCollector : MonoBehaviour {
 		} 
 		else if (Time.time >= 719.5f && Time.time <= 720.5f) {
 			healthDecayRate = 1.0f;
+		}
+
+		if((timeOfLastFishCatch + 30.0f) < Time.time && (timeOfLastUniquePlant + 30.0f) < Time.time && (timeOfLastPlant + 30.0f) < Time.time){
+			AkSoundEngine.SetRTPCValue("Interaction_Success_Rhythm", 0.0f);
+		}
+
+		if((timeOfLastAttemptedCatch + 30.0f) < Time.time && (timeOfLastAttemptedPlant + 30.0f) < Time.time && (timeOfLastAttemptedUniquePlant + 30.0f) < Time.time){
+			AkSoundEngine.SetRTPCValue("Interaction_Percussion", 0.0f);
+		}
+
+		int successfulInteractionsLastThree = successfulInteractions.Count - 3;
+
+		if(successfulInteractions.Count > 3){
+			if(successfulInteractions[successfulInteractionsLastThree] > (Time.time - 60.0f)){
+				print ("combo!");
+				AkSoundEngine.SetRTPCValue("Combo_Strength", 100.0f);
+			}
+			else if (successfulInteractions[successfulInteractionsLastThree] < (Time.time - 120.0f)){
+				AkSoundEngine.SetRTPCValue("Combo_Strength", 0.0f);
+			}
+		}
+		else {
+			AkSoundEngine.SetRTPCValue("Combo_Strength", 0.0f);
 		}
 
 		Ray cameraRay = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));

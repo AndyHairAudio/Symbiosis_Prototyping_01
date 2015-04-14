@@ -7,9 +7,10 @@ public class PlantingController : MonoBehaviour {
 	
 	public enum Dpad{None,Right,Left,Up,Down} private bool flag = true;
 	public bool beatThisFrameRef = false;
+	public bool barThisFrameRef = false;
 	float buttonPressWindowStart;
 	MusicSync syncComponent;
-	float initialDelay = 4.0f;
+	float initialDelay = 2.0f;
 	int depthDug = 30;
 	int randomButtonSelection;
 	public string selectedButtonString;
@@ -40,6 +41,7 @@ public class PlantingController : MonoBehaviour {
 		rightImage = rightArrow.GetComponent<Image> ();
 		fpController = GameObject.Find ("First Person Controller");
 		objCollector = fpController.GetComponent<ObjectCollector> ();
+		objCollector.timeOfLastAttemptedPlant = Time.time;
 		controllerFinder = fpController.GetComponent<CharacterController> ();
 		wwiseGlobal = GameObject.Find ("WwiseGlobal");
 		syncComponent = wwiseGlobal.GetComponent<MusicSync> ();
@@ -50,6 +52,7 @@ public class PlantingController : MonoBehaviour {
 	void Update () {
 		PadControl();
 		beatThisFrameRef = syncComponent.beatThisFrameGlow;
+		barThisFrameRef = syncComponent.barThisFrame;
 		
 		if (controllerFinder.velocity.x != 0 || controllerFinder.velocity.z != 0) {
 			downImage.enabled = false;
@@ -65,7 +68,7 @@ public class PlantingController : MonoBehaviour {
 
 		yield return new WaitForSeconds (initialDelay);
 
-		while (!beatThisFrameRef) 
+		while (!barThisFrameRef) 
 		{yield return null;}
 		
 		AkSoundEngine.PostEvent("Play_testbeep2", this.gameObject);
@@ -163,6 +166,8 @@ public class PlantingController : MonoBehaviour {
 				//disable UI tips
 				AkSoundEngine.SetRTPCValue ("Interaction_Success_Rhythm", 100.0f);
 				objCollector.playerPlanting = false;
+				objCollector.timeOfLastPlant = Time.time;
+				objCollector.successfulInteractions.Add(Time.time);
 				Destroy (this);
 			}
 		}

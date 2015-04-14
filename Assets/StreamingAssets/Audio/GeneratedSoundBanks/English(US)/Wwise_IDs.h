@@ -92,8 +92,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BIRD_POPULATION = 2770716474U;
+        static const AkUniqueID COMBO_STRENGTH = 2556877779U;
         static const AkUniqueID DEPTH_DUG = 1139232757U;
         static const AkUniqueID FISH_DISTANCE = 1567132679U;
+        static const AkUniqueID FISH_POPULATION = 705187635U;
         static const AkUniqueID INTERACTION_PERCUSSION = 1898339869U;
         static const AkUniqueID INTERACTION_SUCCESS_RHYTHM = 2807882626U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
