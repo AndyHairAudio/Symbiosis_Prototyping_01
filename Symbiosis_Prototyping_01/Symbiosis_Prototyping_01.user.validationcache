@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="69">
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Ambience-Emitters.wwu" DateLow="1051681408" DateHigh="30438377"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Ambience-Emitters.wwu" DateLow="3774770432" DateHigh="30439083"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Bird (Forest).wwu" DateLow="3942828544" DateHigh="30429086"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Bird Flutter.wwu" DateLow="681847424" DateHigh="30429056"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Cactus (Desert).wwu" DateLow="4202828544" DateHigh="30429086"/>
@@ -24,7 +24,7 @@
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Mountain.wwu" DateLow="691847424" DateHigh="30429056"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Oasis.wwu" DateLow="691847424" DateHigh="30429056"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Pine (Mountain).wwu" DateLow="1432959360" DateHigh="30429090"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Player.wwu" DateLow="1051681408" DateHigh="30438377"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Player.wwu" DateLow="3774770432" DateHigh="30439083"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Pool.wwu" DateLow="691847424" DateHigh="30429056"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Sand Shifting.wwu" DateLow="691847424" DateHigh="30429056"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Actor-Mixer Hierarchy\Shifting Snow.wwu" DateLow="691847424" DateHigh="30429056"/>
@@ -46,10 +46,10 @@
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1076412032" DateHigh="30423233"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1076412032" DateHigh="30423233"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Effects\Default Work Unit.wwu" DateLow="2528476416" DateHigh="30438279"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Events\Default Work Unit.wwu" DateLow="1848803456" DateHigh="30438289"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Game Parameters\Default Work Unit.wwu" DateLow="1848803456" DateHigh="30438289"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Events\Default Work Unit.wwu" DateLow="3774770432" DateHigh="30439083"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Game Parameters\Default Work Unit.wwu" DateLow="3774770432" DateHigh="30439083"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="221427200" DateHigh="30438675"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Interactive Music Hierarchy\Narrative Score.wwu" DateLow="1137113984" DateHigh="30438696"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Interactive Music Hierarchy\Narrative Score.wwu" DateLow="3774770432" DateHigh="30439083"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Interactive Music Hierarchy\Player Event Triggers.wwu" DateLow="4099337344" DateHigh="30430661"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Interactive Music Hierarchy\Tree (Forest).wwu" DateLow="4099337344" DateHigh="30430661"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2189025152" DateHigh="30431263"/>
@@ -58,11 +58,11 @@
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Presets\Default Work Unit.wwu" DateLow="1176412032" DateHigh="30423233"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Queries\Default Work Unit.wwu" DateLow="1176412032" DateHigh="30423233"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Queries\Factory Queries.wwu" DateLow="1176412032" DateHigh="30423233"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\SoundBanks\Default Work Unit.wwu" DateLow="2185379968" DateHigh="30437267"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\SoundBanks\Default Work Unit.wwu" DateLow="3774770432" DateHigh="30439083"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1176412032" DateHigh="30423233"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\States\Default Work Unit.wwu" DateLow="1061681408" DateHigh="30438377"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Switches\Default Work Unit.wwu" DateLow="3039209344" DateHigh="30436161"/>
-	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01.user.wsettings" DateLow="1197113984" DateHigh="30438696"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\States\Default Work Unit.wwu" DateLow="3774770432" DateHigh="30439083"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Switches\Default Work Unit.wwu" DateLow="3774770432" DateHigh="30439083"/>
+	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01.user.wsettings" DateLow="1622146688" DateHigh="30438697"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01.wproj" DateLow="84627968" DateHigh="30430517"/>
 	<ValidationCacheItem File="Y:\Documents\Unity Projects\Symbiosis_Prototyping_01\Symbiosis_Prototyping_01\Triggers\Default Work Unit.wwu" DateLow="1061681408" DateHigh="30438377"/>
 </ValidationCache>

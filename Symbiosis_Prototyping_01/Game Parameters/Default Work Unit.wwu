@@ -30,6 +30,30 @@
 						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Combo_Strength" ID="{99AB375B-7330-4495-8046-D2EA82BE337C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="25"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="25"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Bird_Population" ID="{9F1B2358-B0C4-4154-ACB2-FE81EB4A8E58}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Fish_Population" ID="{2E507C27-34C2-4FCA-9CC6-87E58CE3727D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
