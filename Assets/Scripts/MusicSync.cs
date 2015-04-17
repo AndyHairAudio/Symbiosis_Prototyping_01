@@ -27,7 +27,6 @@ public class MusicSync : MonoBehaviour {
 
 		if (in_type == AkCallbackType.AK_MusicSyncBar) {
 			timeOfLastBar = Time.time;
-			AkSoundEngine.PostEvent ("Play_testbeep", this.gameObject);
 		}
 	}
 
