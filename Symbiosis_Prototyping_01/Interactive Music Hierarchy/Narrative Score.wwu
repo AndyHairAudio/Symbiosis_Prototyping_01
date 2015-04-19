@@ -1181,6 +1181,9 @@
 													</PropertyList>
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{FC425AC5-6C6A-4784-BADB-3D0F15661F5E}">
+															<PropertyList>
+																<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+															</PropertyList>
 															<TransitionInfo/>
 														</MusicTransition>
 													</ChildrenList>
@@ -1562,7 +1565,7 @@
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -1581,7 +1584,7 @@
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
@@ -1600,7 +1603,7 @@
 																		</PropertyList>
 																		<PointList>
 																			<Point>
-																				<XPos>-0</XPos>
+																				<XPos>0</XPos>
 																				<YPos>0</YPos>
 																				<Flags>5</Flags>
 																			</Point>
