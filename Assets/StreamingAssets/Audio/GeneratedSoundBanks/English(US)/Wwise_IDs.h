@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BELL_TONE = 229829620U;
         static const AkUniqueID PLAY_COLLECT_FRUIT = 726221595U;
         static const AkUniqueID PLAY_DIGGING = 813141615U;
         static const AkUniqueID PLAY_EAT_FRUIT = 898820479U;

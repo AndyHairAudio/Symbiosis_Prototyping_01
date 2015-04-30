@@ -33,11 +33,6 @@
 								</RTPC>
 							</RTPCList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>5</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -977,6 +972,11 @@
 						<Sound Name="Monolith Drone" ID="{FF67C61E-2B6D-477D-B01B-DD5EBB43A1BB}" ShortID="16379594" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>480</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -989,8 +989,10 @@
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Loop_Monolith_44_1kHz_24bit_01" ID="{B2CA266C-BC02-4448-AAA9-857A6B709837}" ShortID="924647221">
 									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.019667355615261"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.71534830930113E-02"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="63.9781181619254"/>
+										<Property Name="TrimEnd" Type="Real64" Value="65.9874799290068"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Loop_Monolith_44.1kHz_24bit_01.wav</AudioFile>

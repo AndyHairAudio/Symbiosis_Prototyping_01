@@ -40,6 +40,7 @@ public class BulbBeatGlow : MonoBehaviour {
 			lightComp.intensity = 3.0f;
 				lightComp.enabled = true;
 				timeLightEnabled = Time.time;
+			    AkSoundEngine.PostEvent("Play_Bell_Tone", this.gameObject);
 			}
 	}
 }

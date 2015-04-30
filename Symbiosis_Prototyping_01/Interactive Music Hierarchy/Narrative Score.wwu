@@ -399,8 +399,6 @@
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{F690A7FA-F7C7-4DD9-8AE3-B92D9DA968A6}">
 															<PropertyList>
-																<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
-																<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 																<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 															</PropertyList>
 															<TransitionInfo>
@@ -789,8 +787,6 @@
 													<ChildrenList>
 														<MusicTransition Name="Transition" ID="{95C35AB2-3C93-4CE0-8D9F-2A6F9909A9CC}">
 															<PropertyList>
-																<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
-																<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 																<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 															</PropertyList>
 															<TransitionInfo>

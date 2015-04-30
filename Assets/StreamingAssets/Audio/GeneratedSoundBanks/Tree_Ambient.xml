@@ -12,6 +12,7 @@
 			<ShortName>Tree_Ambient</ShortName>
 			<Path>Tree_Ambient.bnk</Path>
 			<IncludedEvents>
+				<Event Id="229829620" Name="Play_Bell_Tone" GUID="{EB10336A-EA32-4D20-A5A9-277252BE9B0B}" MaxAttenuation="30.000000"/>
 				<Event Id="3771967532" Name="Play_Falling_Fruit" GUID="{E13D2691-0286-40A8-875B-ECC4E5D320FA}" MaxAttenuation="30.000000"/>
 				<Event Id="3564794469" Name="Play_Tree_Emitter" GUID="{BA583110-534E-4932-9111-8C72238A0EEC}" MaxAttenuation="70.000000"/>
 				<Event Id="1538482647" Name="Stop_Tree_Emitter" GUID="{81739252-1FB7-4234-9EF5-ABF75B426D7A}" MaxAttenuation="0.000000"/>
@@ -32,6 +33,10 @@
 				<File Id="142227830" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_01_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="159059620" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_E3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_E3_DDC98EF4.wem</Path>
 				</File>
 				<File Id="162340508" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_19_bip_1.wav</ShortName>
@@ -137,9 +142,21 @@
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_14_bip_1_DDC98EF4.wem</Path>
 				</File>
+				<File Id="926062791" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_C3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_C3_DDC98EF4.wem</Path>
+				</File>
 				<File Id="932348603" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_02_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="941030436" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_D3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_D3_DDC98EF4.wem</Path>
+				</File>
+				<File Id="957464311" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_G3 .wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_G3 _DDC98EF4.wem</Path>
 				</File>
 				<File Id="968246198" Language="SFX">
 					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_02.wav</ShortName>
@@ -156,6 +173,10 @@
 				<File Id="992573404" Language="SFX">
 					<ShortName>Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1.wav</ShortName>
 					<Path>SFX\Chirp_Small_RAW_Chopped_96kHz_24bit_Massive_04_bip_1_DDC98EF4.wem</Path>
+				</File>
+				<File Id="1024980588" Language="SFX">
+					<ShortName>Falling_Fruit_Bell_Tone_F3.wav</ShortName>
+					<Path>SFX\Falling_Fruit_Bell_Tone_F3_DDC98EF4.wem</Path>
 				</File>
 				<File Id="1035449172" Language="SFX">
 					<ShortName>Bird_Flapping_Glove_Sample_Web_44.1kHz_24bit_06.wav</ShortName>
