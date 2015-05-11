@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BankMemory>
-<<<<<<< HEAD
-	<Timestamp>130752267400000000</Timestamp>
-=======
-	<Timestamp>130748006580000000</Timestamp>
->>>>>>> origin/PC-Local
+	<Timestamp>130758567600000000</Timestamp>
 	<DataSize>6913644</DataSize>
 	<FileSize>6918107</FileSize>
 	<SFXPreFetchSize>0</SFXPreFetchSize>

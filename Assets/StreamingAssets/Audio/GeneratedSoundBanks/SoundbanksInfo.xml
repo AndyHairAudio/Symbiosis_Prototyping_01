@@ -153,11 +153,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-<<<<<<< HEAD
-		<SoundBank Id="1355168291" GUID="{CE513129-204E-4583-9352-E00331509001}" Language="SFX">
-=======
-		<SoundBank Id="1355168291" GUID="{7FB856E6-09A6-40CC-939A-7D4600020548}" Language="SFX">
->>>>>>> origin/PC-Local
+		<SoundBank Id="1355168291" GUID="{7C9FCE26-0BA4-4F0D-A16B-87163C3BBED3}" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
