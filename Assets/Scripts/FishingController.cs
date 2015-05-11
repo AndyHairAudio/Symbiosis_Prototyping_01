@@ -124,7 +124,6 @@ public class FishingController : MonoBehaviour {
 			while (!beatThisFrameRef) 
 			{yield return null;}
 
-			yield return new WaitForSeconds(0.05f);
 			randomButtonSelection = Random.Range(1, 5);
 			switch (randomButtonSelection)
 			{
@@ -149,7 +148,7 @@ public class FishingController : MonoBehaviour {
 				break;
 			}
 
-			yield return new WaitForSeconds (0.83f);
+			yield return new WaitForSeconds (0.45f);
 
 			downImage.color = Color.green;
 			upImage.color = Color.green;

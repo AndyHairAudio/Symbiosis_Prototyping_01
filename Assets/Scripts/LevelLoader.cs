@@ -84,8 +84,12 @@ public class LevelLoader : MonoBehaviour {
 		beginFade (1);
 
 		AkSoundEngine.SetState ("Player_Events", "None");
-		//AkSoundEngine.PostEvent ("Stop_All", this.gameObject);
-
+		AkSoundEngine.PostEvent ("Stop_All", this.gameObject);
+		AkSoundEngine.SetRTPCValue ("Interaction_Percussion", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Interaction_Success_Rhythm", 0.0f);
+		AkSoundEngine.SetRTPCValue ("Combo_strength", 0.0f);
+	
+		
 		yield return new WaitForSeconds (1.0f);
 
 		if (Application.loadedLevelName == "MenuScene"){

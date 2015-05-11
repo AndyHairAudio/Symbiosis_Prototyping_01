@@ -34,7 +34,7 @@
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
-						<Property Name="SlewRateDown" Type="Real64" Value="25"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="25"/>
 					</PropertyList>
 				</GameParameter>
@@ -52,6 +52,19 @@
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Underwater" ID="{C10BFC34-B6A1-4DC4-BA7D-AB0350376E48}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Mushroom_Effect" ID="{FD92D2CC-D85E-4D03-BBBE-A46FC631765B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="25"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

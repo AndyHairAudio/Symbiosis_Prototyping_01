@@ -2481,6 +2481,130 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<RandomSequenceContainer Name="Bell Tone" ID="{2C965030-59BF-4205-A31E-8FDC5EB75A93}" ShortID="64755525">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>830</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="amb_emitter_medium" ID="{7659AE14-0B78-4547-AC1C-0EB64F9977E9}" WorkUnitID="{E7704AF0-29F3-418C-828E-B573C02C78BA}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Falling_Fruit_Bell_Tone_C3" ID="{57A317C8-6665-4123-B0C9-1C3FBDCEE949}" ShortID="416405983" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Falling_Fruit_Bell_Tone_C3" ID="{24F88338-8153-4544-887F-0782D79F4433}" ShortID="926062791">
+											<Language>SFX</Language>
+											<AudioFile>Falling_Fruit_Bell_Tone_C3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Falling_Fruit_Bell_Tone_C3" ID="{24F88338-8153-4544-887F-0782D79F4433}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Falling_Fruit_Bell_Tone_D3" ID="{1C7DE24B-8830-4C4F-8736-F61D194579B4}" ShortID="406488814" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Falling_Fruit_Bell_Tone_D3" ID="{9738DE57-3FB0-4D8A-8D1F-807F823B740B}" ShortID="941030436">
+											<Language>SFX</Language>
+											<AudioFile>Falling_Fruit_Bell_Tone_D3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Falling_Fruit_Bell_Tone_D3" ID="{9738DE57-3FB0-4D8A-8D1F-807F823B740B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Falling_Fruit_Bell_Tone_E3" ID="{53C5EB14-7E3C-483C-A2A1-CFFCEF6A7DF5}" ShortID="333550083" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Falling_Fruit_Bell_Tone_E3" ID="{3C28D3E2-C75C-474B-8701-0CDEA1B933E8}" ShortID="159059620">
+											<Language>SFX</Language>
+											<AudioFile>Falling_Fruit_Bell_Tone_E3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Falling_Fruit_Bell_Tone_E3" ID="{3C28D3E2-C75C-474B-8701-0CDEA1B933E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Falling_Fruit_Bell_Tone_F3" ID="{61B3E83E-5C66-470C-8845-A99086AA4278}" ShortID="770964631" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Falling_Fruit_Bell_Tone_F3" ID="{C0E59302-05A9-4BF6-8256-D0D10BDD7C3E}" ShortID="1024980588">
+											<Language>SFX</Language>
+											<AudioFile>Falling_Fruit_Bell_Tone_F3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Falling_Fruit_Bell_Tone_F3" ID="{C0E59302-05A9-4BF6-8256-D0D10BDD7C3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Falling_Fruit_Bell_Tone_G3" ID="{E3DBE8C5-8DC5-4534-944F-9B4C784ECCB3}" ShortID="173991085" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Falling_Fruit_Bell_Tone_G3 " ID="{0E44A349-55C6-4CD7-9C69-9BC5EC35420D}" ShortID="957464311">
+											<Language>SFX</Language>
+											<AudioFile>Falling_Fruit_Bell_Tone_G3 .wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Falling_Fruit_Bell_Tone_G3 " ID="{0E44A349-55C6-4CD7-9C69-9BC5EC35420D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</BlendContainer>
 			</ChildrenList>

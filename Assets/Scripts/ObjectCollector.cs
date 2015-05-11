@@ -12,6 +12,7 @@ public class ObjectCollector : MonoBehaviour {
 	RaycastHit rayHitUniqueFruit;
 	public RaycastHit rayHitPlant;
 	RaycastHit rayHitLake;
+	RaycastHit rayHitMushrooms;
 	public bool rayHittingFruit;
 	public bool rayHittingTerrain;
 	public bool rayHittingUniqueTerrain;
@@ -36,6 +37,8 @@ public class ObjectCollector : MonoBehaviour {
 	public float timeOfLastAttemptedUniquePlant;
 	public float timeOfLastAttemptedCatch;
 	public List<float> successfulInteractions = new List<float>();
+	public bool eatenMushrooms;
+	public bool rayHittingMushrooms;
 
 	void Awake (){
 		StartCoroutine (HealthDecay (0.01f));
@@ -49,6 +52,7 @@ public class ObjectCollector : MonoBehaviour {
 	}
 
 	void Update (){
+		eatenMushrooms = false;
 		fishFedThisFrame = false;
 
 		if (playerHealth > 100) {

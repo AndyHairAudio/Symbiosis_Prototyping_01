@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BELL_TONE = 229829620U;
         static const AkUniqueID PLAY_COLLECT_FRUIT = 726221595U;
         static const AkUniqueID PLAY_DIGGING = 813141615U;
         static const AkUniqueID PLAY_EAT_FRUIT = 898820479U;
@@ -99,7 +100,9 @@ namespace AK
         static const AkUniqueID FISH_POPULATION = 705187635U;
         static const AkUniqueID INTERACTION_PERCUSSION = 1898339869U;
         static const AkUniqueID INTERACTION_SUCCESS_RHYTHM = 2807882626U;
+        static const AkUniqueID MUSHROOM_EFFECT = 3804670157U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
+        static const AkUniqueID UNDERWATER = 2213237662U;
     } // namespace GAME_PARAMETERS
 
     namespace TRIGGERS

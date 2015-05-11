@@ -248,6 +248,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Bell_Tone" ID="{EB10336A-EA32-4D20-A5A9-277252BE9B0B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4FA5E610-CE00-469B-B4A8-F06E99ED0095}" ShortID="250689530" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8FA2100A-A661-4DBC-89BE-E5C070A3800C}" Global="false">
+									<ObjectRef Name="Bell Tone" ID="{2C965030-59BF-4205-A31E-8FDC5EB75A93}" WorkUnitID="{C70690FC-788B-4CE0-9613-CE6210F107A2}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

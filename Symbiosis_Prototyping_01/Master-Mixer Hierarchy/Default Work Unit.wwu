@@ -4,7 +4,82 @@
 		<WorkUnit Name="Default Work Unit" ID="{B329CCBD-6168-4D44-ADFE-DEF11A67A5AC}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<ReferenceList/>
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{9069F0B7-9B70-44E1-9619-8E0CB67704D3}" ShortID="128431343">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Underwater" ID="{C10BFC34-B6A1-4DC4-BA7D-AB0350376E48}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0F836F28-173D-4CF8-AE54-9E10D4938CDB}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>49</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Stereo Delay (Custom)" ID="{41F4BE55-E56D-4352-846E-D32949331EE2}" ShortID="496745856" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+									<PropertyList>
+										<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
+										<Property Name="EnableFeedback" Type="bool" Value="True"/>
+										<Property Name="FilterFrequency" Type="Real32" Value="433"/>
+										<Property Name="FilterType" Type="int32" Value="5"/>
+										<Property Name="LeftDelayTime" Type="Real32" Value="1.1"/>
+										<Property Name="LeftFeedback" Type="Real32" Value="-4.6"/>
+										<Property Name="RightDelayTime" Type="Real32" Value="1.17"/>
+										<Property Name="RightFeedback" Type="Real32" Value="-2.9"/>
+										<Property Name="WetLevel" Type="Real32" Value="18">
+											<RTPCList>
+												<RTPC Name="" ID="{6DD9C06C-B1AC-4036-9DD8-6BF2AC51E159}" ShortID="952772253">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Mushroom_Effect" ID="{FD92D2CC-D85E-4D03-BBBE-A46FC631765B}" WorkUnitID="{57DAFE62-024F-4A4F-A0C0-7B6595C5BA3B}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9BFE5B6E-42E3-4341-88BA-3325B5220623}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>20.5348</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+					</ReferenceList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
 				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>

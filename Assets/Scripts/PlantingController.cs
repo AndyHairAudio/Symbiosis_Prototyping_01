@@ -101,7 +101,6 @@ public class PlantingController : MonoBehaviour {
 			while (!beatThisFrameRef) 
 			{yield return null;}
 
-					yield return new WaitForSeconds (0.05f);
 					randomButtonSelection = Random.Range (1, 5);
 					switch (randomButtonSelection) {
 					case 1:
@@ -125,7 +124,7 @@ public class PlantingController : MonoBehaviour {
 							break;
 					}
 		
-			yield return new WaitForSeconds (0.83f);
+			yield return new WaitForSeconds (0.45f);
 			downImage.color = Color.green;
 			upImage.color = Color.green;
 			leftImage.color = Color.green;
@@ -137,7 +136,7 @@ public class PlantingController : MonoBehaviour {
 			while (!beatThisFrameRef) 
 			{yield return null;}
 			
-			yield return new WaitForSeconds(0.3f);
+			yield return new WaitForSeconds(0.1f);
 			if(buttonLog.Count > 0){
 				if(buttonLog[0] == selectedButtonString){
 					if(buttonLog.Count >= 2){

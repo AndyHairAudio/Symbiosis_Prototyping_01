@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BirdSpawner : MonoBehaviour {
 	
-	public float spawnRateMultiplier = 1.0f;
+	public float spawnRateMultiplier = 2.5f;
 	public GameObject birdPrefab;
 	GameObject[] birdObjs;
 	GameObject[] fruitObjs;
@@ -30,13 +30,13 @@ public class BirdSpawner : MonoBehaviour {
 		}
 
 		if (fruitObjs.Length <= 10) {
-						spawnRateMultiplier = 1.0f;
-				} else if (fruitObjs.Length > 10 && fruitObjs.Length <= 20) {
 						spawnRateMultiplier = 2.5f;
-				} else if (fruitObjs.Length > 20 && fruitObjs.Length <= 30) {
+				} else if (fruitObjs.Length > 10 && fruitObjs.Length <= 20) {
 						spawnRateMultiplier = 5.0f;
+				} else if (fruitObjs.Length > 20 && fruitObjs.Length <= 30) {
+						spawnRateMultiplier = 7.5f;
 				} else if (fruitObjs.Length > 30 && fruitObjs.Length <= 40) {
-						spawnRateMultiplier = 10.0f;
+						spawnRateMultiplier = 15.0f;
 				} else if (fruitObjs.Length > 40 && fruitObjs.Length <= 50) {
 						spawnRateMultiplier = 20.0f;
 				} else {
