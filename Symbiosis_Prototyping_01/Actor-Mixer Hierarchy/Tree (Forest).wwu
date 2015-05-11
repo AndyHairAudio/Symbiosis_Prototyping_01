@@ -2484,11 +2484,14 @@
 						<RandomSequenceContainer Name="Bell Tone" ID="{2C965030-59BF-4205-A31E-8FDC5EB75A93}" ShortID="64755525">
 							<PropertyList>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+<<<<<<< HEAD
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>910</Value>
+										<Value>830</Value>
 									</ValueList>
 								</Property>
+=======
+>>>>>>> origin/PC-Local
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2584,7 +2587,11 @@
 										<ActiveSource Name="Falling_Fruit_Bell_Tone_F3" ID="{C0E59302-05A9-4BF6-8256-D0D10BDD7C3E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+<<<<<<< HEAD
 								<Sound Name="Falling_Fruit_Bell_Tone_G3" ID="{E3DBE8C5-8DC5-4534-944F-9B4C784ECCB3}" ShortID="173991085" Type="SoundFX">
+=======
+								<Sound Name="Falling_Fruit_Bell_Tone_G3 " ID="{E3DBE8C5-8DC5-4534-944F-9B4C784ECCB3}" ShortID="173991085" Type="SoundFX">
+>>>>>>> origin/PC-Local
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{97418CCF-F9CA-425A-A43E-5DF6D199F834}"/>
