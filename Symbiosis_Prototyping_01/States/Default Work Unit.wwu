@@ -8,6 +8,7 @@
 						<State Name="None" ID="{0A540A64-E1B8-4BD1-ABF3-DABFB33CF437}"/>
 						<State Name="In_World" ID="{E20ECE67-2D0D-4E4C-A805-21619AAF2CA8}"/>
 						<State Name="Empty" ID="{C32125EF-A11B-490E-B39E-79B2FA8CAF0A}"/>
+						<State Name="Menu" ID="{0C3CEB0C-A744-4F11-B0D4-E88901D8B864}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
